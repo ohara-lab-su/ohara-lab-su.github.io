@@ -8,7 +8,8 @@
 - ロボット制御: [cobotta](https://ohara-lab-su.github.io/cobotta2)
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
 - ロボット制御: UR3e
-- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame)
+- 二次元検出機: MiniPIX
+- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring8-BL774互換風味)
 - 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
 - ロガー: [x_logger](https://ohara-lab-su.github.io/x_logger/)
  
@@ -18,6 +19,7 @@
 - ロボット制御: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
 - ロボットGUI: [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
 - ロボット制御: UR3e
+- 二次元検出機: MiniPIX
 - 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/)
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
 - ロガー: [x_logger](https://github.com/ohara-lab-su/x_logger/)
