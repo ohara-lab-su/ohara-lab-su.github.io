@@ -24,6 +24,7 @@
 - [wegPDF local 接続コード & ユーリティティ]
 - [RMC-DFT]
 - [ASE]
+- [機械学習ポテンシャル]
 
 ## 計算関係 docs
 
@@ -32,5 +33,6 @@
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
 
 ## 主な開発者
-1. K.Nakada
+1. K.Ohara
 2. K.Kobayashi
+3. K.Nakada
