@@ -13,7 +13,7 @@
 
 - [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
 - [cobotta](https://github.com/ohara-lab-su/cobotta2/)
-- [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta_joypad/)
+- [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
 - [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/)
 - [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
 - [x_logger](https://github.com/ohara-lab-su/x_logger/)
