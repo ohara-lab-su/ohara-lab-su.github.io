@@ -6,7 +6,7 @@
 - [cobotta](https://ohara-lab-su.github.io/cobotta2)
 - [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta_joypad)
 - [ese774 frame](https://ohara-lab-su.github.io/ese774_frame)
-- [grpc frame](https://ohara-lab-su.github.io/ese774_frame)
+- [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
 - [x_logger](https://ohara-lab-su.github.io/x_logger/)
  
 ## スサノオプロジェクト source (2026/03/03 アクセス制限)
@@ -24,7 +24,7 @@
 - [wegPDF local 接続コード & ユーリティティ]
 - [RMC-DFT]
 - [ASE]
-- [機械学習ポテンシャル]
+- [ASE機械学習ポテンシャル関連ツール]
 
 ## 計算関係 docs
 
