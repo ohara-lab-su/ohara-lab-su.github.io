@@ -29,7 +29,7 @@
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
 - ロガー: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
-## 支援ツール (beta段階)
+## 支援ツール (alpha段階)
 
 - ohara-lab-su: [ページ編集](https://github.com/kengo-nakada/local_pdf)
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
@@ -43,7 +43,7 @@
 
 - [Power スペクトル(using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [振動数解析](https://github.com/shimane-dev/x_frequency) 単純に時系列での周波数追跡
-- [wegPDF local 接続コード & ユーリティティ](https://github.com/kengo-nakada/local_pdf)
+- [wegPDF local](https://github.com/kengo-nakada/local_pdf)
 - [RMC-DFT](https://github.com/shimane-dev/rmc_dft) RMC/DFTに関する支援ツール
 - [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集(古すぎるのでほぼ死亡)
 - [vasp1](https://github.com/shimane-dev/vasp1) VASP 支援スクリプト週
