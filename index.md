@@ -49,10 +49,14 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [Power スペクトル(using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造とMD関係の解析支援
 - [振動数解析](https://github.com/shimane-dev/x_frequency) 単純に時系列での周波数追跡
+- [結合解析(COHP)ツール](https://github.com/shimane-dev/x_lobster)
 - [wegPDF local](https://github.com/kengo-nakada/local_pdf)
 - [RMC-DFT](https://github.com/shimane-dev/rmc_dft) RMC/DFTに関する支援ツール
 - [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集(古すぎるのでほぼ死亡)
 - [vasp1](https://github.com/shimane-dev/vasp1) VASP 支援スクリプト集
+- [真空層 関連ツール](https://github.com/shimane-dev/change_lattice_constant)
+- [構造の結合 ツール](https://github.com/shimane-dev/merge_cells)
+- [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
 - [rote クラスター](https://github.com/shimane-dev/rotate_cluster) クラスター回転
 - [VCA 作成ツール](https://github.com/shimane-dev/make_vca) 仮想結晶近似
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
