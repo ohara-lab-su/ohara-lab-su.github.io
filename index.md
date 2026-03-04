@@ -60,7 +60,7 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [rote クラスター](https://github.com/shimane-dev/rotate_cluster) クラスター回転
 - [VCA 作成ツール](https://github.com/shimane-dev/make_vca) 仮想結晶近似
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
-- [ASE機械学習ポテンシャル関連ツール]
+- [機械学習ポテンシャル ACE 関連ツール](https://github.com/kengo-nakada/ace_env)
 
 ## 計算関係 docs
 
