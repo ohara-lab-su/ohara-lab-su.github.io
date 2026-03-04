@@ -14,7 +14,7 @@
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
 - ロボット制御: UR3e
 - 二次元検出機: MiniPIX
-- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring8-BL774互換風味)
+- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
 - 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
 - ロガー: [x_logger](https://ohara-lab-su.github.io/x_logger/)
  
@@ -29,14 +29,19 @@
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
 - ロガー: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
-## 支援ツール (alpha段階)
+## スサノオプロジェクト 支援ツール (alpha段階)
 
 - ohara-lab-su: [ページ編集](https://github.com/kengo-nakada/local_pdf)
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
  
-## システムの概要
+## スサノオプロジェクト システムの概要
 
-## インストール方法
+SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサノオ**と読んでいる。
+
+- BL774 互換(ese774)を用いた通信による機器制御
+- gRPC を用いた通信による機器制御
+
+## スサノオプロジェクト インストール方法
 
 
 ## 計算関係 source (2026/03/03 アクセス制限)
