@@ -2,8 +2,10 @@
 
 [source](https://github.com/ohara-lab-su) / [docs](https://ohara-lab-su.github.io/) / [尾原研](https://ohara.mat.shimane-u.ac.jp/)
 
+<!--
 * Toc
 {:toc}
+-->
 
 ## スサノオプロジェクト docs
 
