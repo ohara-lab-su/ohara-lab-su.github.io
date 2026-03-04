@@ -43,7 +43,7 @@
 - [振動数解析](https://github.com/shimane-dev/x_frequency) 単純に時系列での周波数追跡
 - [wegPDF local 接続コード & ユーリティティ](https://github.com/kengo-nakada/local_pdf)
 - [RMC-DFT](https://github.com/shimane-dev/rmc_dft) RMC/DFTに関する支援ツール
-- [ASE](https://github.com/shimane-dev/sae)
+- [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集(古すぎるのでほぼ死亡)
 - [vasp1](https://github.com/shimane-dev/vasp1) VASP 支援スクリプト週
 - [rote クラスター](https://github.com/shimane-dev/rotate_cluster) クラスター回転
 - [VCA 作成ツール](https://github.com/shimane-dev/make_vca) 仮想結晶近似
