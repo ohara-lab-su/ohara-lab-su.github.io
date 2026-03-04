@@ -42,6 +42,7 @@
 ## 計算関係 source (2026/03/03 アクセス制限)
 
 - [Power スペクトル(using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
+- [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造とMD関係の解析支援
 - [振動数解析](https://github.com/shimane-dev/x_frequency) 単純に時系列での周波数追跡
 - [wegPDF local](https://github.com/kengo-nakada/local_pdf)
 - [RMC-DFT](https://github.com/shimane-dev/rmc_dft) RMC/DFTに関する支援ツール
