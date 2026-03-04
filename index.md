@@ -2,6 +2,9 @@
 
 [source](https://github.com/ohara-lab-su) / [docs](https://ohara-lab-su.github.io/) / [尾原研](https://ohara.mat.shimane-u.ac.jp/)
 
+*Toc
+{:toc}
+
 ## スサノオプロジェクト docs
 
 - 電子天秤制御: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
@@ -24,9 +27,9 @@
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
 - ロガー: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
-## インストール方法
+## システムの概要
 
-##
+## インストール方法
 
 
 ## 計算関係 source (2026/03/03 アクセス制限)
