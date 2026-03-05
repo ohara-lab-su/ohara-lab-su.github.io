@@ -72,9 +72,12 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
 - [rote クラスター](https://github.com/shimane-dev/rotate_cluster) クラスター回転
 - [VCA (仮想結晶近似)](https://github.com/shimane-dev/make_vca) 仮想結晶近似
+- [SQS を用いた構造作成・計算]()
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
 - [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
-- [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw)
+- [機械学習ポテンシャル SNAP]()
+- [機械学習ポテンシャル GAP]()
+- [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW基盤から、FLEUR/exting基盤へ移行中)
 
 ## 計算関係 docs
 
