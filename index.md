@@ -16,6 +16,8 @@
 - 二次元検出機: MiniPIX
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
 - 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
+- 通信Frame: tango frame
+- 通信Frame: DDS frame
 - ロガー: [x_logger](https://ohara-lab-su.github.io/x_logger/)
  
 ## スサノオプロジェクト source (2026/03/03 アクセス制限)
@@ -27,19 +29,47 @@
 - 二次元検出機: MiniPIX
 - 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/)
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
+- 通信Frame: tango frame
+- 通信Frame: DDS frame
 - ロガー: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
-## スサノオプロジェクト 支援ツール (alpha段階)
+## スサノオプロジェクト alpha段階 & 支援page
 
-- ohara-lab-su: [ページ編集](https://github.com/kengo-nakada/local_pdf)
+- ohara-lab-su: [ページ編集](https://github.com/ohara-lab-su/ohara-lab-su.github.io)
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
+- websocketによるリアルタイム通信
  
 ## スサノオプロジェクト システムの概要
 
 SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサノオ**と読んでいる。
 
-- BL774 互換(ese774)を用いた通信による機器制御
+思想として、SPring-8 における MADOCA/DARUMA や ESRF の TANGO のようなフルスタック型の
+プロトコル・フレームワークの開発設計はせずに **マイクロサービス** を軸としたコンパクトな
+フレームを組み合わせる形をめざす。その意味では思想的にも SPring-8 BL774 互換でもある。
+
+システムの中核となる通信フレームは、ターゲットとなるデバイスと目的の通信速度・フレークワークとの
+結合をしやすいように、フレームを切り替えても同じように使えるようにしている。
+
+**シンプルな透過型プロキシ**を用いる採用している。
+
+- **BL774 互換** (ese774)を用いた通信による機器制御
+  - 本プロジェクトの中核をなす frame
+  - BL774 と同じく RestAPI を基本とする
+  - BL774型の post/get ルール（に可能な限り同じくする)
+  - pydantice / openAPI による API 定義
+    - おそらくBL774による採用とは少し違う採用方法かもしれない
+      - 2025.4 では BL774 は pydantic は採用希望段階であって実装方式は決まってなかったと聞く
+  - 通信サーバ・クライアントは透過型プロキシとして機能するように、すべて動的なディスパッチで構成
+    - おそらく透過型へのこだわりは BL774 と少し違う
+    - 透過型にしてクライアントに pydantc オブジェクトを見せない形なのであまり pydantic の意義がないとも言える
 - gRPC を用いた通信による機器制御
+  - API定義も完全に透過型プロキシ
+  - ese774 frame と完全に置換可能なgRPCによる透過型プロキシ
+  - RestAPI で実現不可能な Event 処理などの処理をserver/client で可能
+  - 将来の(もしかして現在の)BL774採用型、のはず
+- tango (ZMQ/CORBA)を用いた通信による機器制御
+  - フルスタック型を透過型プロキシとしてのみ用いる
+- DDS を用いた通信による機器制御
 
 ## スサノオプロジェクト インストール方法
 
@@ -49,8 +79,8 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [Power スペクトル(using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造とMD関係の解析支援
 - [振動数解析](https://github.com/shimane-dev/x_frequency) 単純に時系列での周波数追跡
-- [結合解析(COHP)ツール](https://github.com/shimane-dev/x_lobster)
-- [wegPDF local](https://github.com/kengo-nakada/local_pdf)
+- [結合解析(COHP)](https://github.com/shimane-dev/x_lobster)
+- [webPDF local](https://github.com/kengo-nakada/local_pdf)
 - [RMC-DFT](https://github.com/shimane-dev/rmc_dft) RMC/DFTに関する支援ツール
 - [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集(古すぎるのでほぼ死亡)
 - [vasp1](https://github.com/shimane-dev/vasp1) VASP 支援スクリプト集
@@ -59,9 +89,10 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [構造の結合 ツール](https://github.com/shimane-dev/merge_cells)
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
 - [rote クラスター](https://github.com/shimane-dev/rotate_cluster) クラスター回転
-- [VCA 作成ツール](https://github.com/shimane-dev/make_vca) 仮想結晶近似
+- [VCA (仮想結晶近似)](https://github.com/shimane-dev/make_vca) 仮想結晶近似
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
-- [機械学習ポテンシャル ACE 関連ツール](https://github.com/kengo-nakada/ace_env)
+- [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
+- [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw)
 
 ## 計算関係 docs
 
