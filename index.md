@@ -1,5 +1,5 @@
 # Ohara Lab
-Software and tools developed for analysis and control in our research projects.  
+Software for data analysis and device control used in our research projects.  
 [github](https://github.com/ohara-lab-su) / [docs](https://ohara-lab-su.github.io/) / [尾原研](https://ohara.mat.shimane-u.ac.jp/)
 
 <!--
