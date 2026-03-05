@@ -85,6 +85,11 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
 
+## 古い記事へのリンク
+
+- DARUMA_2019.12
+- [計算関係の役立ちリンク](abinit/index.md)
+
 ## 主な開発者
 1. K.Ohara
 2. K.Kobayashi
