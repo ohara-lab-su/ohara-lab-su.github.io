@@ -1,4 +1,4 @@
-# Ohara Lab | Analysis & Control System Development
+# Ohara Lab | Software and tools developed for analysis and control in our research projects.
 
 [source](https://github.com/ohara-lab-su) / [docs](https://ohara-lab-su.github.io/) / [尾原研](https://ohara.mat.shimane-u.ac.jp/)
 
@@ -35,7 +35,6 @@
 
 ## スサノオプロジェクト alpha段階 & 支援page
 
-- ohara-lab-su: [ページ編集](https://github.com/ohara-lab-su/ohara-lab-su.github.io)
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
 - websocketによるリアルタイム通信
  
