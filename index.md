@@ -54,7 +54,7 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 ## スサノオプロジェクト インストール方法
 
 
-## 計算関係 source (2026/03/03 アクセス制限)
+## 第一原理計算関係 source (2026/03/03 アクセス制限)
 
 - [Power スペクトル(using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造とMD関係の解析支援
@@ -79,7 +79,7 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [機械学習ポテンシャル GAP]()
 - [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW基盤から、FLEUR/exting基盤へ移行中)
 
-## 計算関係 docs
+## 第一原理計算関係 docs
 
 - [第一原理計算の選び方](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf)
 - [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
