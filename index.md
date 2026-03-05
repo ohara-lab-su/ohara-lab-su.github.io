@@ -60,8 +60,8 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造とMD関係の解析支援
 - [振動数解析](https://github.com/shimane-dev/x_frequency) 単純に時系列での周波数追跡
 - [COHP にる結合解析](https://github.com/shimane-dev/x_lobster)
-- [ワニエ関数による局在軌道解析 (結合解析)]()
-- [ワニエ関数による局在軌道解析 (電荷のずれ)]()
+- [ワニエ関数による局在化軌道解析 (結合解析)]()
+- [ワニエ関数による局在化軌道解析 (電荷のずれ)]()
 - [webPDF local](https://github.com/kengo-nakada/local_pdf)
 - [RMC-DFT](https://github.com/shimane-dev/rmc_dft) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
 - [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集(古すぎるのでほぼ死亡)
