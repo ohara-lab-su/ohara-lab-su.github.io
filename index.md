@@ -80,7 +80,8 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 
 ## 第一原理計算関係 docs
 
-- [第一原理計算の選び方](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf)
+- [基礎知識](abinit/intro/intro.md)
+- [第一原理計算の選び方 (プレゼン資料)](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf)
 - [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
 
