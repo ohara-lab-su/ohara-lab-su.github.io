@@ -1,37 +1,14 @@
----
----
-
-@import "{{ site.theme }}";
-
-#markdown-toc {
-  float: left;
-  width: 260px;
-  margin: 0 24px 24px 0;
+.note {
+  border-left: 4px solid #3b82f6;
+  background: #eef6ff;
   padding: 12px 16px;
-  border: 1px solid rgba(0,0,0,.10);
-  border-radius: 10px;
-  background: #fff;
-
-  position: sticky;
-  top: 16px;
-  max-height: calc(100vh - 32px);
-  overflow: auto;
+  margin: 1em 0;
+  border-radius: 4px;
 }
 
-#markdown-toc::before {
-  content: "目次";
+.note::before {
+  content: "Note";
+  font-weight: bold;
   display: block;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-#markdown-toc,
-#markdown-toc ul { list-style: none; padding-left: 0; }
-#markdown-toc ul { padding-left: 16px; }
-
-#markdown-toc ~ * { margin-left: 284px; }
-
-@media (max-width: 900px) {
-  #markdown-toc { float: none; width: auto; position: static; margin: 0 0 16px 0; max-height: none; }
-  #markdown-toc ~ * { margin-left: 0; }
+  margin-bottom: 4px;
 }
