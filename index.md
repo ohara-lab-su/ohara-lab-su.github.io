@@ -33,7 +33,7 @@ Software for data analysis and device control used in our research projects.
 - 通信Frame: DDS frame
 - ロガー: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
-## スサノオプロジェクト alpha段階 & 支援page
+## スサノオプロジェクト alpha段階 & 支援page (2026/03/03 アクセス制限)
 
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
 - websocketによるリアルタイム通信
