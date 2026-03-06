@@ -36,7 +36,7 @@ Software for data analysis and device control used in our research projects.
 ## スサノオプロジェクト alpha段階 & 支援page (2026/03/03 アクセス制限)
 
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
-- websocketによるリアルタイム通信
+- websocketによるリアルタイム通信と遠隔実験システム
  
 ## スサノオプロジェクト システムの概要
 
