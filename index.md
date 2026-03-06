@@ -55,9 +55,9 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 
 ## 第一原理計算関係 source (2026/03/03 アクセス制限)
 
-- [Power スペクトル(using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
+- [Power スペクトル (using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造とMD関係の解析支援
-- [振動数解析](https://github.com/shimane-dev/x_frequency) 単純に時系列での周波数追跡
+- [周波数解析](https://github.com/shimane-dev/x_frequency) ゼロクロッシング法による周波数推定とSynchrosqueezing Transform (SST) による周波数セグメント検出
 - [COHP にる結合解析](https://github.com/shimane-dev/x_lobster)
 - [ワニエ関数による局在化軌道解析 (結合解析)]()
 - [ワニエ関数による局在化軌道解析 (電荷のずれ)]()
