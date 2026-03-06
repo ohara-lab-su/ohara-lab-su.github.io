@@ -87,7 +87,8 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 
 ## 古い記事へのリンク
 
-- DARUMA_2019.12
+- DARUMA project (2019.12 プロジェクト更新は無くなりました。その時点でのproject内容)
+- [DARUMA (spring8 サイト内)](http://daruma.spring8.or.jp/)
 - [計算関係の役立ちリンク](abinit/index.md)
 
 ## 主な開発者
