@@ -7,6 +7,22 @@ Software for data analysis and device control used in our research projects.
 {:toc}
 -->
 
+## スサノオプロジェクト システムの概要
+
+SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサノオ**と読んでいる。
+
+SPring-8 における MADOCA/DARUMA や ESRF の TANGO のようなフルスタック型の
+プロトコル・フレームワークの開発設計はせずに **マイクロサービス** を軸としたコンパクトな
+フレームを設計し、それを組み合わせる形をめざす。その意味では思想的にも SPring-8 BL774 互換でもある。
+システムの中核となる通信フレームは、ターゲットとなるデバイスと目的の通信速度・フレークワークとの
+結合をしやすいように、フレームを切り替えても同じように使えるようにしている。
+BL774互換として、RestAPI や gRPC 通信を軸としているが、それらをマイクロサービとして使うために通信は
+何を採用しても同じように設計している。基本は**シンプルな透過型プロキシ**を用いる採用している。
+そのため動的なディスパッチを軸として設計開発している。
+
+- [基本: 方針/設計](susanoo_intro.md)
+
+
 ## スサノオプロジェクト docs
 
 - 電子天秤制御: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
@@ -38,17 +54,6 @@ Software for data analysis and device control used in our research projects.
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
 - websocketによるリアルタイム通信
  
-## スサノオプロジェクト システムの概要
-
-SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサノオ**と読んでいる。
-
-思想として、SPring-8 における MADOCA/DARUMA や ESRF の TANGO のようなフルスタック型の
-プロトコル・フレームワークの開発設計はせずに **マイクロサービス** を軸としたコンパクトな
-フレームを組み合わせる形をめざす。その意味では思想的にも SPring-8 BL774 互換でもある。
-システムの中核となる通信フレームは、ターゲットとなるデバイスと目的の通信速度・フレークワークとの
-結合をしやすいように、フレームを切り替えても同じように使えるようにしている。 **シンプルな透過型プロキシ**を用いる採用している。
-
-- [基本: 方針/設計](susanoo_intro.md)
 
 ## スサノオプロジェクト インストール方法
 
