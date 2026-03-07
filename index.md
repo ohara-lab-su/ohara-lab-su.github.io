@@ -10,7 +10,7 @@ Software for data analysis and device control used in our research projects.
 ## スサノオ: スサノオとは？
 
 SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
-を用いた一連の計測システムを**スサノオ**と読んでいる。
+を用いた一連の計測システムを**スサノオ**と読んでいる。BL774のサブセットを自称している。
 
 ## スサノオ: システムの概要
 
@@ -22,7 +22,7 @@ ESRF の [TANGO](https://www.tango-controls.org/) のようなフルスタック
 結合をしやすいように、フレームを切り替えても同じように使えるようにする。
 つまり基本は**シンプルな透過型プロキシ**を採用している。
 
-BL774互換としての立ち位置は、**BL774 REST server** のコードを基盤にしており、
+BL774互換としての立ち位置は、公式に**BL774 REST server** のコードを基盤にしており、
 get や post のルールを BL774 側の真似をしているところである。
 ただ、マネージメントやAPIセットにははまだ大きな規定や仕組みはない。つまり774APIセットに対応しているわけではなく、
 BL774 Basic System 未満、ただし、素の FastAPI 以上である。
@@ -30,8 +30,45 @@ BL774 Basic System 未満、ただし、素の FastAPI 以上である。
 
 - [基本: 方針/設計](susanoo_intro.md)
 
+## スサノオ: 分散システム
+
+[MADOCA/DARUMA](https://user.spring8.or.jp/sp8info/?p=37181) や
+[TANGO](https://www.tango-controls.org/) のような本当の意味での分散システムは目指さない。
+つまりサーバー・サーバー間通信を含めた意味で分散ではなく、単純なサーバー・クライアント通信が
+ベースのシステム構成となる。ミニマムな実験支援系システムではそれほど本格的な分散システムは
+必要ないという判断が根底ある。単純にBL774型の互換であるからという理由もあるし、
+設計・開発・保守メンテナンスをミニマムなコストで行うためである。
+
+BL774はかなり遅い通信である RestAPI を採用している。これは、
+webに立脚した技術体系の普及率と簡便さに立脚しているからである。
+開発効率と一般的で普及しているシステムであることは何より大切である。
+同システムのサブセットであるスサノオも同等である
+
+また、それなりに高速な通信やイベント起動が必要な場合は、
+同じ web技術でも gRPC をスサノオでは選択可能になっている。
+
+- [分散制御システム]()
+- [スサノオのシステム]()
+
+## スサノオ: インストール方法
+
+スサノオは、サーバー・クライアント型のシンプルな分散システムである。
+そのため、デバイスサーバの形、デバイス(実験機器)側の
+サーバーを立ち上げる必要がある。
+
+スサノオはほぼ完全は透過型プロキシであるため、(1)スサノオに関係なく
+デバイス制御プログラムを書く。 (2)スサノオフレームにより、デバイスサーバーを数行記述することで
+デバイスサーを作る。 (3)スサノオフレームにより自動で作られるデバイスクライアントを
+用いることで機器制御を行う。
+
+- [インストール](susanoo_install.md)
 
 ## スサノオ: docs
+
+以下は各機器ごとの制御プログムと
+スサノオに対応したデバイスサーバーが導入されているパッケージである。
+基本的に全てスサノオとは独立して記述してあるために、他の機器制御フレームからでも
+そのまま使える
 
 - 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
 - ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2)
@@ -63,11 +100,8 @@ BL774 Basic System 未満、ただし、素の FastAPI 以上である。
 - websocketによるリアルタイム通信
  
 
-## スサノオ: インストール方法
 
-- [インストール構成](susanoo_install.md)
-
-## 第一原理計算関係: source (2026/03/03 アクセス制限)
+## データ解析: source (2026/03/03 アクセス制限)
 
 - [Power スペクトル (using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造と Bader 電荷密度とMD関係の解析支援クラスライブラリおよびその使用例
@@ -92,9 +126,9 @@ BL774 Basic System 未満、ただし、素の FastAPI 以上である。
 - [機械学習ポテンシャル GAP]()
 - [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW基盤から、FLEUR/exting基盤へ移行中)
 
-## 第一原理計算関係: docs
+## データ解析: docs
 
-- [基礎知識](abinit/intro/intro.md)
+- [第一原理計算の基礎知識](abinit/intro/intro.md)
 - [第一原理計算の選び方 (プレゼン資料)](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf)
 - [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
