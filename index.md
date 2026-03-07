@@ -1,6 +1,6 @@
 # Ohara Lab
 Software for data analysis and device control used in our research projects.  
-[github](https://github.com/ohara-lab-su) / [docs](https://ohara-lab-su.github.io/) / [尾原研](https://ohara.mat.shimane-u.ac.jp/)
+[尾原研](https://ohara.mat.shimane-u.ac.jp/) / [github](https://github.com/ohara-lab-su) / [docs](https://ohara-lab-su.github.io/)
 
 <!--
 * Toc
@@ -36,7 +36,7 @@ Software for data analysis and device control used in our research projects.
 ## スサノオプロジェクト alpha段階 & 支援page (2026/03/03 アクセス制限)
 
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
-- websocketによるリアルタイム通信と遠隔実験システム
+- websocketによるリアルタイム通信
  
 ## スサノオプロジェクト システムの概要
 
@@ -88,7 +88,6 @@ SPring-8 の BL774 互換(ese774)を用いた一連の計測システム**スサ
 ## 古い記事へのリンク
 
 - DARUMA project (2019.12 プロジェクト更新は無くなりました。その時点でのproject内容)
-- [DARUMA (spring8 サイト内)](http://daruma.spring8.or.jp/)
 - [計算関係の役立ちリンク](abinit/index.md)
 
 ## 主な開発者
