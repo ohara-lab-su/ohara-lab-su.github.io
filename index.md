@@ -1,6 +1,6 @@
 # Ohara Lab
 Software for data analysis and device control used in our research projects.  
-[尾原研](https://ohara.mat.shimane-u.ac.jp/) / [github](https://github.com/ohara-lab-su) / [docs](https://ohara-lab-su.github.io/)
+[尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 <!--
 * Toc
