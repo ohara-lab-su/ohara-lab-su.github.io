@@ -213,6 +213,4 @@ BL774対応の一つである
 1. K.Ohara
 2. K.Kobayashi
 3. K.Nakada
-
-## 協力者
-1. R.Hinohara
+4. R.Hinohara
