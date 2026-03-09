@@ -43,7 +43,7 @@
 
 ---
 中央集権型の分散利用
-<img src="fig/dcs_with_e.009.png" width="70%" style="display:block; margin:auto;">
+<img src="fig/dcs_with_e.010.png" width="70%" style="display:block; margin:auto;">
 
 ---
 本格的な分散モデルでの機器制御
