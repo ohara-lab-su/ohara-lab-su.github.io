@@ -22,7 +22,8 @@
 現実の状況下では、このシンプルなモデルはテスト例以外では
 使えないことが多い。
 
-![](fig/dcs_with_e.003.png)
+<img src="fig/dcs_with_e.003.png" width="70%" style="display:block; margin:auto;">
+<!-- ![](fig/dcs_with_e.003.png) -->
 
 ---
 中央集権型。実際には中央集権型の多くは後述する「複数の中央集権型」のあつまり
@@ -32,7 +33,8 @@
 
 というモデルの違いは理解おいた方が、制御としては健全である。
 
-![](fig/dcs_with_e.004.png)
+<img src="fig/dcs_with_e.004.png" width="70%" style="display:block; margin:auto;">
+<!-- ![](fig/dcs_with_e.004.png) -->
 
 ---
 本格的な分散モデル。
