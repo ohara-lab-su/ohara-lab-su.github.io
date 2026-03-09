@@ -9,7 +9,7 @@ Software for data analysis and device control used in our research projects.
 
 ## スサノオ: スサノオとは？
 
-SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
+島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
 を用いた一連の計測システムを**スサノオ**と読んでいる。BL774のサブセットの一種である
 
 ## スサノオ: システムの概要
