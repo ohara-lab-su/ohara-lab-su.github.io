@@ -50,21 +50,21 @@ BL774 Basic System 未満である。
 型の互換であるからという理由もあるし、
 設計・開発・保守メンテナンスをミニマムなコストで行うためである。
 
+- [分散制御システム](susanoo_dcs.md)
+- [スサノオのシステム](susanooo_system.md)
+ 
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
 は遅い通信である RestAPI を採用している。これは、
 webに立脚した技術体系の普及率と簡便さに立脚しているからである。
 開発効率と一般的で普及しているシステムであることは何より大切である。
 同システムのサブセットであるスサノオも同等である
 
+<img src="fig/ese_774.005.png" width="70%" style="display:block; margin:auto;">
+
 それに対して、それなりに高速な通信やイベント起動などの高度な通信が必要な場合は、
 同じ web技術の範囲でも、gRPC をスサノオでは選択可能になっている。この gRPC
 への拡張は本家BL774でも行われており、BL774対応の一つである
 
-- [分散制御システム](susanoo_dcs.md)
-- [スサノオのシステム](susanooo_system.md)
-
-
-<img src="fig/ese_774.005.png" width="70%" style="display:block; margin:auto;">
 
 ## スサノオ: インストール方法
 
