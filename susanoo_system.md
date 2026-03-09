@@ -18,5 +18,6 @@ cobotta.meas()
 
 として動かしたことと同じになる。
 
-![](fig/susanoo-intro.003.png)
+<img src="fig/susanoo-intro.003.png" width="70%" style="display:block; margin:auto;">
+<!-- ![](fig/susanoo-intro.003.png) -->
 

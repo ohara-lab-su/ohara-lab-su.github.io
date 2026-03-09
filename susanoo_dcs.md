@@ -44,7 +44,8 @@
 透過型でアクセスする限りは、ユーザーサイドから見れば
 ただの単一の python プログラムである。
 
-![](fig/dcs_with_e.005.png)
+<img src="fig/dcs_with_e.005.png" width="70%" style="display:block; margin:auto;">
+<!-- ![](fig/dcs_with_e.005.png) -->
 
 ---
 中央集権型を複数用意して、クライアントからそれぞれ使う。 
@@ -59,7 +60,8 @@
 ユーザー側のpython プログラムから、特に何かを意識することなる。
 個別のpythonのクラスをそのまま使うだけでする。
 
-![](fig/dcs_with_e.006.png)
+<img src="fig/dcs_with_e.006.png" width="70%" style="display:block; margin:auto;">
+<!-- ![](fig/dcs_with_e.006.png) -->
 
 ## もう少し現実的なケース
 
@@ -80,12 +82,14 @@ L774型の通信プロトコルでは本質的に実現不可能であるが、
 などのような構成が容易に可能になる。
 ある意味一般的なクララスライブラリの構成をサーバー単位で拡張した概念で組むことが可能になる。
 
-![](fig/dcs_with_e.007.png)
+<img src="fig/dcs_with_e.007.png" width="70%" style="display:block; margin:auto;">
+<!-- ![](fig/dcs_with_e.007.png) -->
 
 ---
 もっと現実的に、複数のネットワークセグメントを横断する形で制御系システムを構築する場合がある。
 
 
-![](fig/dcs_with_e.008.png)
+<img src="fig/dcs_with_e.008.png" width="70%" style="display:block; margin:auto;">
+<!-- ![](fig/dcs_with_e.008.png) -->
 
 # 分散システムにおけるプロトコル
