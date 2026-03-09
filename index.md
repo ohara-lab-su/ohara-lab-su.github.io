@@ -22,6 +22,8 @@ ESRF の [TANGO](https://www.tango-controls.org/) のようなフルスタック
 結合をしやすいように、フレームを切り替えても同じように使えるようにする。
 つまり基本は**シンプルな透過型プロキシ**を採用している。
 
+![](fig/ese_774.004.png)
+
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
 互換としての立ち位置は、公式に**BL774 REST server** のコードを基盤にしており、
 get や post のルールを
