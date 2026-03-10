@@ -124,6 +124,37 @@ BL774対応の一つである
 注意が必要である。この非同期性の担保・実装は個別のデ**バイスサーバーの責務**となる。
 原理的に不可能なデバイスも多い。
 
+## スサノオ: 作成済みデバイスサーバ docs
+
+以下は各機器ごとに制御プログムと
+スサノオに対応したデバイスサーバーが公開されている。そのドキュメントである。
+機器制御側は基本的に全てスサノオとは独立して記述してあるために、
+他の機器制御フレームからでもそのまま使える
+
+- 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
+- ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2)
+- ロボット制御class: UR3e
+- ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
+- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix) 開発始め
+- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
+- 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
+- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame) (beta-stage)
+- 通信Frame: DDS frame
+- ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
+
+## スサノオ: 作成済みデバイスサーバ source (2026/03/03 アクセス制限)
+
+- 電子天秤制御clss: [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
+- ロボット制御clss: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
+- ロボット制御class: UR3e
+- ロボットGUI: [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
+- 二次元検出機class: [MiniPIX](https://github.com/ohara-lab-su/mini_pix)
+- 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/) 開発始め
+- 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
+- 通信Frame: [TANGO frame](https://github.com/ohara-lab-su/tango_frame) (beta-stage)
+- 通信Frame: DDS frame
+- ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
+
 ## スサノオ: 実験用スクリプトを作る
 
 スサノオ使用者はロボットのプログラムも通信のプログラムも複雑なプログラムを書くことも理解することもなく、
@@ -142,38 +173,7 @@ BL774対応の一つである
 - [学生が書いた学生向けドキュメント (研究室内部doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/ohara_lab.md)
 - [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
  
-## スサノオ: 制御クラス/デバイスサーバ docs
-
-以下は各機器ごとに制御プログムと
-スサノオに対応したデバイスサーバーが公開されている。そのドキュメントである。
-機器制御側は基本的に全てスサノオとは独立して記述してあるために、
-他の機器制御フレームからでもそのまま使える
-
-- 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
-- ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2)
-- ロボット制御class: UR3e
-- ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
-- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix) 開発始め
-- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
-- 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
-- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame) (beta-stage)
-- 通信Frame: DDS frame
-- ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
-
-## スサノオ: 制御クラス/デバイスサーバ source (2026/03/03 アクセス制限)
-
-- 電子天秤制御clss: [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
-- ロボット制御clss: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
-- ロボット制御class: UR3e
-- ロボットGUI: [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
-- 二次元検出機class: [MiniPIX](https://github.com/ohara-lab-su/mini_pix)
-- 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/) 開発始め
-- 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
-- 通信Frame: [TANGO frame](https://github.com/ohara-lab-su/tango_frame) (beta-stage)
-- 通信Frame: DDS frame
-- ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
-
-## スサノオ: alpha段階 & 支援page (2026/03/03 アクセス制限)
+## スサノオ: その他alpha段階 & 支援page (2026/03/03 アクセス制限)
 
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
 - websocketによるリアルタイム通信
