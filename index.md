@@ -77,14 +77,22 @@ APIを揃える場合は制御クラス側で揃える。
 この gRPC への拡張は本家BL774でも行われており、
 BL774対応の一つである
 
-
 ## スサノオ: インストール方法
+
+スサノを構成する基本モジュールを導入する
+
+- [スサノオの基本構成のインストール](susanoo_install.md)
+
+次にデバイスサーバーを導入する必要がある。 
+後述する、すでに開発済みのデバイスサーバーを使うだけならば次のセクションは飛ばして良い
+
+## スサノオ: デバイスサーバー作成
 
 スサノオは、サーバー・クライアント型のシンプルな分散システムである。
 そのため、使用するにあたっては、デバイスサーバの形でデバイス(実験機器)側の
 サーバーを立ち上げる必要がある。
-
 スサノオはほぼ完全な透過型プロキシであるため、
+基本は制御クラス(デバイスクラス)があればデバイスサーバー・クライアント作成はほぼ終わる。
 
 1. スサノオに関係なくデバイス制御クラス(プログラム)を書く。 
 2. スサノオフレームを用いて、デバイス制御プログラムからデバイスサーバーを作る (わずか数行)
@@ -95,11 +103,10 @@ BL774対応の一つである
 4の作業をより簡略化するために、1 をうまく作ると良い。すでに我々他用意しているものはこの後のセクションにある。
 これらの具体的作業を下記に記す
 
-- [スサノオの基本構成のインストール](susanoo_install.md)
-- [スサノオに対応するデバイスサーバの作成](susanoo_device_server.md)
+- [スサノオに対応するデバイスサーバの作成](susanoo_device_server.md) (自分でデバイスサーバーを作る場合)
 
-基本構成の導入の後は、個別の装置ごとのモジュールを導入すればいい。
-ここでは cobotta と電子天秤のデバイスを用いるのでそのためのモジュールを導入して設定を行う。
+実際にデバイスサーバーを作る例を下記に示す。
+すでにデバイスクラス(機器制御用のクラスが存在するとき)にデバイスサーバーまでを作る例である。
 
 - [cobotta制御サーバ (ese774)](https://ohara-lab-su.github.io/cobotta2/tutorials/install_server.html) の導入
 - [cobotta制御クライアント (ese774)](https://ohara-lab-su.github.io/cobotta2/tutorials/install_client.html) 導入
@@ -117,24 +124,7 @@ BL774対応の一つである
 注意が必要である。この非同期性の担保・実装は個別のデ**バイスサーバーの責務**となる。
 原理的に不可能なデバイスも多い。
 
-これらに立脚してたシステムであるため、
-使用者はロボットのプログラムも通信のプログラムも複雑なプログラムを書くことも理解することもなく、
-[簡単なシーケンススクリプト](susanoo_robo.md)だけで操作が可能となる。
-
-### スサノオ環境の構築: 研究室の学生向けのドキュメント 
-
-おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
-サーバーPC と python 環境などの環境構築が大変な障壁になる。
-以下にに学生の試行錯誤の記録を記す
-
-<a href="https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/">
-<img src="fig/slack.png" width="20">
-</a> [Ohara Lab Slack Robo Channel](https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/)
-
-- [学生が書いた学生向けドキュメント (研究室内部doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/ohara_lab.md)
-- [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
- 
-## スサノオ: 制御クラス/デバイスサーバ docs
+## スサノオ: 作成済みデバイスサーバ docs
 
 以下は各機器ごとに制御プログムと
 スサノオに対応したデバイスサーバーが公開されている。そのドキュメントである。
@@ -152,7 +142,7 @@ BL774対応の一つである
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
 
-## スサノオ: 制御クラス/デバイスサーバ source (2026/03/03 アクセス制限)
+## スサノオ: 作成済みデバイスサーバ source (2026/03/03 アクセス制限)
 
 - 電子天秤制御clss: [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
 - ロボット制御clss: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
@@ -165,7 +155,25 @@ BL774対応の一つである
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
-## スサノオ: alpha段階 & 支援page (2026/03/03 アクセス制限)
+## スサノオ: 実験用スクリプトを作る
+
+スサノオ使用者はロボットのプログラムも通信のプログラムも複雑なプログラムを書くことも理解することもなく、
+[簡単なシーケンススクリプト](susanoo_robo.md)だけで操作が可能となる。
+
+### スサノオ環境の構築: 研究室の学生向けのドキュメント 
+
+おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
+サーバーPC と python 環境などの環境構築が大変な障壁になる。
+以下にに学生の試行錯誤の記録を記す
+
+<a href="https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/">
+<img src="fig/slack.png" width="20">
+</a> [Ohara Lab Slack Robo Channel](https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/)
+
+- [学生が書いた学生向けドキュメント (研究室内部doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/ohara_lab.md)
+- [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
+ 
+## スサノオ: その他alpha段階 & 支援page (2026/03/03 アクセス制限)
 
 - webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ
 - websocketによるリアルタイム通信
