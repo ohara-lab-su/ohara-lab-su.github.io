@@ -22,7 +22,7 @@
 現実の状況下では、このシンプルなモデルはテスト例以外では
 使えないことが多い。
 
-<img src="fig/dcs_with_e.003.png" width="70%" style="display:block; margin:auto;">
+<img src="fig/dcs_with_e.003.png" width="65%" style="display:block; margin:auto;">
 <!-- ![](fig/dcs_with_e.003.png) -->
 
 ### 中央集権型での機器制御
