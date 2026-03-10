@@ -10,3 +10,17 @@
 の３つである。(1) は導入しなくても python 標準の ```logging``` モジュールで代理が可能である。
 ただし、サーバー運用・実験運用での利用が目的なので、ログのファオル保存・ローテーション機能は必須となるため、
 標準の ```logging``` ではなく ```x_logger``` を推奨する
+
+```bash
+
+cd x_logger
+pip install .
+
+cd ../ese774_frame
+pip install .
+
+cd ../grpc_frame
+pip install .
+```
+
+それぞれのモジュールに必要なモジュールは勝手に導入される
