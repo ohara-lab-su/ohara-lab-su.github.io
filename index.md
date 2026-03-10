@@ -136,10 +136,10 @@ BL774対応の一つである
 - ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2)
 - ロボット制御class: UR3e
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
-- 二次元検出機class: MiniPIX
+- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix) 開発始め
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
 - 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
-- 通信Frame: TANGO frame
+- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame) (beta-stage)
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
 
@@ -149,10 +149,10 @@ BL774対応の一つである
 - ロボット制御clss: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
 - ロボット制御class: UR3e
 - ロボットGUI: [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
-- 二次元検出機class: MiniPIX
+- 二次元検出機class: [MiniPIX](https://github.com/ohara-lab-su/mini_pix)
 - 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/)
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
-- 通信Frame: TANGO frame
+- 通信Frame: [TANGO frame](https://github.com/ohara-lab-su/tango_frame) (beta-stage)
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
