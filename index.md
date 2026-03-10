@@ -90,6 +90,8 @@ BL774対応の一つである
 - [スサノオの基本構成のインストール](susanoo_install.md)
 
 基本構成の導入の後は、個別の装置ごとのモジュールを導入すればいい。
+- [スサノオに対応するデバイスサーバの作成](susanoo_device_server.md)
+- 
 ここでは cobotta と電子天秤のデバイスを用いるのでそのためのモジュールを導入して設定を行う。
 
 - [cobotta制御サーバ (ese774)](https://ohara-lab-su.github.io/cobotta2/tutorials/install_server.html) の導入
