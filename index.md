@@ -40,8 +40,6 @@ Software for data analysis and device control used in our research projects.
 - ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
 
-
-
 ## スサノオ: スサノオとは？
 
 島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
@@ -81,7 +79,7 @@ APIを揃える場合は制御クラス側で揃える。
 セットが固定なものを扱うことよりも、**多種多様なデバイスに対する対応の容易さ**の方を重視している。
 いいかえると徹底的にミニマム志向で作られているともいえる。
 
-- [基本: 方針/設計](susanoo_intro.md)
+- [方針メモ](susanoo_intro.md)
 
 ## スサノオ: 分散システム
 
