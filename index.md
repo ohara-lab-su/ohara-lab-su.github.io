@@ -25,6 +25,8 @@ Software for data analysis and device control used in our research projects.
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame) (beta-stage)
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
+- ...
+- 今後の移植予定？: 旧DARUMA-EM から
 
 ## スサノオ: デバイスサーバ source
 **(*) 2026/03/03 アクセス制限あり**
@@ -39,6 +41,8 @@ Software for data analysis and device control used in our research projects.
 - 通信Frame: [TANGO frame](https://github.com/ohara-lab-su/tango_frame) (beta-stage)
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
+- ...
+- 今後の移植予定？: [旧DARUMA-EM](susanoo_porting.md)
 
 
 ## スサノオ: スサノオとは？
