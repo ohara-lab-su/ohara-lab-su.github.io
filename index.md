@@ -15,10 +15,10 @@ Software for data analysis and device control used in our research projects.
 **他の機器制御フレームからでもそのまま使える**。
 スサノオを使われない場合でも下記の制御クラスはぜひ使っていただければと思う。
 
-- 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
 - ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2)
 - ロボット制御class: UR3e
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
+- 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
 - 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix) 開発始め
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
 - 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
@@ -26,15 +26,14 @@ Software for data analysis and device control used in our research projects.
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
 - ...
-- 今後の移植予定？: 旧DARUMA-EM から
 
 ## スサノオ: デバイスサーバ source
 **(*) 2026/03/03 アクセス制限あり**
 
-- 電子天秤制御clss: [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
 - ロボット制御clss: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
 - ロボット制御class: UR3e
 - ロボットGUI: [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
+- 電子天秤制御clss: [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
 - 二次元検出機class: [MiniPIX](https://github.com/ohara-lab-su/mini_pix)
 - 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/) 開発始め
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
@@ -42,7 +41,6 @@ Software for data analysis and device control used in our research projects.
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 - ...
-- 今後の移植予定？: [旧DARUMA-EM](susanoo_porting.md)
 
 
 ## スサノオ: スサノオとは？
