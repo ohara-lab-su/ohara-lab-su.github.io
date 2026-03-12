@@ -7,10 +7,6 @@ Software for data analysis and device control used in our research projects.
 {:toc}
 -->
 
-## スサノオ: スサノオとは？
-
-島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
-を用いた一連の計測システムを**スサノオ**と読んでいる。BL774のサブセットの一種である
 
 ## スサノオ: デバイスサーバ docs
 
@@ -49,10 +45,13 @@ Software for data analysis and device control used in our research projects.
 ## スサノオ: 実験用スクリプト
 
 実験制御をするエンドユーザーにって簡便であること。これがスサノオの究極的な目的である。
-スサノオ使用者はロボットのプログラムも通信のプログラムも複雑なプログラムを書くことも理解する必要もない。
-[簡単なシーケンススクリプト](susanoo_robo.md)だけで操作が可能となる。python は多少は知っておく必要はある。
+スサノオ使用者はロボット制御のプログラムも通信のプログラムも複雑なプログラムを書くことも理解する必要もない。
+python は多少は知っておく必要はある。
 
-### スサノオ環境の構築: 研究室の学生向けのドキュメント 
+- [簡単なシーケンススクリプト例](susanoo_robo.md)
+
+## スサノオ: 構築の構築
+**(*)研究室の学生向けのドキュメント**
 
 おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
 サーバーPC と python 環境などの環境構築が大変な障壁になる。
@@ -70,6 +69,10 @@ Software for data analysis and device control used in our research projects.
 <!--
 <img src="fig/robo01.png" width="20%" style="display:block; margin:left;">
 -->
+## スサノオ: スサノオとは？
+
+島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
+を用いた一連の計測システムを**スサノオ**と読んでいる。BL774のサブセットの一種である
 
 
 ## スサノオ: システムの概要
