@@ -98,8 +98,9 @@ APIを揃える場合は制御クラス側で揃える。
 型の互換であるからという理由もあるし、
 設計・開発・保守メンテナンスをミニマムなコストで行うためである。
 
-- [分散制御システム](susanoo_dcs.md)
-- [スサノオのシステム](susanoo_system.md)
+- [(1) 機器制御における分散モデル](susanoo_dcs_intro.md)
+- [(2) 分散ノード通信の基盤](susanoo_dcs_com.md)
+- [(3) スサノオのシステム](susanoo_system.md)
  
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
 はメインとしては RestAPI を採用している。
