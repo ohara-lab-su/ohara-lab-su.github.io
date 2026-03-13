@@ -60,7 +60,7 @@ V10 以降は ZMQ構成でctrl messageは非同期通信である。
 その意味で典型的な意味で、サーバークライアントになる。
 
 
-<img src="fig/dcs_with_e.012.png" width="65%" style="display:block; margin:auto;">
+<img src="fig/dcs_with_e.012.png" width="50%" style="display:block; margin:auto;">
 
 受ける側と (bin)、接続する側 (connect) の関係と、REQ/REP の関係を
 整理するとサーバーと通信の受送信の関係を混ぜこぜにすることが減る。
