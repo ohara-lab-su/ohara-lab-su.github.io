@@ -1,4 +1,5 @@
 # スサノオでのデバイスサーバの作り方
+K.NAKADA (Shimane University)  
 
 ## ese774 frame
 

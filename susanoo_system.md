@@ -1,4 +1,5 @@
 # スサノオのシステム
+K.NAKADA (Shimane University)  
 
 スサノオの根底はシンプルな透過型で構成されている。
 これはサーバー側の制御classをそのままクライアント側の制御class
