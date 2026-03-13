@@ -1,4 +1,5 @@
 # スサノオにおける基本方針/設計
+K.NAKADA (Shimane University)  
 
 - **BL774 互換** (ese774)を用いた通信による機器制御
   - 本プロジェクトの中核をなす frame

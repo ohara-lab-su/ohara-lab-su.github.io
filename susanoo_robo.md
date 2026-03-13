@@ -1,6 +1,5 @@
-from aandd_reader.server_fastapi.clients.async_aandd_reader_client import AsyncAanddReaderClient
-
 # robo
+K.NAKADA (Shimane University)  
 
 主に二つの使い方がある。同期プログラムと非同期プログラムである。
 

@@ -1,4 +1,5 @@
 # スサノオの基本構成の Install
+K.NAKADA (Shimane University)  
 
 スサノオを構成する最小の python モジュールを導入する。
 必要な基本モジュールは。
