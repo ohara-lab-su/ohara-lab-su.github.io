@@ -65,10 +65,16 @@ python は多少は知っておく必要はある。
 - [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
  
 
----
 <!--
 <img src="fig/robo01.png" width="20%" style="display:block; margin:left;">
 -->
+
+<div align="center">
+<hr style="width:40%; display:inline-block;">
+<span style="padding:0 10px;">●</span>
+<hr style="width:40%; display:inline-block;">
+</div>
+
 ## スサノオ: スサノオとは？
 
 島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
