@@ -70,9 +70,7 @@ python は多少は知っておく必要はある。
 -->
 
 <div align="center">
-<hr style="width:40%; display:inline-block;">
-<span style="padding:0 10px;">●</span>
-<hr style="width:40%; display:inline-block;">
+<span style="padding:0 20px;">●</span>
 </div>
 
 ## スサノオ: スサノオとは？
