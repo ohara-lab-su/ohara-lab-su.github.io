@@ -1,5 +1,4 @@
 # スサノオにおける基本方針/設計
-K.NAKADA (Shimane University)  
 
 - **BL774 互換** (ese774)を用いた通信による機器制御
   - 本プロジェクトの中核をなす frame
@@ -22,3 +21,9 @@ K.NAKADA (Shimane University)
 - DDS を用いた通信による機器制御 (alpha版)
   - 分散型通信フレームとして MADOCAやTANGOのようなフルスタック型ではなく、DDSのようなマイクロサービをそのまま持ってきて使う。のちの分散化ではこちらの方式をおそらく使う機会が増える
   - 欧州のロボットなどの ROS の通信レイヤーや、軍事・科学の中心となる通信プロトコルである
+
+---
+# 作者
+- Kengo NAKADA (中田謙吾)
+  - kengo.nakada@mat.shimane-u.ac.jp
+  - kengo.nakada@gmail.com

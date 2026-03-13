@@ -1,5 +1,4 @@
 # スサノオのシステム
-K.NAKADA (Shimane University)  
 
 スサノオの根底はシンプルな透過型で構成されている。
 これはサーバー側の制御classをそのままクライアント側の制御class
@@ -68,3 +67,9 @@ Client: Pydanticで復元
   ↓
 Python (素の値だけ返す)
 ```
+
+---
+# 作者
+- Kengo NAKADA (中田謙吾)
+  - kengo.nakada@mat.shimane-u.ac.jp
+  - kengo.nakada@gmail.com

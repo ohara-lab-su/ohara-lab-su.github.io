@@ -1,5 +1,4 @@
 # スサノオの基本構成の Install
-K.NAKADA (Shimane University)  
 
 スサノオを構成する最小の python モジュールを導入する。
 必要な基本モジュールは。
@@ -25,3 +24,9 @@ pip install .
 ```
 
 それぞれのモジュールに必要なモジュールは勝手に導入される
+
+---
+# 作者
+- Kengo NAKADA (中田謙吾)
+  - kengo.nakada@mat.shimane-u.ac.jp
+  - kengo.nakada@gmail.com

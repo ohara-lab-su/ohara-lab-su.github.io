@@ -1,5 +1,4 @@
 # robo
-K.NAKADA (Shimane University)  
 
 主に二つの使い方がある。同期プログラムと非同期プログラムである。
 
@@ -98,3 +97,9 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 ```
+
+---
+# 作者
+- Kengo NAKADA (中田謙吾)
+  - kengo.nakada@mat.shimane-u.ac.jp
+  - kengo.nakada@gmail.com
