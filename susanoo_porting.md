@@ -1,5 +1,4 @@
 # スサノオ向け移植計画
-K.NAKADA (Shimane University)  
 
 今更必要ないのもたくさんあるし、記述してないのもの多数あるが、
 制御フレームワーク関係なく、ただのデバイスクラスとしては、
@@ -48,3 +47,9 @@ K.NAKADA (Shimane University)
 - ポテンショスタッド EmStat4M 制御
 - MFC: FCST1000
 - センサー: Arduino MQ8ガスセンサー
+
+---
+# 作者
+- Kengo NAKADA (中田謙吾)
+  - kengo.nakada@mat.shimane-u.ac.jp
+  - kengo.nakada@gmail.com

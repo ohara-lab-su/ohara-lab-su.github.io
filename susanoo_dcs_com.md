@@ -1,5 +1,4 @@
 # 分散ノード通信の基礎
-K.NAKADA (shimane University)
 
 サーバー・クライアント通信と、サーバー・サーバー間通信を分けて理解するよりもこれらを総括して、
 「ノード間通信」としてまとめて、ノード間通信のモデルとして理解した方が理解しやすい。
@@ -119,3 +118,9 @@ SPring-8 の MADOCA ではノードを跨いで術繋ぎで routing できるよ
 ### 1:多数 通信 pub/sub
 
 #### ブローカー型とブローカーレス型
+
+---
+# 作者
+- Kengo NAKADA (中田謙吾)
+  - kengo.nakada@mat.shimane-u.ac.jp
+  - kengo.nakada@gmail.com

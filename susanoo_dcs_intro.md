@@ -1,5 +1,4 @@
 # 機器制御における分散モデル
-K.NAKADA (shimane University)
 
 制御の基本モデルには色々な考え方がある。
 状況によってはそれぞれ一長一短があるので後述するモデルがより優れているわけではない。
@@ -178,3 +177,8 @@ lowレベルのプロトコルで言えば、TANGOやMADOCAは ZMQ であり、B
 デンソーウェーブのORiN2は ROS1 への接続へは拡張はできるが、ROS2は完全に非対応なので、
 もはや過去の遺物とかしている。
 
+---
+# 作者
+- Kengo NAKADA (中田謙吾)
+  - kengo.nakada@mat.shimane-u.ac.jp
+  - kengo.nakada@gmail.com
