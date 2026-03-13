@@ -40,8 +40,17 @@ V10 以降は ZMQ構成でctrl messageは非同期通信である。
 
 パターンとしては
 
-- REQ: send -> redcv -> send -> redcv
-- REP: recv -> send -> recv -> send
+#### REQ (クライアント側)
+
+- REQ
+  - send -> recv
+  - request を送って reply を受け取る)
+ 
+#### REP (サーバ側)
+
+- REP
+  - recv -> send
+  - request を受け取って reply を返す)
  
 押さえておいて欲しいのは、web 通信(http)は、
 非対称構造(接続主体がclinetで応答主体がサーバー)
@@ -60,10 +69,49 @@ APIが呼び出して、別のサーバーにアクセスするなど。
 飛ばすことができるが、これも分散通信か？といえば明らかに違う。
 
 ### 1:1 通信 ROUTER / DEALER
-REQ/REP を拡張した非同期版
 
-- REQ / REP
-- RPC
+- 接続しているノードを識別してメッセージを転送できる通信パターン
+- REQ/REP を拡張した非同期版
+
+```text
+TCP connection A ──┐
+TCP connection B ──┼── ROUTER socket
+TCP connection C ──┘
+```
+3:1 接続になる。
+しかしこの場合でも、同時にメッセージを送ることはできない。
+あくまでメッセージのシーケンスで送り、その通信自体はそれぞれの非同期で動作する形となる。
+
+```text
+(node A) ─ DEALER ─┐
+(node B) ─ DEALER ─┼── ROUTER socket
+(node C) ─ DEALER ─┘
+```
+ROUTER ソケットはそれぞれの DEALER からの接続(peer)に routing id を持っている。
+raw-level でみればそれぞれのpeer ごとにソケットがあり、
+それが一つの router ソケットと繋がる形になる。
+
+ROUTER は名前の通り routing をするもので「別のノード」へ送る。
+つまり、別のノードのDEALER へ送る。
+
+```text
+(node A) ─ DEALER ─┐           ┌─ DEALER ─ (node D)
+(node B) ─ DEALER ─┼── ROUTER ─┼─ DEALER ─ (node E)
+(node C) ─ DEALER ─┘           └─ DEALER ─ (node F)
+```
+これは中央にROUTERが一つあって、そのセンターのROUTERが、
+どのDEALERにメッセージを送るか？という中央集権型の DEALER/ROUTER の使い方になる。
+
+SPring-8 の MADOCA ではノードを跨いで術繋ぎで routing できるようになっており、
+中央 ROUTER は存在しない設計になっている。つまり
+
+<img src="fig/dcs_with_e.011.png" width="70%" style="display:block; margin:auto;">
+
+```text
+(node A) DEALER ─ (note E) DEALER  ─ (node B)  DEALER ── (node C)
+```
+のような peer-to-peer routing 構造となる。ROUTER / DEALER ソケットの組み合わせで、
+自由にネットワーク間通信を横断できるようになる。そして、これは非同期で繋がる。
 
 ### 1:多数 通信 pub/sub
 
