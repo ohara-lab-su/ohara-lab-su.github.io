@@ -40,8 +40,15 @@ V10 以降は ZMQ構成でctrl messageは非同期通信である。
 
 パターンとしては
 
-- REQ: send -> redcv -> send -> redcv
-- REP: recv -> send -> recv -> send
+#### REQ (クライアント側)
+- REQ
+  - send -> recv
+  - request を送って reply を受け取る)
+ 
+#### REP (サーバ側)
+- REP
+  - recv -> send
+  - request を受け取って reply を返す)
  
 押さえておいて欲しいのは、web 通信(http)は、
 非対称構造(接続主体がclinetで応答主体がサーバー)
@@ -60,10 +67,8 @@ APIが呼び出して、別のサーバーにアクセスするなど。
 飛ばすことができるが、これも分散通信か？といえば明らかに違う。
 
 ### 1:1 通信 ROUTER / DEALER
-REQ/REP を拡張した非同期版
-
-- REQ / REP
-- RPC
+- REQ/REP を拡張した非同期版
+- routing される
 
 ### 1:多数 通信 pub/sub
 
