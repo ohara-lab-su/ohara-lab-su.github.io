@@ -14,7 +14,7 @@ ese774_frame を用いたデバイスサーバの作り方を説明する
 - [ese774 frame (チュートリアル)](https://ohara-lab-su.github.io/ese774_frame/)
 
 ---
-# 作者
+## 作者
 - Kengo NAKADA (中田謙吾)
   - kengo.nakada@mat.shimane-u.ac.jp
   - kengo.nakada@gmail.com

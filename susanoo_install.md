@@ -26,7 +26,7 @@ pip install .
 それぞれのモジュールに必要なモジュールは勝手に導入される
 
 ---
-# 作者
+## 作者
 - Kengo NAKADA (中田謙吾)
   - kengo.nakada@mat.shimane-u.ac.jp
   - kengo.nakada@gmail.com
