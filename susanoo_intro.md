@@ -23,7 +23,7 @@
   - 欧州のロボットなどの ROS の通信レイヤーや、軍事・科学の中心となる通信プロトコルである
 
 ---
-# 作者
+## 作者
 - Kengo NAKADA (中田謙吾)
   - kengo.nakada@mat.shimane-u.ac.jp
   - kengo.nakada@gmail.com
