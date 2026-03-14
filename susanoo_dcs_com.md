@@ -83,6 +83,12 @@ HTTP は req/rep 型プロトコルであり、
 クライアントとサーバーを入れ替えて別のサーバーと通信で繋がることはできる。
 たとえば、webサーバーからアクションされてから呼び出された サービス
 APIが呼び出して、別のサーバーにアクセスするなど。
+
+<img src="fig/dcs_with_e.014.png" width="70%" style="display:block; margin:auto;">
+
+そこまでしなくても複数のデバイス用のサーバーをつかって、
+個別のデバイスごとのサーバーへクライアントから繋がる形にする。
+れが、BL774 や スサノオの基本モデルではある。
 ただ、これを分散通信か？といえばおそらく物言いが多くつくとは思う。
 また nginxとかでリバースプロキシをかけてweb通信を別のサーバーに
 飛ばすことができるが、これも分散通信か？といえば明らかに違う。
@@ -164,20 +170,25 @@ raw-level でみればそれぞれのpeer ごとにソケットがあり、
 これは中央にROUTERが一つあって、そのセンターのROUTERが、
 どのDEALERにメッセージを送るか？という中央集権型の DEALER/ROUTER の使い方になる。
 
+<img src="fig/dcs_with_e.011.png" width="70%" style="display:block; margin:auto;">
+
 一方、SPring-8 の MADOCA では
 ノードを跨いで術繋ぎで routing できるようになっており、
 中央 ROUTER は存在しない設計になっている。つまり
-
-<img src="fig/dcs_with_e.011.png" width="70%" style="display:block; margin:auto;">
-
 ```text
-(node A) DEALER ─ (node B) ROUTER ─ (node C) ROUTER ─ (node D) ROUTER ─ (node E) DEALER
+(node A) DEALER ─ (node B) ROUTER ─ (node C) ROUTER ─ (node E) DEALER
 ```
 のように、各メッセージサーバーが ROUTER を持ち、
 そのサーバープロセスが次に送る先を決めながら
 メッセージをホップさせていく peer-to-peer routing 構造となる。
 ROUTER / DEALER ソケットの組み合わせで、
-自由にネットワーク間通信を横断できるようになる。そして、これは非同期で繋がる
+自由にネットワーク間通信を横断できるようになる。
+
+<img src="fig/dcs_with_e.013.png" width="70%" style="display:block; margin:auto;">
+
+ROUTER に対して、デバイスがぶら下がり、ROUTER同士が繋がって、
+遠くのネットワークの装置と接続する。
+そして、これは非同期で繋がる。
 
 ### 1:N (マルチプレクス) 通信 PUB/SUB (イベント)
 
