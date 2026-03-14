@@ -164,16 +164,20 @@ raw-level でみればそれぞれのpeer ごとにソケットがあり、
 これは中央にROUTERが一つあって、そのセンターのROUTERが、
 どのDEALERにメッセージを送るか？という中央集権型の DEALER/ROUTER の使い方になる。
 
-SPring-8 の MADOCA ではノードを跨いで術繋ぎで routing できるようになっており、
+一方、SPring-8 の MADOCA では  
+ノードを跨いで術繋ぎで routing できるようになっており、  
 中央 ROUTER は存在しない設計になっている。つまり
 
 <img src="fig/dcs_with_e.011.png" width="70%" style="display:block; margin:auto;">
 
 ```text
-(node A) DEALER ─ (note E) DEALER  ─ (node B)  DEALER ── (node C)
+(node A) DEALER ─ (node B) ROUTER ─ (node C) ROUTER ─ (node D) ROUTER ─ (node E) DEALER
 ```
-のような peer-to-peer routing 構造となる。ROUTER / DEALER ソケットの組み合わせで、
-自由にネットワーク間通信を横断できるようになる。そして、これは非同期で繋がる。
+のように、各メッセージサーバーが ROUTER を持ち、
+そのサーバープロセスが次に送る先を決めながら
+メッセージをホップさせていく peer-to-peer routing 構造となる。
+ROUTER / DEALER ソケットの組み合わせで、
+自由にネットワーク間通信を横断できるようになる。そして、これは非同期で繋がる
 
 ### 1:N (マルチプレクス) 通信 PUB/SUB (イベント)
 
