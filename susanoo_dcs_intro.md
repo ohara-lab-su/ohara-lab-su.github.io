@@ -178,7 +178,5 @@ lowレベルのプロトコルで言えば、TANGOやMADOCAは ZMQ であり、B
 もはや過去の遺物とかしている。
 
 ---
-# 作者
-- Kengo NAKADA (中田謙吾)
-  - kengo.nakada@mat.shimane-u.ac.jp
-  - kengo.nakada@gmail.com
+## 作者
+- Kengo NAKADA

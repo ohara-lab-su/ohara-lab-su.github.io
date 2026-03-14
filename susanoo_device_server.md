@@ -15,6 +15,4 @@ ese774_frame を用いたデバイスサーバの作り方を説明する
 
 ---
 ## 作者
-- Kengo NAKADA (中田謙吾)
-  - kengo.nakada@mat.shimane-u.ac.jp
-  - kengo.nakada@gmail.com
+- Kengo NAKADA
