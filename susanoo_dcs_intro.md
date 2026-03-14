@@ -168,7 +168,7 @@ lowレベルのプロトコルで言えば、TANGOやMADOCAは ZMQ であり、B
 少し調査と情報が古いうえに偏っているところもあるが、大型放射光施設をめぐるプロトコルとフレームワーク事情をまとめられたらと思う。
 あとロボット。
 
-<img src="fig/dcs_with_e.031.png" width="70%" style="display:block; margin:auto;">
+<img src="fig/dcs_with_e.036.png" width="70%" style="display:block; margin:auto;">
 
 たとえば、ESRF の [TANGO](https://www.tango-controls.org/)
 は TANGO v10 からメッセージ通信においても、CORBA の同期通信から ZMQ の非同期に変わるなど古いプロトコル(CORBA)を捨てる動きが本格化している。
