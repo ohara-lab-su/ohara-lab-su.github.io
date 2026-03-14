@@ -269,7 +269,7 @@ REQ/REP や ROUTER/DEALER は、基本的には
 しかし、誰がどこにいるかを管理する仕組みを持っていない(別途必要)
 
 ---
-# 作者
+## 作者
 - Kengo NAKADA (中田謙吾)
   - kengo.nakada@mat.shimane-u.ac.jp
   - kengo.nakada@gmail.com
