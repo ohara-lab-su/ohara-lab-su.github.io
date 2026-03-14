@@ -207,8 +207,9 @@ ROUTER / DEALER ソケットの組み合わせで、
 
 <img src="fig/dcs_with_e.013.png" width="70%" style="display:block; margin:auto;">
 
-ROUTER に対して、デバイスがぶら下がり、ROUTER同士が繋がって、
-遠くのネットワークの装置と接続する。
+ROUTER に対してデバイス（DEALER）がぶら下がり、
+ROUTER 同士が接続されることで、
+遠くのネットワークの装置へメッセージをホップさせながら到達する構造になる。
 そして、これは非同期で繋がる。
 
 ### 1:N (マルチプレクス) 通信 PUB/SUB (イベント)
