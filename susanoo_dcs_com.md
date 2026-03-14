@@ -283,6 +283,4 @@ REQ/REP や ROUTER/DEALER は、基本的には
 
 ---
 ## 作者
-- Kengo NAKADA (中田謙吾)
-  - kengo.nakada@mat.shimane-u.ac.jp
-  - kengo.nakada@gmail.com
+- Kengo NAKADA
