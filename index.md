@@ -249,7 +249,7 @@ DDSとの接続はロボットを使う上では必須であるため、枠組�
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
 - [rote クラスター](https://github.com/shimane-dev/rotate_cluster) クラスター回転
 - [VCA (仮想結晶近似)](https://github.com/shimane-dev/make_vca) 仮想結晶近似
-- [SQS を用いた構造作成・計算]()
+- [SQS を用いた構造作成・計算](https://github.com/kengo-nakada/make_sqs)
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
 - [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
 - [機械学習ポテンシャル SNAP]()
