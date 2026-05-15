@@ -76,11 +76,17 @@ python は多少は知っておく必要はある。
 ## スサノオ: スサノオとは？
 
 島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
-を用いた一連の計測システムを**スサノオ**と読んでいる。BL774のサブセットの一種である。
-
-**八百万のデバイスを統べる**
-
-が根底の精神としてある。無論後付けである。
+を用いた一連の計測システムを
+**S**ustainable
+**U**nified
+**S**ystems
+**A**rchitecture
+for
+**N**etworked
+**O**perations
+and
+**O**rchestration
+スサノオ(SUSANOO)と読んでいる。BL774のサブセットの一種である。
 
 ## スサノオ: システムの概要
 
