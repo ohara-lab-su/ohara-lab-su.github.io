@@ -270,7 +270,7 @@ DDSとの接続はロボットを使う上では必須であるため、枠組�
 
 ## 古い記事へのリンク
 
-- DARUMA project (2019.12 プロジェクト更新は無くなりました。その時点でのproject内容)
+- [DARUMA project](http://daruma.spring8.or.jp/) (2019.12 プロジェクト更新は無くなりました。その時点でのproject内容)
 - [計算関係の役立ちリンク](abinit/index.md)
 
 ## 主な開発者
