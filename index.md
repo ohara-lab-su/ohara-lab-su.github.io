@@ -283,5 +283,6 @@ DDSとの接続はロボットを使う上では必須であるため、枠組�
 ## 主な開発者
 1. K.Ohara
 2. K.Kobayashi
-3. K.Nakada
+3. K.Watanabe
 4. R.Hinohara
+5. K.Nakada
