@@ -8,7 +8,7 @@ Software for data analysis and device control used in our research projects.
 -->
 
 
-## スサノオ: デバイスサーバ docs
+## スサノオ(仮): デバイスサーバ docs
 
 以下は各機器ごとに**制御プログム**と
 スサノオに対応した**デバイスサーバー**が公開されている。そのドキュメントである。
@@ -20,7 +20,8 @@ Software for data analysis and device control used in our research projects.
 - ロボット制御class: UR3e
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
 - 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
-- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix) 開発始め
+- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix)
+- マルチメータclass: [xdm1000](https://ohara-lab-su.github.io/xdm1000)
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
 - 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame) (beta-stage)
@@ -28,7 +29,7 @@ Software for data analysis and device control used in our research projects.
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
 
 
-## スサノオ: デバイスサーバ source
+## スサノオ(仮): デバイスサーバ source
 **(*) 2026/03/03 アクセス制限あり**
 
 - ロボット制御clss: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
@@ -36,7 +37,8 @@ Software for data analysis and device control used in our research projects.
 - ロボットGUI: [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
 - 電子天秤制御clss: [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
 - 二次元検出機class: [MiniPIX](https://github.com/ohara-lab-su/mini_pix)
-- 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/) 開発始め
+- マルチメーターclass: [xdm1000](https://github.com/ohara-lab-su/xdm1000)
+- 通信Frame: [ese774 frame](https://github.com/ohara-lab-su/ese774_frame/)
 - 通信Frame: [grpc frame](https://github.com/ohara-lab-su/grpc_frame/)
 - 通信Frame: [TANGO frame](https://github.com/ohara-lab-su/tango_frame) (beta-stage)
 - 通信Frame: DDS frame
