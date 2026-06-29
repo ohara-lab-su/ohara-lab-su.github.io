@@ -17,13 +17,13 @@ Software for data analysis and device control used in our research projects.
 スサノオを使われない場合でも下記の制御クラスはぜひ使っていただければと思う。
 
 - ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2)
-- ロボット制御class: UR3e
+- ロボット制御class: [UR (UR3e)](https://ohara-lab-su.github.io/ur)
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad)
 - 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader)
 - 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix)
 - マルチメータclass: [xdm1000](https://ohara-lab-su.github.io/xdm1000)
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame) (SPring-8 BL774互換風味)
-- 通信Frame: [grpc frame](https://ohara-lab-su.github.io/grpc_frame)
+- 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame) (高速な gRPC 転送用)
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame) (beta-stage)
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/)
@@ -33,7 +33,7 @@ Software for data analysis and device control used in our research projects.
 **(*) 2026/03/03 アクセス制限あり**
 
 - ロボット制御clss: [cobotta](https://github.com/ohara-lab-su/cobotta2/)
-- ロボット制御class: UR3e
+- ロボット制御class: [UR (UR3e)](https://github.com/ohara-lab-su/ur)
 - ロボットGUI: [cobotta_joypad (GUI)](https://github.com/ohara-lab-su/cobotta2_joypad/)
 - 電子天秤制御clss: [aandd_reader](https://github.com/ohara-lab-su/aandd_reader/)
 - 二次元検出機class: [MiniPIX](https://github.com/ohara-lab-su/mini_pix)
@@ -44,7 +44,7 @@ Software for data analysis and device control used in our research projects.
 - 通信Frame: DDS frame
 - ロガーclass: [x_logger](https://github.com/ohara-lab-su/x_logger/)
 
-## スサノオ: 実験用スクリプト
+## スサノオ(仮): 実験用スクリプト
 
 実験制御をするエンドユーザーにって簡便であること。これがスサノオの究極的な目的である。
 スサノオ使用者はロボット制御のプログラムも通信のプログラムも複雑なプログラムを書くことも理解する必要もない。
@@ -52,7 +52,7 @@ python は多少は知っておく必要はある。
 
 - [簡単なシーケンススクリプト例](susanoo_robo.md)
 
-## スサノオ: 構築の構築
+## スサノオ(仮): 構築の構築
 **(*)研究室の学生向けのドキュメント**
 
 おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
@@ -75,7 +75,7 @@ python は多少は知っておく必要はある。
 <span style="padding:0 20px;">●</span>
 </div>
 
-## スサノオ: スサノオとは？
+## スサノオ(仮): スサノオとは？
 
 島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換(ese774)
 を用いた一連の計測システムを
@@ -88,7 +88,7 @@ for
 **O**perations
 and
 **O**rchestration
-スサノオ(SUSANOO)と読んでいる。BL774のサブセットの一種である。
+スサノオ(SUSANOO)と読んでいる。BL774のサブセットの一種である。しかし名前は帰る可能性がある。
 
 ## スサノオ: システムの概要
 
