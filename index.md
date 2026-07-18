@@ -26,7 +26,7 @@ Software for data analysis and device control used in our research projects.
 - モーター制御class: ツジ電子
 - 画像転送class: [n10w02 (コボッタ付属カメラ)](https://ohara-lab-su.github.io/n10w02/)
 - 画像転送class: [web cam (OpenCVを使ったカメラ)](https://ohara-lab-su.github.io/image_server/)
-- 粉体の位置測定class: [powder-level-monitor](https://ohara-lab-su.com/powder_level_monitor/)
+- 粉体の位置測定class: [powder-level-monitor](https://ohara-lab-su.github.io/powder_level_monitor/)
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/) (SPring-8 BL774互換風味)
 - 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/) (高速な gRPC 転送用)
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/) (beta-stage)
