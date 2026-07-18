@@ -18,7 +18,7 @@ Software for data analysis and device control used in our research projects.
 **他の機器制御フレームからでもそのまま使える**。
 スサノオを使われない場合でも下記の制御クラスはぜひ使っていただければと思う。
 
-- ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2/), [src](https://github.com/ohara-lab-su/cobotta2/)
+- ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2/) / ([src](https://github.com/ohara-lab-su/cobotta2/))
 - ロボット制御class: [cobotta 文字書き](https://ohara-lab-su.github.io/glyph_motion/), [src](https://github.com/ohara-lab-su/glyph_motion/)
 - ロボット制御class: [UR (UR3e)](https://ohara-lab-su.github.io/ur/), [src](https://github.com/ohara-lab-su/ur)
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad/), [src](https://github.com/ohara-lab-su/cobotta2_joypad/)
