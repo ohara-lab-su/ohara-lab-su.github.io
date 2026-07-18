@@ -36,36 +36,6 @@ Software for data analysis and device control used in our research projects.
 - メール送信サーバ: [notify_server](https://ohara-lab-su.github.io/notify_server/), ([source](https://github.com/ohara-lab-su/notify_server/))
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
 
-## スサノオ(仮): 実験用スクリプト
-
-実験制御をするエンドユーザーにって簡便であること。これがスサノオの究極的な目的である。
-スサノオ使用者はロボット制御のプログラムも通信のプログラムも複雑なプログラムを書くことも理解する必要もない。
-python は多少は知っておく必要はある。
-
-- [簡単なシーケンススクリプト例](susanoo_robo.md)
-
-## スサノオ(仮): 構築の構築
-**(*)研究室の学生向けのドキュメント**
-
-おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
-サーバーPC と python 環境などの環境構築が大変な障壁になる。
-以下にに学生の試行錯誤の記録を記す
-
-<a href="https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/">
-<img src="fig/slack.png" width="20">
-</a> [Ohara Lab Slack Robo Channel](https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/)
-
-- [学生が書いた学生向けドキュメント (研究室内部doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/ohara_lab.md)
-- [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
- 
-
-<!--
-<img src="fig/robo01.png" width="20%" style="display:block; margin:left;">
--->
-
-<div align="center">
-<span style="padding:0 20px;">●</span>
-</div>
 
 ## スサノオ(仮): スサノオとは？
 
@@ -214,6 +184,36 @@ DDSとの接続はロボットを使う上では必須であるため、枠組�
 注意が必要である。この非同期性の担保・実装は個別のデ**バイスサーバーの責務**となる。
 原理的に不可能なデバイスも多い。
 
+## スサノオ(仮): 実験用スクリプト
+
+実験制御をするエンドユーザーにって簡便であること。これがスサノオの究極的な目的である。
+スサノオ使用者はロボット制御のプログラムも通信のプログラムも複雑なプログラムを書くことも理解する必要もない。
+python は多少は知っておく必要はある。
+
+- [簡単なシーケンススクリプト例](susanoo_robo.md)
+
+## スサノオ(仮): 構築の構築
+**(*)研究室の学生向けのドキュメント**
+
+おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
+サーバーPC と python 環境などの環境構築が大変な障壁になる。
+以下にに学生の試行錯誤の記録を記す
+
+<a href="https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/">
+<img src="fig/slack.png" width="20">
+</a> [Ohara Lab Slack Robo Channel](https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/)
+
+- [学生が書いた学生向けドキュメント (研究室内部doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/ohara_lab.md)
+- [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
+ 
+
+<!--
+<img src="fig/robo01.png" width="20%" style="display:block; margin:left;">
+-->
+
+<div align="center">
+<span style="padding:0 20px;">●</span>
+</div>
 
 ## スサノオ(仮): アルファ stage
 **(*) 2026/03/03 アクセス制限あり**
