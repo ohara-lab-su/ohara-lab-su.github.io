@@ -222,41 +222,48 @@ python は多少は知っておく必要はある。
 - [websocketによるリアルタイム通信 (過去資産+次のあれこれ alpha版)]()
 - [過去資産の移行](susanoo_porting.md)
 
----
-## データ解析: source
 
+---
 **(*) 2026/03/03 アクセス制限あり**
 
-スサノオを用いて実験データーが得られた後は、そのデータを解析する必要がある。
-ここではそのための手法として、第一原理計算を軸にして、
-機械学習ポテンシャル、古典分子動力学、逆モンテカルロ法などの
-計算よるシミュレーションプログラムをまとめている。
-それらのプログラム開発とその解析プログラムなどの提供する。
+RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールやドキュメント
 
-- [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / [github](https://github.com/ohara-lab-su/rust_pdf/)
+## データ解析 (RMC): source
+
+- [RMC (RMC-DFT)](https://ohara-lab-su.github.io/rmc_dft/) / [[source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
+- [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/))
+- [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/)
+- [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
+
+## データー解析 (MD): source
+
 - [Power スペクトル (using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
+- [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
+ 
+## データー解析 (機械学習ポテンシャル): source
+ 
+- [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
+- [機械学習ポテンシャル SNAP]()
+- [機械学習ポテンシャル GAP]()
+
+## データー解析 (DFT): source
+
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造と Bader 電荷密度とMD関係の解析支援クラスライブラリおよびその使用例
 - [周波数解析](https://github.com/shimane-dev/x_frequency) ゼロクロッシング法による周波数推定とSynchrosqueezing Transform (SST) による周波数セグメント検出
 - [COHP にる結合解析](https://github.com/shimane-dev/x_lobster)
 - [ワニエ関数による局在化軌道解析 (結合解析)]()
 - [ワニエ関数による局在化軌道解析 (電荷のずれ)]()
-- [webPDF local](https://github.com/kengo-nakada/local_pdf)
-- [RMC-DFT](https://github.com/shimane-dev/rmc_dft) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
 - [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集(古すぎるのでほぼ死亡)
 - [vasp1](https://github.com/shimane-dev/vasp1) VASP 支援スクリプト集
 - [bader1](https://github.com/shimane-dev/bader1) Bader 支援スクリプト集
 - [真空層 関連ツール](https://github.com/shimane-dev/change_lattice_constant)
 - [構造の結合 ツール](https://github.com/shimane-dev/merge_cells)
-- [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
 - [rote クラスター](https://github.com/shimane-dev/rotate_cluster) クラスター回転
 - [VCA (仮想結晶近似)](https://github.com/shimane-dev/make_vca) 仮想結晶近似
 - [SQS を用いた構造作成・計算](https://github.com/kengo-nakada/make_sqs)
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
-- [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
-- [機械学習ポテンシャル SNAP]()
-- [機械学習ポテンシャル GAP]()
-- [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW基盤から、FLEUR/exting基盤へ移行中)
 - キュリー温度の計算コード開発
+- [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW基盤から、FLEUR/exting基盤へ移行中)
 
 ## データ解析: docs
 
@@ -267,7 +274,6 @@ python は多少は知っておく必要はある。
 - [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
 - 遍歴電子モデルによる強磁性発現機構
- 
 
 ## 古い記事へのリンク
 
