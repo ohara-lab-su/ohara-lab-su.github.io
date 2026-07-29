@@ -219,11 +219,11 @@ python は多少は知っておく必要はある。
 ---
 **(*) 2026/03/03 アクセス制限あり**
 
-RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールやドキュメント
+RMC/DFT/MD/MLP(機械学習ポテンシャル) などを用いた各種ツールやドキュメント
 
 ## 計算・データ解析 (RMC): source
 
-主に RMC を用いた計算・データー解析とそのための支援ツールなど
+主に逆モンテカルロ(RMC)を用いた計算・データー解析とそのための支援ツールなど
 
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
 - [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
@@ -235,14 +235,14 @@ RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールや�
 
 ## 計算・データー解析 (MD): source
 
-主にMDを用いた計算・データー解析とそのための支援ツールなど
+主に古典分子動力学(MD)を用いた計算・データー解析とそのための支援ツールなど
 
 - [Power スペクトル (using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
  
-## 計算・データー解析 (機械学習ポテンシャル): source
+## 計算・データー解析 (MLP): source
 
-主に機械学習ポテンシャルを用いた計算・データー解析とそのための支援ツールなど
+主に機械学習ポテンシャル(MLP)を用いた計算・データー解析とそのための支援ツールなど
  
 - [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
 - [機械学習ポテンシャル SNAP]()
@@ -250,7 +250,7 @@ RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールや�
 
 ## 計算・データー解析 (DFT): source
 
-主にDFTを用いた計算・データー解析とそのための支援ツールなど
+主に密度汎関数理論(DFT)/第一原理MDを用いた計算・データー解析とそのための支援ツールなど
 
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造と Bader 電荷密度とMD関係の解析支援クラスライブラリおよびその使用例
 - [周波数解析](https://github.com/shimane-dev/x_frequency) ゼロクロッシング法による周波数推定とSynchrosqueezing Transform (SST) による周波数セグメント検出
