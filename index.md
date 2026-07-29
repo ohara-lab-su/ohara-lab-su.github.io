@@ -36,6 +36,9 @@ Software for data analysis and device control used in our research projects.
 - メール送信サーバ: [notify_server](https://ohara-lab-su.github.io/notify_server/), ([source](https://github.com/ohara-lab-su/notify_server/))
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
 
+- webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ (alpha stage)
+- websocketカメラ制御: [websocketによるリアルタイム通信 (過去資産+次のあれこれ alpha版)]()
+- [過去資産の移行](susanoo_porting.md)
 
 ## スサノオ(仮): スサノオとは？
 
@@ -184,7 +187,7 @@ DDSとの接続はロボットを使う上では必須であるため、枠組�
 注意が必要である。この非同期性の担保・実装は個別のデ**バイスサーバーの責務**となる。
 原理的に不可能なデバイスも多い。
 
-## スサノオ(仮): 実験用スクリプト
+## スサノオ(仮): 実験用サンプルスクリプトと環境構築 docs
 
 実験制御をするエンドユーザーにって簡便であること。これがスサノオの究極的な目的である。
 スサノオ使用者はロボット制御のプログラムも通信のプログラムも複雑なプログラムを書くことも理解する必要もない。
@@ -192,7 +195,6 @@ python は多少は知っておく必要はある。
 
 - [簡単なシーケンススクリプト例](susanoo_robo.md)
 
-## スサノオ(仮): 構築の構築
 **(*)研究室の学生向けのドキュメント**
 
 おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
@@ -205,7 +207,6 @@ python は多少は知っておく必要はある。
 
 - [学生が書いた学生向けドキュメント (研究室内部doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/ohara_lab.md)
 - [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
- 
 
 <!--
 <img src="fig/robo01.png" width="20%" style="display:block; margin:left;">
@@ -215,13 +216,6 @@ python は多少は知っておく必要はある。
 <span style="padding:0 20px;">●</span>
 </div>
 
-## スサノオ(仮): アルファ stage
-**(*) 2026/03/03 アクセス制限あり**
-
-- webカメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) webカメラ画像を gRPC 転送するだけ (alpha stage)
-- [websocketによるリアルタイム通信 (過去資産+次のあれこれ alpha版)]()
-- [過去資産の移行](susanoo_porting.md)
-
 
 ---
 **(*) 2026/03/03 アクセス制限あり**
@@ -230,24 +224,32 @@ RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールや�
 
 ## データ解析 (RMC): source
 
+主に RMC を用いた計算・データー解析とそのための支援ツールなど
+
 - [packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
 - [RMC (RMC-DFT)](https://ohara-lab-su.github.io/rmc_dft/) / [[source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
 - [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
 - [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/)
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
 
-## データー解析 (MD): source
+## 計算・データー解析 (MD): source
+
+主にMDを用いた計算・データー解析とそのための支援ツールなど
 
 - [Power スペクトル (using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
  
-## データー解析 (機械学習ポテンシャル): source
+## 計算・データー解析 (機械学習ポテンシャル): source
+
+主に機械学習ポテンシャルを用いた計算・データー解析とそのための支援ツールなど
  
 - [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
 - [機械学習ポテンシャル SNAP]()
 - [機械学習ポテンシャル GAP]()
 
-## データー解析 (DFT): source
+## 計算・データー解析 (DFT): source
+
+主にDFTを用いた計算・データー解析とそのための支援ツールなど
 
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造と Bader 電荷密度とMD関係の解析支援クラスライブラリおよびその使用例
 - [周波数解析](https://github.com/shimane-dev/x_frequency) ゼロクロッシング法による周波数推定とSynchrosqueezing Transform (SST) による周波数セグメント検出
