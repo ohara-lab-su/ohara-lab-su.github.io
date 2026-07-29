@@ -222,15 +222,15 @@ python は多少は知っておく必要はある。
 
 RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールやドキュメント
 
-## データ解析 (RMC): source
+## 計算・データ解析 (RMC): source
 
 主に RMC を用いた計算・データー解析とそのための支援ツールなど
 
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
+- [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
 - [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
   - [RMC 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
   - [VASP 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/vasp)
-- [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
 - [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/)
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
 
@@ -267,6 +267,8 @@ RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールや�
 - [VCA (仮想結晶近似)](https://github.com/shimane-dev/make_vca) 仮想結晶近似
 - [SQS を用いた構造作成・計算](https://github.com/kengo-nakada/make_sqs)
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
+
+ 
 - キュリー温度の計算コード開発
 - [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW基盤から、FLEUR/exting基盤へ移行中)
 
