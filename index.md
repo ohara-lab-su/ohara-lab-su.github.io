@@ -189,13 +189,11 @@ DDSとの接続はロボットを使う上では必須であるため、枠組�
 
 ## スサノオ(仮): 実験用サンプルスクリプトと環境構築 docs
 
+**(*)研究室の学生向けのドキュメント**
+
 実験制御をするエンドユーザーにって簡便であること。これがスサノオの究極的な目的である。
 スサノオ使用者はロボット制御のプログラムも通信のプログラムも複雑なプログラムを書くことも理解する必要もない。
 python は多少は知っておく必要はある。
-
-- [簡単なシーケンススクリプト例](susanoo_robo.md)
-
-**(*)研究室の学生向けのドキュメント**
 
 おそらく、学生にとっては cobotta やスサノオのシステムの導入より、
 サーバーPC と python 環境などの環境構築が大変な障壁になる。
@@ -205,6 +203,7 @@ python は多少は知っておく必要はある。
 <img src="fig/slack.png" width="20">
 </a> [Ohara Lab Slack Robo Channel](https://w1769571594-yzx230902.slack.com/archives/C0AJHG8VBA5/)
 
+- [簡単なシーケンススクリプト例](susanoo_robo.md)
 - [学生が書いた学生向けドキュメント (研究室内部doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/ohara_lab.md)
 - [学生が書いた学生向けドキュメント (公開を目指している途中doc)](https://github.com/shimane-dev/docs/tree/main/cobotta_setup/cobotta_setup.md)
 
