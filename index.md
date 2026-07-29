@@ -226,8 +226,10 @@ RMC/DFT/MD/機械学習ポテンシャル などを用いた各種ツールや�
 
 主に RMC を用いた計算・データー解析とそのための支援ツールなど
 
-- [packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
-- [RMC (RMC-DFT)](https://ohara-lab-su.github.io/rmc_dft/) / [[source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
+- [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
+- [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
+  - [RMC 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
+  - [VASP 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/vasp)
 - [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
 - [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/)
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
