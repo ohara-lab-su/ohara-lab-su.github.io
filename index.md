@@ -219,14 +219,18 @@ python は多少は知っておく必要はある。
 ---
 ## 計算・データ解析 (RMC): source
 **(*) 2026/03/03 アクセス制限あり**
-主に逆モンテカルロ(RMC)を用いた計算・データー解析とそのための支援ツールなど
+主に逆モンテカルロ(RMC)を用いた計算・データー解析とそのための支援ツールなど。
 
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
 - [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
+- RMC (ANET)
 - [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
-  - [RMC 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
-  - [VASP 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/vasp)
-  - [QE (Quantum Espresso)支援クラスライブラリ]()
+  - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
+  - [RMC_DFT: VASP 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/vasp)
+  - [RMC-DFT: QE (Quantum Espresso)支援クラスライブラリ]()
+- [RMC-MLP: ACE](https://github.com/kengo-nakada/ace_env)
+- RMC-MLP: GAP
+- RMC-MD
 - [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/)
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
 
@@ -241,9 +245,9 @@ python は多少は知っておく必要はある。
 **(*) 2026/03/03 アクセス制限あり**
 主に機械学習ポテンシャル(MLP)を用いた計算・データー解析とそのための支援ツールなど
  
-- [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env)
-- [機械学習ポテンシャル SNAP]()
-- [機械学習ポテンシャル GAP]()
+- [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env) (非晶質にはちょっと学習向いてないかも)
+- 機械学習ポテンシャル SNAP
+- 機械学習ポテンシャル GAP (割と本命)
 
 ## 計算・データー解析 (DFT): source
 **(*) 2026/03/03 アクセス制限あり**
@@ -252,9 +256,9 @@ python は多少は知っておく必要はある。
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造と Bader 電荷密度とMD関係の解析支援クラスライブラリおよびその使用例
 - [周波数解析](https://github.com/shimane-dev/x_frequency) ゼロクロッシング法による周波数推定とSynchrosqueezing Transform (SST) による周波数セグメント検出
 - [COHP にる結合解析](https://github.com/shimane-dev/x_lobster)
-- [ワニエ関数による局在化軌道解析 (結合解析)]()
-- [ワニエ関数による局在化軌道解析 (電荷のずれ)]()
-- [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集(古すぎるのでほぼ死亡)
+- ワニエ関数による局在化軌道解析 (結合解析)
+- ワニエ関数による局在化軌道解析 (電荷のずれ)
+- [SAE](https://github.com/shimane-dev/sae) DFT計算と結晶構造と群論に関して支援ツール集 (**古すぎるのでほぼ死亡** 歴史的役割は終わった)
 - [vasp1](https://github.com/shimane-dev/vasp1) VASP 支援スクリプト集
 - [bader1](https://github.com/shimane-dev/bader1) Bader 支援スクリプト集
 - [真空層 関連ツール](https://github.com/shimane-dev/change_lattice_constant)
