@@ -20,18 +20,19 @@ Software for data analysis and device control used in our research projects.
 
 - ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2/) / ([source](https://github.com/ohara-lab-su/cobotta2/))
 - ロボット制御class: [cobotta 文字書き](https://ohara-lab-su.github.io/glyph_motion/), ([source](https://github.com/ohara-lab-su/glyph_motion/))
-- ロボット制御class: [UR (UR3e)](https://ohara-lab-su.github.io/ur/), ([source](https://github.com/ohara-lab-su/ur))
+- ロボット制御class: [UR (UR3e)](https://ohara-lab-su.github.io/ur/), ([source](https://github.com/ohara-lab-su/ur/))
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad/), ([source](https://github.com/ohara-lab-su/cobotta2_joypad/))
 - 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader/), ([source](https://github.com/ohara-lab-su/aandd_reader/))
-- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix/), ([source](https://github.com/ohara-lab-su/mini_pix))
-- マルチメータclass: [xdm1000](https://ohara-lab-su.github.io/xdm1000/), ([source](https://github.com/ohara-lab-su/xdm1000))
-- モーター制御class: ツジ電子
+- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix/), ([source](https://github.com/ohara-lab-su/mini_pix/))
+- マルチメータclass: [xdm1000](https://ohara-lab-su.github.io/xdm1000/), ([source](https://github.com/ohara-lab-su/xdm1000/))
+- モーター制御class: [ツジ電子PM16C](https://ohara-lab-su.github.io/pm16c/), ([source](https://github.com/ohara-lab-su/pm16c/))
+- モーター制御class: [ツジ電子PM2CD](https://ohara-lab-su.github.io/pm2cd/), ([source](https://github.com/ohara-lab-su/pm2cd/))
 - 画像転送class: [n10w02 (コボッタ付属カメラ)](https://ohara-lab-su.github.io/n10w02/), ([source](https://github.com/ohara-lab-su/n10w02/))
 - 画像転送class: [web cam (OpenCVを使ったカメラ)](https://ohara-lab-su.github.io/image_server/), ([source](https://github.com/ohara-lab-su/image_server/))
 - 粉体の位置測定class: [powder-level-monitor](https://ohara-lab-su.github.io/powder_level_monitor/), ([source](https://github.com/ohara-lab-su/powder_level_monitor/))
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/), ([source](https://github.com/ohara-lab-su/ese774_frame/)) SPring-8 BL774互換風味
 - 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/), ([source](https://github.com/ohara-lab-su/grpc_frame/)) 高速な gRPC 転送用
-- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame)) beta-stage
+- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame/)) beta-stage
 - 通信Frame: DDS frame
 - メール送信サーバ: [notify_server](https://ohara-lab-su.github.io/notify_server/), ([source](https://github.com/ohara-lab-su/notify_server/))
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
