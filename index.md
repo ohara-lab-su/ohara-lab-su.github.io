@@ -233,7 +233,7 @@ python は多少は知っておく必要はある。
 - [RMC-MLP: ACE](https://github.com/kengo-nakada/ace_env)
 - RMC-MLP: GAP
 - RMC-MD: LAMMPS
-- [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/)
+- [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
 
 ## 計算・データー解析 (MD): source
