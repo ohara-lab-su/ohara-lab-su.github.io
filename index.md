@@ -140,7 +140,7 @@ webベースであるか？DDSのような本格的な分散ベースか？の�
 スサノオでは BL774 ベースであるため、DDSベースはとりあえずはコアライブラリとしては除外する。
 DDSとの接続はロボットを使う上では必須であるため、枠組みに入れていく形にする。
 
-## スサノオ(仮): インストール方法
+## スサノオ(仮): インストール方法およびデバイスサーバー作成
 
 スサノを構成する基本モジュールを導入する
 
@@ -149,7 +149,7 @@ DDSとの接続はロボットを使う上では必須であるため、枠組�
 次にデバイスサーバーを導入する必要がある。 
 後述する、すでに開発済みのデバイスサーバーを使うだけならば次のセクションは飛ばして良い
 
-## スサノオ(仮): デバイスサーバー作成
+### デバイスサーバー作成
 
 スサノオは、サーバー・クライアント型のシンプルな分散システムである。
 そのため、使用するにあたっては、デバイスサーバの形でデバイス(実験機器)側の
@@ -222,8 +222,10 @@ python は多少は知っておく必要はある。
 主に逆モンテカルロ(RMC)を用いた計算・データー解析とそのための支援ツールなど。
 
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
+- RMC (FNC) 形状固定の方法
+- RMC (TOP) ポテンシャル利用
 - [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
-- RMC (ANET)
+- RMC (ANET) 機械学習ポテンシャル利用
 - [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
   - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
   - [RMC_DFT: VASP 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/vasp)
