@@ -226,13 +226,13 @@ python は多少は知っておく必要はある。
 - RMC (TOP) ポテンシャル利用
 - [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
 - RMC (ANET) 機械学習ポテンシャル利用
-- [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/shimane-dev/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
-  - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
-  - [RMC_DFT: VASP 支援クラスライブラリ](https://github.com/shimane-dev/rmc_dft/tree/main/src/rmc_dft/vasp)
-  - [RMC-DFT: QE (Quantum Espresso)支援クラスライブラリ]()
+- [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
+  - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
+  - [RMC_DFT: VASP 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/vasp)
+  - RMC-DFT: QE (Quantum Espresso)支援クラスライブラリ
 - [RMC-MLP: ACE](https://github.com/kengo-nakada/ace_env)
 - RMC-MLP: GAP
-- RMC-MD
+- RMC-MD: LAMMPS
 - [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/)
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
 
@@ -242,6 +242,7 @@ python は多少は知っておく必要はある。
 
 - [Power スペクトル (using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
+- LAMMPS の基本的な使い方
  
 ## 計算・データー解析 (MLP): source
 **(*) 2026/03/03 アクセス制限あり**
@@ -271,9 +272,11 @@ python は多少は知っておく必要はある。
 - [表面構造作成支援(突貫)](https://github.com/shimane-dev/make_surface)
 
  
-- キュリー温度の計算コード開発
 - [全電子計算手法(FLAPW)によるDFT計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW基盤から、FLEUR/exting基盤へ移行中)
-
+- VASP の基本的な使い方
+- QE の基本的な使い方
+- キュリー温度の計算コード開発
+ 
 ## データ解析: docs
 
 計算手法の基礎とその応用について
