@@ -224,7 +224,7 @@ python は多少は知っておく必要はある。
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
 - RMC (FNC) 形状固定の方法
 - RMC (TOP) ポテンシャル利用
-- [RMC (Qn Network)](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
+- [RMC (SNC) Qn Network](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
 - RMC (ANET) 機械学習ポテンシャル利用
 - [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
   - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
@@ -235,6 +235,7 @@ python は多少は知っておく必要はある。
 - RMC-MD: LAMMPS
 - [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
+
 
 ## 計算・データー解析 (MD): source
 **(*) 2026/03/03 アクセス制限あり**
