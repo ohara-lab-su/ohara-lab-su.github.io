@@ -225,13 +225,13 @@ python は多少は知っておく必要はある。
 - RMC (FNC) 形状固定の方法 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
 - RMC (TOP) ポテンシャル利用 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
 - [RMC (SNC) Qn Network](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
-- RMC (ANN) 機械学習ポテンシャル利用 (ANETのANNポテンシャル) / 支援ライブラリ
+- RMC (ANN) 機械学習ポテンシャル利用 (ANETのANNポテンシャル) / ([支援ライブラリ](https://github.com/ohara-lab-su/ann_env)) ANN 作成/利用 支援ライブラリ
 - [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC/DFTに関するクラスライブラリとRMC-DFT計算コード
   - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
   - [RMC_DFT: VASP 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/vasp)
   - RMC-DFT: QE (Quantum Espresso)支援クラスライブラリ
-- [RMC-MLP: ACE](https://github.com/kengo-nakada/ace_env) 
-- RMC-MLP: GAP, MLP を MD/DFT の代わりに使うのは苦労の割には報われない気がする。それよりは、RMC の制約・補正としてのANN
+- [RMC-MLP: ACE](https://ohara-lab-su.github.io/ace_env/), ACE を MD/DFT の代わりに使うための支援
+- [RMC-MLP: GAP](https://ohara-lab-su.github.io/gap_env/), MLP を MD/DFT の代わりに使うための支援。苦労の苦労の割には報われない気がする。それよりは、RMC の制約・補正としての ANNが RMC
 - RMC-MD: LAMMPS
 - [webPDF の Rust 版（パラメター自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust版へ統合
