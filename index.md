@@ -7,6 +7,11 @@ Software for data analysis and device control used in our research projects.
 {:toc}
 -->
 
+## 更新履歴
+- 2026/08/04: ページ文章と構成を少し修正
+- xxx
+
+(*) [history](susanoo_history.md)
 
 # デバイスサーバ
 
