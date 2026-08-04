@@ -391,8 +391,8 @@ python は多少は知っておく必要はある。
 計算手法の基礎とその応用についての過去記事
 
 - [第一原理計算の基礎知識](abinit/intro/intro.md)
-- [第一原理計算の選び方 (プレゼン資料)](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf)
-- [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
+- [第一原理計算の選び方 (プレゼン資料)](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf), 2015年度版
+- [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf), 2023年度版
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
 - [TSPACE](abinit/TSPACE/tspace_00.md), 空間群のプログラム(2017)
 - [memo WIN2K](abinit/pdf/memo_WIEN2k_code_intro_2015.pdf), WIN2kメモ (2015)
