@@ -12,7 +12,8 @@ Software for data analysis and device control used in our research projects.
 - xxx
 - [HISTORY](susanoo_history.md)
 
-# デバイスサーバ
+---
+# 対応デバイスサーバ一覧
 
 **(*) 2026/03/03 ソースコードにはアクセス制限あり**
 
@@ -150,7 +151,7 @@ APIを揃える場合は制御クラス側で揃える。
 スサノオでは、そのような下位レイヤーをできるだけシンプルに保ち、
 上位の知能化や自動化は利用者が自由に構築できるようにする。
 
-## 解析や可視化ソフトとの結合による自立実験
+## 解析との結合による自立実験
 
 スサノオ(仮)では、それぞれのデバイスがが分散環境化において、ネットワークを意識しない形で配置される。
 つまり、ハードウエアはただのデバイスオブジェクトである。
@@ -298,8 +299,8 @@ python は多少は知っておく必要はある。
 実験制御たるデバイスサーバー（デバイスクラス）と連携する計算・解析オブジェクトを提供する
 
 ## 計算・データ解析 (RMC): source
-
 **(*) 2026/03/03 アクセス制限あり**
+
 主に逆モンテカルロ(RMC)を用いた計算・データー解析とそのための支援ツールなど。
 
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
@@ -319,8 +320,8 @@ python は多少は知っておく必要はある。
 
 
 ## 計算・データー解析 (MD): source
-
 **(*) 2026/03/03 アクセス制限あり**
+
 主に古典分子動力学(MD)を用いた計算・データー解析とそのための支援ツールなど
 
 - [Power スペクトル (using lammps トラジェトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD解析支援project
@@ -328,8 +329,8 @@ python は多少は知っておく必要はある。
 - LAMMPS の基本的な使い方
  
 ## 計算・データー解析 (MLP): source
-
 **(*) 2026/03/03 アクセス制限あり**
+
 主に機械学習ポテンシャル(MLP)を用いた計算・データー解析とそのための支援ツールなど
  
 - [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env) (非晶質にはちょっと学習向いてないかも)
@@ -337,8 +338,8 @@ python は多少は知っておく必要はある。
 - 機械学習ポテンシャル GAP (割と本命)
 
 ## 計算・データー解析 (DFT): source
-
 **(*) 2026/03/03 アクセス制限あり**
+
 主に密度汎関数理論(DFT)/第一原理MDを用いた計算・データー解析とそのための支援ツールなど
 
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造と Bader 電荷密度とMD関係の解析支援クラスライブラリおよびその使用例
@@ -380,6 +381,7 @@ python は多少は知っておく必要はある。
 - [計算関係の役立ちリンク](abinit/index.md)
 
 ## 主な開発者
+
 1. K.Ohara
 2. K.Kobayashi
 3. K.Watanabe
