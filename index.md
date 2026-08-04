@@ -394,6 +394,8 @@ python は多少は知っておく必要はある。
 - [第一原理計算の選び方 (プレゼン資料)](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf)
 - [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
+- [TSPACE](abinit/TSPACE/tspace_00.md), 空間群のプログラム(2017)
+- [メモ WIN2kの話](abinit/pdf/メモ_WIEN2k_コードの基礎_2015_.pdf), 
 - 遍歴電子モデルによる強磁性発現機構
 
 ## 古い記事へのリンク
