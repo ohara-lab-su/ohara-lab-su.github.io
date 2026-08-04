@@ -1,7 +1,8 @@
 # Ohara Lab | Software
+[尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
+
 > A Python framework for laboratory automation, experiment control,  
 > online analysis, and intelligent scientific instrumentation.
-[尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 * Toc
 {:toc}
