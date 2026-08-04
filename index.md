@@ -62,7 +62,7 @@ and
 
 (*) 名前は変わる可能性がある
 
-## システムの概要
+## スサノオの概要
 
 スサノオでは SPring-8 における [MADOCA/DARUMA](https://user.spring8.or.jp/sp8info/?p=37181) や
 ESRF の [TANGO](https://www.tango-controls.org/) のようなフルスタック型
@@ -91,9 +91,10 @@ MADOCA や TANGO でも一般的なものである。
 
 <img src="fig/ese_774.004.png" width="70%" style="display:block; margin:auto;">
 
+スサノオは
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
-互換としての立ち位置は、
-公式に**BL774 REST server** のコードを基盤にしており、
+互換としての立ち位置を持つ。
+これは、公式に**BL774 REST server** のコードを基盤にしており、
 get や post のルールを
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
 側の真似をしているところである。
@@ -101,7 +102,11 @@ get や post のルールを
 つまり774APIセットに対応しているわけではなく、
 774 Basic System 未満である。
 
-基本センスとしては、スサノオはフレームワーク側として API を統一整理する代わりに、
+意図的に、ユーザーレベルのマネージもアクセス権も作らない。
+最大規模でも、SPring-8 の BL単位。研究室のラボの機器とアクセスフリーな
+ヤクザなユーザー構成構成を前提とする。
+
+そして、基本センスとしては、スサノオはフレームワーク側として API を統一整理する代わりに、
 制御クラス側に API の規定は任せている。
 つまり、透過型プロキシとして動的ディパッチを軸としたフレームであり、
 制御クラス側の python の API がそのままクライアント上での API となる。
