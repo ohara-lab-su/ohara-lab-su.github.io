@@ -10,8 +10,7 @@ Software for data analysis and device control used in our research projects.
 ## 更新履歴
 - 2026/08/04: ページ文章と構成を少し修正
 - xxx
-
-(*) [history](susanoo_history.md)
+- [HISTORY](susanoo_history.md)
 
 # デバイスサーバ
 
@@ -90,7 +89,7 @@ MADOCA や TANGO でも一般的なものである。
 そしてスサノオでは、
 ターゲットとなるデバイスと目的の通信速度・フレークワークとの結合をしやすいように、
 フレームを切り替えても同じように使えるようにする。
-つまり、基本は**シンプルな透過型プロキシ**である。
+つまり、基本は**シンプルな透過型プロキシ**構成である。
 
 
 <img src="fig/ese_774.004.png" width="70%" style="display:block; margin:auto;">
