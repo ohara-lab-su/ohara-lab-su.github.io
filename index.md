@@ -1,16 +1,20 @@
 # Ohara Lab | Software
-Software for data analysis and device control used in our research projects.  
+> A Python framework for laboratory automation, experiment control,  
+> online analysis, and intelligent scientific instrumentation.
+
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 * Toc
 {:toc}
 
 ## 更新履歴
+
 - 2026/08/04: ページ文章と構成を少し修正
 - xxx
 - [HISTORY](susanoo_history.md)
 
 ---
+
 # 対応デバイスサーバ一覧
 
 **(*) 2026/03/03 ソースコードにはアクセス制限あり**
@@ -88,7 +92,6 @@ MADOCA や TANGO でも一般的なものである。
 ターゲットとなるデバイスと目的の通信速度・フレークワークとの結合をしやすいように、
 フレームを切り替えても同じように使えるようにする。
 つまり、基本は**シンプルな透過型プロキシ**構成である。
-
 
 <img src="fig/ese_774.004.png" width="70%" style="display:block; margin:auto;">
 
@@ -210,7 +213,6 @@ ROS2 というフレームワークである。
 webベースであるか？DDSのような本格的な分散ベースか？の選択肢となるが、
 スサノオでは BL774 ベースであるため、DDSベースはとりあえずはコアライブラリとしては除外する。
 DDSとの接続はロボットを使う上では必須であるため、枠組みに入れていく形にする。
-
 
 ---
 
