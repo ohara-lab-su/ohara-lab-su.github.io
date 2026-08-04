@@ -386,17 +386,22 @@ python は多少は知っておく必要はある。
 
 --- 
 
-# データ解析: docs
+# 過去記事
 
-計算手法の基礎とその応用について
+計算手法の基礎とその応用についての過去記事
 
 - [第一原理計算の基礎知識](abinit/intro/intro.md)
 - [第一原理計算の選び方 (プレゼン資料)](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf)
 - [実空間差分法によるXANESスペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf)
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
 - [TSPACE](abinit/TSPACE/tspace_00.md), 空間群のプログラム(2017)
-- [メモ WIN2kの話](abinit/pdf/メモ_WIEN2k_コードの基礎_2015_.pdf), 
-- 遍歴電子モデルによる強磁性発現機構
+- [memo WIN2K](abinit/pdf/memo_WIEN2k_code_intro_2015.pdf), WIN2kメモ (2015)
+- [memo CP2K](abinit/pdf/memo_CP2k_2015.pdf), CP2K memo (2015)
+- [memo PWScf](abinit/pdf/memo_PWScf_2015.pdf), PWScf memo (2015)
+- [memo OpenMX](abinit/pdf/memo_OpenMX_2015.pdf), OpenMX memo (2015)
+- [memo LOBSTER_COHP](abinit/pdf/memo_LOBSTER_COHP_2017.06.13.pdf), LOBSTER COHP 解析 (2017)
+- [memo ELF (vasp)](abinit/pdf/VASP_ELF_2017.08.21update.pdf), ELF 解析メモ (2017)
+- [遍歴電子モデルによる強磁性発現機構](abinit/pdf/20060726.pdf), M.SHIMIZU, Proc. Phys. Soc., 84 (1964) 397. の解説
 
 ## 古い記事へのリンク
 
