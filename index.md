@@ -2,10 +2,10 @@
 Software for data analysis and device control used in our research projects.  
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
-<!--
+
 * Toc
 {:toc}
--->
+
 
 ## 更新履歴
 - 2026/08/04: ページ文章と構成を少し修正
