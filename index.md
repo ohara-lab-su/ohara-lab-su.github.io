@@ -8,7 +8,7 @@ Software for data analysis and device control used in our research projects.
 -->
 
 
-# デバイスサーバ docs, src
+# デバイスサーバ
 
 **(*) 2026/03/03 ソースコードにはアクセス制限あり**
 
@@ -65,7 +65,7 @@ and
 ## システムの概要
 
 スサノオでは SPring-8 における [MADOCA/DARUMA](https://user.spring8.or.jp/sp8info/?p=37181) や
-ESRF の [TANGO](https://www.tango-controls.org/) のようなフルスタック型の
+ESRF の [TANGO](https://www.tango-controls.org/) のようなフルスタック型
 のプロトコル・フレームワークを新たに構築することは目的としない。
 
 MADOCA や TANGO もデバイスサーバー単位で構成されているが、
