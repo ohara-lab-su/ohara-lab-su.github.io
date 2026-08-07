@@ -78,7 +78,7 @@ gRPC / FastAPI(BL774互換) などを用いた、
 デバイスサーバーをデバイスオブジェクトとして組み合わせることで、
 必要な機器や解析機能を緩やかに結合することを目的とするからだ。
 
-<img src="fig/susanoo_system.png" width="70%" style="display:block; margin:auto;">
+<img src="fig/susanoo_system.png" width="90%" style="display:block; margin:auto;">
 
 無論、デバイスサーバー単位の構成は、
 MADOCA や TANGO でも一般的なものである。
@@ -135,7 +135,7 @@ APIを揃える場合は制御クラス側で揃える。
 つまり、利用者はネットワークの存在をほとんど意識することなく、
 ローカルの Python オブジェクトを扱うような感覚でデバイスを操作できる。
 
-<img src="fig/ese_774.004.png" width="85%" style="display:block; margin:auto;">
+<img src="fig/ese_774.004.png" width="75%" style="display:block; margin:auto;">
 
 スサノオ自身は、デバイス固有の API を新たに定義したり、
 複雑な抽象化レイヤーを追加したりしない。
