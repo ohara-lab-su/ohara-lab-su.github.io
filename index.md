@@ -1,11 +1,16 @@
 # Ohara Lab | Software
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
+> Sustainable Unified Systems Architecture for Networked Operations and Orchestration 
 
 * Toc
 {:toc}
 
 ## 更新履歴
-- 2026/08/08: 動的ディスパッチの初学者向けのセクションを追加
+- 2026/08/10: [n10w02 update](https://github.com/ohara-lab-su/n10w02/)
+- 2026/08/10: [拘束な gRPC 転送用 grpc_frame update](https://github.com/ohara-lab-su/grpc_frame/)
+- 2026/08/09: [ese774_frame 動的ディスパッチ update](https://github.com/ohara-lab-su/ese774_frame/)
+- 2026/08/08: [cobotta_ctrl_joypad update](https://github.com/ohara-lab-su/cobotta2/)
+- 2026/08/08: [動的ディスパッチの初学者向けのセクションを追加](#transparent-proxy)
 - 2026/08/07: 統括の図を追加
 - 2026/08/04: ページ文章と構成を少し修正
 - [HISTORY](susanoo_history.md)
@@ -244,6 +249,9 @@ API の I/F を明示的に定義する方法も用意している。
 
 <img src="fig/dcs_robotto.png" width="80%" style="display:block; margin:auto;">
 
+### デンソーウェーブ
+### ユニバーサルロボット
+
 ## デバイスサーバー単位の緩やかな結合
 
 自動化・自律化などの大きな枠組みを作らずに、
@@ -306,8 +314,8 @@ API の I/F を明示的に定義する方法も用意している。
 型の互換であるからという理由もあるし、
 設計・開発・保守メンテナンスをミニマムなコストで行うためである。
 
-1. [機器制御における分散モデル](susanoo_dcs_intro.md)
-2. [分散ノード通信の基盤](susanoo_dcs_com.md), (BL774, TANGO, MADOCA/DARUMA, ROS2)
+1. [機器制御における分散モデル](susanoo_dcs_intro.md), 分散モデルの基本概念
+2. [分散ノード通信の基盤](susanoo_dcs_com.md), ソケットパターン分類 (BL774, TANGO, MADOCA/DARUMA, ROS2)
 
 ## スサノオにおける分散システム
 
