@@ -307,7 +307,7 @@ API の I/F を明示的に定義する方法も用意している。
 設計・開発・保守メンテナンスをミニマムなコストで行うためである。
 
 1. [機器制御における分散モデル](susanoo_dcs_intro.md)
-2. [分散ノード通信の基盤](susanoo_dcs_com.md)
+2. [分散ノード通信の基盤](susanoo_dcs_com.md), (BL774, TANGO, MADOCA/DARUMA, ROS2)
 
 ## スサノオにおける分散システム
 
