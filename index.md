@@ -308,7 +308,10 @@ API の I/F を明示的に定義する方法も用意している。
 
 1. [機器制御における分散モデル](susanoo_dcs_intro.md)
 2. [分散ノード通信の基盤](susanoo_dcs_com.md)
-3. [スサノオのシステム](susanoo_system.md)
+
+## スサノオにおける分散システム
+
+- [スサノオのシステム](susanoo_system.md)
  
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
 はメインとしては RestAPI を採用している。
