@@ -1,4 +1,4 @@
-# Ohara Lab | Software
+# Ohara Lab | Software {#top}
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 > Sustainable Unified Systems Architecture for Networked Operations and Orchestration 
 
@@ -61,6 +61,7 @@
 ---
 
 # スサノオとは？
+[return](#top)
 
 島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換 (ese774)
 を用いた一連の計測システムを
@@ -80,6 +81,7 @@ and
 (*) 名前は変わる可能性がある
 
 ## スサノオの概要
+[return](#top)
 
 スサノオでは SPring-8 における [MADOCA/DARUMA](https://user.spring8.or.jp/sp8info/?p=37181) や
 ESRF の [TANGO](https://www.tango-controls.org/) のようなフルスタック型のプロトコル・フレームワークを新たに構築することは目的としない。
@@ -136,6 +138,7 @@ API を揃える場合は制御クラス側で揃える。
 - [方針メモ](susanoo_intro.md)
 
 ## 透過型プロキシとは？ {#transparent-proxy}
+[return](#top)
 
 スサノオでは、
 デバイスへのアクセスを透過型プロキシ (Transparent Proxy) として構成している。
@@ -180,6 +183,7 @@ Device、**Device Class**、**Device Server** という関係と名称も一般�
 の影響を強く受けている。
 
 ## 動的ディスパッチとは？
+[return](#top)
 
 スサノオでは、デバイス制御クラスのメソッドをネットワーク越しに呼び出すために、
 **[動的ディスパッチ (Dynamic Dispatch)](susanoo_dynamic_dispatch.md)** を利用している。
@@ -237,6 +241,7 @@ API の I/F を明示的に定義する方法も用意している。
 に記す。
 
 ## ロボット制御
+[return](#top)
 
 特にスサノオ (仮) の自動化の中核として、ロボット制御のデバイスサーバーが挙げられる。
 当然ロボットに関しては各社独自のフレームワークなど、大変な力を入れている。
@@ -250,6 +255,7 @@ API の I/F を明示的に定義する方法も用意している。
 <img src="fig/dcs_robotto.png" width="85%" style="display:block; margin:auto;">
 
 ### デンソーウェーブcobotta {#cobotta}
+[return](#top)
 
 デンソーウェーブのロボットでは、
 コントローラ内部の Motion Generator / Robot Motion が実際のモーション制御を担い、
@@ -269,6 +275,7 @@ b-CAP はコントローラへアクセスする通信プロトコルという�
 - [スサノオにおける COBOTTA 制御の詳細](https://ohara-lab-su.github.io/cobotta2/)
 
 ### ユニバーサルロボット {#ur}
+[return](#top)
 
 Universal Robots のロボットは、
 Robot Arm、Control Box、
@@ -323,6 +330,7 @@ FANATICのスサノオでの制御アレコレ
 ...
 
 ## デバイスサーバー単位の緩やかな結合
+[return](#top)
 
 自動化・自律化などの大きな枠組みを作らずに、
 あくまでデバイスサーバー単位での緩やかなシステム構成を中心に据えるのがスサノオ (仮) である。
@@ -341,6 +349,7 @@ FANATICのスサノオでの制御アレコレ
 上位の知能化や自動化は利用者が自由に構築できるようにする。
 
 ## 解析との結合による自動・自律実験
+[return](#top)
 
 スサノオ (仮) では、それぞれのデバイスが分散環境に配置されていても、
 利用者はネットワークを意識することなく扱うことができる。
@@ -373,6 +382,7 @@ FANATICのスサノオでの制御アレコレ
 ---
 
 # 分散システムとは？
+[return](#top)
 
 スサノオでは [MADOCA/DARUMA](https://user.spring8.or.jp/sp8info/?p=37181) や
 [TANGO](https://www.tango-controls.org/)
@@ -427,6 +437,7 @@ DDS との接続はロボットを使う上では必須であるため、枠組�
 ---
 
 # デバイスオブジェクト {#device-object}
+[return](#top)
 
 ## インストール方法
 
@@ -462,6 +473,7 @@ DDS との接続はロボットを使う上では必須であるため、枠組�
 ...
 
 ## デバイスサーバー作成 (Pydantic/OpenAPI タイプ)
+[return](#top)
 
 Pydantic を用いた API 定義を用いることで、OpenAPI に対応した I/F 定義を作ることができる。
 I/F 定義をすることで、透過型プロキシとしての完全自動のメリットがなくなり、
@@ -501,6 +513,7 @@ I/F 定義を作る必要があるが、OpenAPI による定義を提供する�
 原理的に不可能なデバイスも多い。
 
 ## 実験用サンプルスクリプトと環境構築 docs
+[return](#top)
 
 **(*) 研究室の学生向けのドキュメント**
 
@@ -532,6 +545,7 @@ Python は多少は知っておく必要がある。
 ---
 
 # 計算・解析オブジェクト
+
 
 実験制御たるデバイスサーバー（デバイスクラス）と連携する計算・解析オブジェクトを提供する
 
