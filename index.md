@@ -40,11 +40,11 @@
 - 画像転送class: [n10w02 (コボッタ付属カメラ)](https://ohara-lab-su.github.io/n10w02/), ([source](https://github.com/ohara-lab-su/n10w02/))
 - 画像転送class: [web cam (OpenCVを使ったカメラ)](https://ohara-lab-su.github.io/image_server/), ([source](https://github.com/ohara-lab-su/image_server/))
 - 粉体の位置測定class: [powder-level-monitor](https://ohara-lab-su.github.io/powder_level_monitor/), ([source](https://github.com/ohara-lab-su/powder_level_monitor/))
+- 通信Frameテストclass: dummy_device, ([source](https://github.com/ohara-lab-su/ese774_dummy/)) ese774_frame 試験用の仮想のデバイス
 
 ## Framework {#frame-work}
 
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/), ([source](https://github.com/ohara-lab-su/ese774_frame/)) SPring-8 BL774互換風味
-- 通信Frame: ese774_dummy, ([source](https://github.com/ohara-lab-su/ese774_dummy/)) ese774_frame 試験用の仮想のデバイス
 - 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/), ([source](https://github.com/ohara-lab-su/grpc_frame/)) 高速な gRPC 転送用
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage
 - 通信Frame: DDS frame
@@ -126,7 +126,7 @@ SPring-8 の BL単位。
 制御クラス側の python の API がそのままクライアント上での API となる。
 APIを揃える場合は制御クラス側で揃える。
 
-これは、最初からデバイスサーバーを増やす前提のもとで設計されているためであり、
+これは、最初から[デバイスサーバー](#device-server)を増やす前提のもとで設計されているためであり、
 デバイスごとに基本となるAPIが異なるためだ。
 モーター系などすでに揃えるべき API セットが固定なものを扱うことよりも、
 **多種多様なデバイスに対する対応の容易さ**の方を重視している。
@@ -181,7 +181,7 @@ Device、**Device Class**、**Device Server** という関係と名称も一般�
 ## 動的ディスパッチとは？
 
 スサノオでは、デバイス制御クラスのメソッドをネットワーク越しに呼び出すために、
-**動的ディスパッチ (Dynamic Dispatch)** を利用している。
+**[動的ディスパッチ (Dynamic Dispatch)](susanoo_dynamic_dispatch.md)** を利用している。
 
 例えば、デバイス制御クラスに
 
@@ -216,7 +216,7 @@ device.move(...)
 サーバー側が対応するデバイスクラスのメソッドを探して実行している。
 通常の Web API では、`move`、`stop`、`get_position` などの処理ごとに
 個別の API を定義する必要がある。
-動的ディスパッチを利用すると、
+[動的ディスパッチ](susanoo_dynamic_dispatch.md)を利用すると、
 制御クラスにあるメソッドを比較的そのまま公開できるため、
 新しい機器や新しい機能を追加するときの通信部分の記述を大幅に減らすことができる。
 
@@ -246,7 +246,7 @@ API の I/F を明示的に定義する方法も用意している。
 各社を横断したAPIセットは、大学らしい、メーカーではできない設計となる。
 各社の違いを超えて、実験する人が容易に置き換えることを目的としている。
 
-<img src="fig/dcs_robotto.png" width="80%" style="display:block; margin:auto;">
+<img src="fig/dcs_robotto.png" width="85%" style="display:block; margin:auto;">
 
 ### デンソーウェーブ
 ### ユニバーサルロボット
