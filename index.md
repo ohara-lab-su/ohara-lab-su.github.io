@@ -6,6 +6,7 @@
 {:toc}
 
 ## 更新履歴
+- 2026/08/11: [コボッタ制御](#cobotta)、[ユニバーサルロボット](#ur)の記事を追加
 - 2026/08/10: [n10w02 update](https://github.com/ohara-lab-su/n10w02/)
 - 2026/08/10: [高速な gRPC 転送用 grpc_frame update](https://github.com/ohara-lab-su/grpc_frame/)
 - 2026/08/09: [ese774_frame 動的ディスパッチ update](https://github.com/ohara-lab-su/ese774_frame/)
@@ -248,7 +249,7 @@ API の I/F を明示的に定義する方法も用意している。
 
 <img src="fig/dcs_robotto.png" width="85%" style="display:block; margin:auto;">
 
-### デンソーウェーブ {#cobotta}
+### デンソーウェーブcobotta {#cobotta}
 
 デンソーウェーブのロボットでは、
 コントローラ内部の Motion Generator / Robot Motion が実際のモーション制御を担い、
