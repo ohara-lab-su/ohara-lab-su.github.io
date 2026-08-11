@@ -38,9 +38,9 @@
 - モーター制御class: [ツジ電子 PM16C](https://ohara-lab-su.github.io/pm16c16/), ([source](https://github.com/ohara-lab-su/pm16c16/))
 - モーター制御class: [ツジ電子 PM2CD](https://ohara-lab-su.github.io/pm2cd/), ([source](https://github.com/ohara-lab-su/pm2cd/))
 - 画像転送class: [n10w02 (コボッタ付属カメラ)](https://ohara-lab-su.github.io/n10w02/), ([source](https://github.com/ohara-lab-su/n10w02/))
-- 画像転送class: [web cam (OpenCV を使ったカメラ)](https://ohara-lab-su.github.io/image_server/), ([source](https://github.com/ohara-lab-su/image_server/))
+- 画像転送class: [Web cam (OpenCV を使ったカメラ)](https://ohara-lab-su.github.io/image_server/), ([source](https://github.com/ohara-lab-su/image_server/))
 - 粉体の位置測定class: [powder-level-monitor](https://ohara-lab-su.github.io/powder_level_monitor/), ([source](https://github.com/ohara-lab-su/powder_level_monitor/))
-- 通信Frame テストclass: dummy_device, ([source](https://github.com/ohara-lab-su/ese774_dummy/)) ese774_frame 試験用の仮想のデバイス
+- 通信Frame テスト class: dummy_device, ([source](https://github.com/ohara-lab-su/ese774_dummy/)) ese774_frame 試験用の仮想のデバイス
 
 ## Framework {#frame-work}
 
@@ -122,11 +122,11 @@ SPring-8 の BL 単位。
 
 そして、基本センスとしては、スサノオはフレームワーク側として API を統一整理する代わりに、
 制御クラス側に API の規定を任せている。
-つまり、[透過型プロキシ](#transparent-proxy)として[動的ディスパッチ](susanoo_dynamic_dispatch.md)を軸としたフレームであり、
+つまり、[透過型プロキシ](#transparent-proxy) として[動的ディスパッチ](susanoo_dynamic_dispatch.md) を軸としたフレームであり、
 制御クラス側の python の API がそのままクライアント上での API となる。
 API を揃える場合は制御クラス側で揃える。
 
-これは、最初から[デバイスサーバー](#device-server)を増やす前提のもとで設計されているためであり、
+これは、最初から[デバイスサーバー](#device-server) を増やす前提のもとで設計されているためであり、
 デバイスごとに基本となる API が異なるためだ。
 モーター系など、すでに揃えるべき API セットが固定されたものを扱うことよりも、
 **多種多様なデバイスに対する対応の容易さ**の方を重視している。
@@ -166,7 +166,7 @@ API を揃える場合は制御クラス側で揃える。
 このように、
 通信機構を共通化しつつ、
 デバイスクラスの機能をできるだけそのまま利用できることが、
-スサノオにおける[透過型プロキシ](#transparent-proxy)構成の特徴である (*)
+スサノオにおける[透過型プロキシ](#transparent-proxy) 構成の特徴である (*)
 
 *) そもそも、
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
@@ -216,7 +216,7 @@ device.move (...)
 サーバー側が対応するデバイスクラスのメソッドを探して実行している。
 通常の Web API では、`move`、`stop`、`get_position` などの処理ごとに
 個別の API を定義する必要がある。
-[動的ディスパッチ](susanoo_dynamic_dispatch.md)を利用すると、
+[動的ディスパッチ](susanoo_dynamic_dispatch.md) を利用すると、
 制御クラスにあるメソッドを比較的そのまま公開できるため、
 新しい機器や新しい機能を追加するときの通信部分の記述を大幅に減らすことができる。
 
@@ -229,18 +229,18 @@ device.move (...)
 一方、動的ディスパッチだけでは、
 利用できるメソッドや引数の型などの I/F が外部から分かりにくい。
 
-そのためスサノオでは、必要に応じて Pydantic / OpenAPI を用いて
+そのためスサノオでは、必要に応じて Pydantic/OpenAPI を用いて
 API の I/F を明示的に定義する方法も用意している。
-より詳しい仕組みと Pydantic / OpenAPI との関係については、
+より詳しい仕組みと Pydantic/OpenAPI との関係については、
 [動的ディスパッチと API の定義](susanoo_dynamic_dispatch.md)
 に記す。
 
 ## ロボット制御
 
-特にスサノオ (仮)の自動化の中核として、ロボット制御のデバイスサーバーが挙げられる。
+特にスサノオ (仮) の自動化の中核として、ロボット制御のデバイスサーバーが挙げられる。
 当然ロボットに関しては各社独自のフレームワークなど、大変な力を入れている。
 それらを置換するものではない。
-各社のロボットは、ハードウェアとしての目的が異なるために I/F の違いが大きい。
+各社のロボットは、ハードウェアとしての目的が異なるために I/F の違いが大きい.
 スサノオではこれらをある程度統一的な API-I/F として揃える。
 つまり各社 API の緩やかな抽象化を行う。
 各社を横断した API セットは、メーカーではできない、大学らしい設計となる。
@@ -254,7 +254,7 @@ API の I/F を明示的に定義する方法も用意している。
 ## デバイスサーバー単位の緩やかな結合
 
 自動化・自律化などの大きな枠組みを作らずに、
-あくまでデバイスサーバー単位での緩やかなシステム構成を中心に据えるのがスサノオ (仮)である。
+あくまでデバイスサーバー単位での緩やかなシステム構成を中心に据えるのがスサノオ (仮) である。
 それはフィジカル AI 時代に対する一つの回答であるのは言うまでもない。
 
 どのような汎用 API を用意して、どのような大きな構成を見据えた巨大なフレームワークを作っても、
@@ -271,7 +271,7 @@ API の I/F を明示的に定義する方法も用意している。
 
 ## 解析との結合による自動・自律実験
 
-スサノオ (仮)では、それぞれのデバイスが分散環境に配置されていても、
+スサノオ (仮) では、それぞれのデバイスが分散環境に配置されていても、
 利用者はネットワークを意識することなく扱うことができる。
 つまり、ハードウェアは利用者から見れば、ただのデバイスオブジェクトである。
 
@@ -363,7 +363,7 @@ DDS との接続はロボットを使う上では必須であるため、枠組�
 
 - [スサノオの基本構成のインストール](susanoo_install.md)
 
-次に[デバイスサーバー](#device-server)を導入する必要がある。 
+次に[デバイスサーバー](#device-server) を導入する必要がある。 
 後述する、すでに開発済みのデバイスサーバーを使うだけならば次のセクションは飛ばして良い。
 
 ## デバイスサーバー作成 (自動ディスパッチ)
@@ -372,14 +372,14 @@ DDS との接続はロボットを使う上では必須であるため、枠組�
 ここではローカルで動作するデバイスオブジェクトから、サーバー・クライアントで動作するデバイスオブジェクトの作り方まで説明する。
 
 スサノオは、サーバー・クライアント型のシンプルな分散システムである。
-そのため、使用するにあたっては、デバイスサーバーの形でデバイス (実験機器)側のサーバーを立ち上げる必要がある。
-スサノオはほぼ完全な[透過型プロキシ](#transparent-proxy)であるため、
-基本は制御クラス (デバイスクラス)があればデバイスサーバー・クライアント作成はほぼ終わる。
+そのため、使用するにあたっては、デバイスサーバーの形でデバイス (実験機器) 側のサーバーを立ち上げる必要がある。
+スサノオはほぼ完全な[透過型プロキシ](#transparent-proxy) であるため、
+基本は制御クラス (デバイスクラス) があればデバイスサーバー・クライアント作成はほぼ終わる。
 
-1. スサノオに関係なく[デバイス制御クラス (プログラム)](#device-class)を書く。
+1. スサノオに関係なく[デバイス制御クラス (プログラム)](#device-class) を書く。
 2. スサノオフレームを用いて、デバイス制御クラスからデバイスサーバーを作る (**わずか数行**)
-3. サーバー側で処理されてしまう処理をクライアント側にしたいなど (たとえばファイル保存)の例外処理を書く
-4. スサノオフレームにより自動で作られるデバイスプロキシ (デバイスクライアント)を用いて、実験制御プログラムを書く。
+3. サーバー側で処理されてしまう処理をクライアント側にしたいなど (たとえばファイル保存) の例外処理を書く
+4. スサノオフレームにより自動で作られるデバイスプロキシ (デバイスクライアント) を用いて、実験制御プログラムを書く。
 
 クライアントサーバーで例外処理がない場合は、実質的には最初の 1 のステップだけで、
 デバイスサーバー公開までのステップはほぼ終わる。
@@ -390,18 +390,18 @@ DDS との接続はロボットを使う上では必須であるため、枠組�
 
 ...
 
-## デバイスサーバー作成 (Pydantic / OpenAPI タイプ)
+## デバイスサーバー作成 (Pydantic/OpenAPI タイプ)
 
 Pydantic を用いた API 定義を用いることで、OpenAPI に対応した I/F 定義を作ることができる。
 I/F 定義をすることで、透過型プロキシとしての完全自動のメリットがなくなり、
-I/F 定義を作る必要があるが、OpenAPI による定義を提供することで幅広い web 技術との連結が可能になるメリットがある。
+I/F 定義を作る必要があるが、OpenAPI による定義を提供することで幅広い Web 技術との連結が可能になるメリットがある。
 
-1. スサノオに関係なく[デバイス制御クラス (プログラム)](#device-class)を書く。
+1. スサノオに関係なく[デバイス制御クラス (プログラム)](#device-class) を書く。
 2. スサノオフレームを用いて、デバイス制御クラスからデバイスサーバーを作る
 3. スサノオフレームを用いて、デバイスサーバーの**API 定義**を記述する (ある意味これがサーバを作る作業の本丸だが、実はただのコピペ作業)
    pydantic/OpenAPI という一般的な Web 技術とその記法で記述されており、スサノオが用意するクライアントを使わなくてもデバイスサーバーを使うことができる
-4. サーバー側で処理されてしまう処理をクライアント側にしたいなど (たとえばファイル保存)の例外処理を書く
-5. スサノオフレームにより自動で作られるデバイスプロキシ (デバイスクライアント)を用いて、実験制御プログラムを書く。
+4. サーバー側で処理されてしまう処理をクライアント側にしたいなど (たとえばファイル保存) の例外処理を書く
+5. スサノオフレームにより自動で作られるデバイスプロキシ (デバイスクライアント) を用いて、実験制御プログラムを書く。
 
 この 5 つのステップで機器制御・開発を行う。
 3 の作業をより簡略化するために、1 をうまく作ると良い。
@@ -418,7 +418,7 @@ I/F 定義を作る必要があるが、OpenAPI による定義を提供する�
 - [電子天秤サーバ (ese774)](https://ohara-lab-su.github.io/aandd_reader/tutorials/intro.html#a-ese774) の導入
 - [電子天秤クライアント (ese774)](https://ohara-lab-su.github.io/aandd_reader/tutorials/intro.html#a-ese774) の導入
 
-クライアントコードは async 対応であるが、厳密にはサーバー側の制御クラス が非同期に正しく対応していないと
+クライアントコードは async 対応であるが、厳密にはサーバー側の制御クラスが非同期に正しく対応していないと
 唯のハッタリ async となる。
 もともとサーバーとクライアントで分離しているために、
 同期非同期はそれぞれの責務となる。
@@ -467,19 +467,19 @@ Python は多少は知っておく必要がある。
 ## 計算・データ解析 (RMC): source
 **(*) 2026/03/03 アクセス制限あり**
 
-主に逆モンテカルロ (RMC)を用いた計算・データ解析とそのための支援ツールなど。
+主に逆モンテカルロ (RMC) を用いた計算・データ解析とそのための支援ツールなど。
 
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
 - RMC (FNC) 形状固定の方法 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
 - RMC (TOP) ポテンシャル利用 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
 - [RMC (SNC) Qn Network](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
 - RMC (ANN) 機械学習ポテンシャル利用 (AENET の ANN ポテンシャル) / ([支援ライブラリ](https://github.com/ohara-lab-su/ann_env)) ANN 作成/利用 支援ライブラリ
-- [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC / DFT に関するクラスライブラリと RMC-DFT 計算コード
+- [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC/DFT に関するクラスライブラリと RMC-DFT 計算コード
   - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
   - [RMC_DFT: VASP 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/vasp)
-  - RMC-DFT: QE (Quantum ESPRESSO)支援クラスライブラリ
-- [RMC-MLP: ACE](https://ohara-lab-su.github.io/ace_env/), ACE を MD / DFT の代わりに使うための支援
-- [RMC-MLP: GAP](https://ohara-lab-su.github.io/gap_env/), MLP を MD / DFT の代わりに使うための支援。苦労の割には報われない気がする。それよりは、RMC の制約・補正としての ANN が RMC
+  - RMC-DFT: QE (Quantum ESPRESSO) 支援クラスライブラリ
+- [RMC-MLP: ACE](https://ohara-lab-su.github.io/ace_env/), ACE を MD/DFT の代わりに使うための支援
+- [RMC-MLP: GAP](https://ohara-lab-su.github.io/gap_env/), MLP を MD/DFT の代わりに使うための支援。苦労の割には報われない気がする。それよりは、RMC の制約・補正としての ANN が RMC
 - RMC-MD: LAMMPS
 - [webPDF の Rust 版（パラメータ自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - [webPDF local](https://github.com/kengo-nakada/local_pdf) 廃止予定/Rust 版へ統合
@@ -488,7 +488,7 @@ Python は多少は知っておく必要がある。
 ## 計算・データ解析 (MD): source
 **(*) 2026/03/03 アクセス制限あり**
 
-主に古典分子動力学 (MD)を用いた計算・データ解析とそのための支援ツールなど
+主に古典分子動力学 (MD) を用いた計算・データ解析とそのための支援ツールなど
 
 - [Power スペクトル (using lammps トラジェクトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD 解析支援 project
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
@@ -497,7 +497,7 @@ Python は多少は知っておく必要がある。
 ## 計算・データ解析 (MLP): source
 **(*) 2026/03/03 アクセス制限あり**
 
-主に機械学習ポテンシャル (MLP)を用いた計算・データ解析とそのための支援ツールなど
+主に機械学習ポテンシャル (MLP) を用いた計算・データ解析とそのための支援ツールなど
 
 - [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env) (非晶質にはちょっと学習向いてないかも)
 - 機械学習ポテンシャル SNAP
@@ -524,7 +524,7 @@ Python は多少は知っておく必要がある。
 - [表面構造作成支援 (突貫)](https://github.com/shimane-dev/make_surface)
 
 
-- [全電子計算手法 (FLAPW)による DFT 計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW 基盤から、FLEUR/exting 基盤へ移行中)
+- [全電子計算手法 (FLAPW) による DFT 計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW 基盤から、FLEUR/exting 基盤へ移行中)
 - VASP の基本的な使い方
 - QE の基本的な使い方
 - キュリー温度の計算コード開発
