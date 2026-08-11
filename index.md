@@ -294,11 +294,11 @@ I/O、汎用レジスタなどを双方向に読み書きする公式 I/F であ
 ただし **RTDE** 自体に `movej` や `movel` のようなロボット動作命令が定義されているわけではない。
 **RTDE** で渡した値をどの動作に使うかは、必要に応じて controller 側のロボットプログラムが受け持つ。
 
-現在スサノオで使用している `RTDEControlInterface` は Universal Robots 純正 API ではない。
-これは **SDU Robotics** が開発するオープンソースライブラリ `ur_rtde` の API であり、
+現在スサノオで使用している **RTDEControlInterface** は Universal Robots 純正 API ではない。
+これは **SDU Robotics** が開発するオープンソースライブラリ **ur_rtde** の API であり、
 Universal Robots 公式 **RTDE** とロボット側で動作する **control URScript** を組み合わせ、
 PC から `moveJ`、`moveL`、`servoJ` などを呼べる形にまとめたものである。
-したがって、Universal Robots 公式の RTDE と SDU Robotics の `ur_rtde` は明確に区別して扱う必要がある。
+したがって、Universal Robots 公式の RTDE と SDU Robotics の **ur_rtde** は明確に区別して扱う必要がある。
 
 現在の実装では、
 モーション制御に SDU Robotics の `RTDEControlInterface`、
