@@ -269,35 +269,40 @@ b-CAP はコントローラへアクセスする通信プロトコルという�
 
 ### ユニバーサルロボット
 
+Universal Robots のロボットは、
+Robot Arm、Control Box、
+Teach Pendant から構成される。
+実際に各関節を協調して動かす制御の中心は Control Box 側にあり、
+TP 上の **PolyScope** はその上位にある操作・教示・プログラミング環境である。
+PolyScope で作成したロボットプログラムや外部 PC から送信した URScript は、
+最終的に Control Box 側の URControl で実行され、ロボット動作へ変換される。
 
-Universal Robots では、Control Box 内の **URControl** がロボット制御の中核となる。
-TP 上の **PolyScope** はその上位の操作・教示・プログラミング環境であり、
-PolyScope で作成・実行する動作は **URScript** を介して URControl の制御系へ渡される。
-外部 PC から URScript を直接送信して実行する経路も用意されている。
+外部 PC との通信には Universal Robots 公式の
+**RTDE**、
+**Primary / Secondary Interface**、
+**Dashboard Server** など複数の I/F が用意されている。
+このうち RTDE は、外部 PC と UR controller の間で controller の状態、
+I/O、汎用レジスタなどを双方向に読み書きする公式 I/F である。
+ただし **RTDE** 自体に `movej` や `movel` のようなロボット動作命令が定義されているわけではない。
+**RTDE** で渡した値をどの動作に使うかは、必要に応じて controller 側のロボットプログラムが受け持つ。
 
-**RTDE (Real-Time Data Exchange)** は Universal Robots が公式に提供する、
-外部 PC と UR controller 間の双方向データ I/F である。
-状態取得だけでなく、I/O、speed slider、汎用レジスタなど controller 側の入力値も書き込める。
-一方、公式 RTDE の標準入力項目には、`movej` や `movel` のようなロボット動作そのものを直接指定する命令はない。
-そのため RTDE を用いてロボット動作を構成する場合は、
-controller 側のプログラムが RTDE で受け取った値をどのような動作に使うかを定義する。
+現在スサノオで使用している `RTDEControlInterface` は Universal Robots 純正 API ではない。
+これは **SDU Robotics** が開発するオープンソースライブラリ `ur_rtde` の API であり、
+Universal Robots 公式 **RTDE** とロボット側で動作する **control URScript** を組み合わせ、
+PC から `moveJ`、`moveL`、`servoJ` などを呼べる形にまとめたものである。
+したがって、Universal Robots 公式の RTDE と SDU Robotics の `ur_rtde` は明確に区別して扱う必要がある。
 
-現在スサノオで使用している **`ur_rtde`** は Universal Robots 純正 SDK ではなく、
-**SDU Robotics が開発する第三者のオープンソースライブラリ**である。
-その `RTDEControlInterface` は、Universal Robots 公式 RTDE を通信に利用しつつ、
-ロボット側に専用の control URScript を実行させることで、
-`moveJ`、`moveL`、`servoJ` などの PC 側モーション API を構成している。
+現在の実装では、
+モーション制御に SDU Robotics の `RTDEControlInterface`、
+状態取得に `RTDEReceiveInterface`、
+I/O に `RTDEIOInterface`、
+コントローラ管理に Dashboard Server、
+controller message / error の取得に Primary Interface を利用している。
 
-したがって、
-**Universal Robots 公式 RTDE** と
-**SDU Robotics の `RTDEControlInterface`** は別物として扱う必要がある。
-現在のスサノオでは、モーション制御に SDU `RTDEControlInterface`、
-状態取得に `RTDEReceiveInterface`、I/O に `RTDEIOInterface`、
-管理系に `DashboardClient`、controller message / error 取得に Primary Interface を利用している。
-
-- [Universal Robots の制御構造と公式 I/F](ur_control_architecture.md)
+- [Universal Robots の制御アーキテクチャ](ur_control_architecture.md)
 - [公式 RTDE と SDU Robotics `ur_rtde`](ur_rtde_control.md)
- 
+
+
 ## JAKA
 ## FAIRINO
 ## Dobot
