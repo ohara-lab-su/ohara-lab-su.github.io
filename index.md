@@ -248,7 +248,7 @@ API の I/F を明示的に定義する方法も用意している。
 
 <img src="fig/dcs_robotto.png" width="85%" style="display:block; margin:auto;">
 
-### デンソーウェーブ
+### デンソーウェーブ {#cobotta}
 
 デンソーウェーブのロボットでは、
 コントローラ内部の Motion Generator / Robot Motion が実際のモーション制御を担い、
@@ -267,7 +267,7 @@ b-CAP はコントローラへアクセスする通信プロトコルという�
 
 - [スサノオにおける COBOTTA 制御の詳細](https://ohara-lab-su.github.io/cobotta2/)
 
-### ユニバーサルロボット
+### ユニバーサルロボット {#ur}
 
 Universal Robots のロボットは、
 Robot Arm、Control Box、
@@ -302,11 +302,24 @@ controller message / error の取得に Primary Interface を利用している�
 - [Universal Robots の制御アーキテクチャ](ur_control_architecture.md)
 - [公式 RTDE と SDU Robotics `ur_rtde`](ur_rtde_control.md)
 
+### JAKA
+JAKAのスサノオでの制御アレコレ
 
-## JAKA
-## FAIRINO
-## Dobot
-## FANATIC
+...
+### FAIRINO
+FAIRINOのスサノオでの制御アレコレ
+
+...
+
+### Dobot
+Dobotのスサノオでの制御アレコレ
+
+...
+
+### FANATIC
+FANATICのスサノオでの制御アレコレ
+
+...
 
 ## デバイスサーバー単位の緩やかな結合
 
