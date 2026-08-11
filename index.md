@@ -268,16 +268,45 @@ b-CAP はコントローラへアクセスする通信プロトコルという�
 ### ユニバーサルロボット
 
 Universal Robots では、
-コントローラ内部の URControl がロボットのモーション制御とプログラム実行を担い、
-その上でロボット言語である URScript が実行される。
+Control Box 上の URControl がロボットのプログラム実行、軌道生成、リアルタイム制御を担い、
+その下位で各関節のモータを制御する。
+ロボット制御言語として URScript が用意されており、
+movej、movel、servoj などの命令は URControl によって実際のロボットモーションへ変換される。
 
-TP 上の PolyScope はロボットの操作・プログラミング環境であり、
-そこで作成したプログラムも最終的には URScript としてコントローラで実行される
-。一方、PC からは PolyScope を介さず URScript をコントローラへ直接送信することもできる。
+TP 上の PolyScope は、この URControl を利用する上位の操作・プログラミング環境である。
+PolyScope 上で作成したロボットプログラムは実行時に URScript としてコントローラ上で実行される。
+したがって、TP 自体がモータを直接制御するのではなく、
+TP/PolyScope から作成されたプログラムも URScript を介して URControl のモーション制御系を利用する。
 
-さらに外部制御用として、ロボット状態や I/O などを周期的に交換する RTDE などの通信 I/F が用意されている。
-デンソーウェーブの ORiN2 のような共通デバイスフレームワークを上位に置く構成ではなく、
-URControl を中心として URScript や RTDE などの I/F を直接公開する構成となっている。
+外部 PC からも複数の方法で同じコントローラへアクセスできる。
+Primary / Secondary Interface などを利用する場合は、
+PC から URScript を直接送信し、コントローラ上で実行できる。
+この場合、TP/PolyScope と PC は異なる入口から同じ URScript 実行系を利用することになる。
+
+低レベルな外部制御には RTDE も用意されている。
+**RTDE** は URControl と外部 PC の間で、
+ロボット状態、I/O、レジスタなどを周期的に交換するための通信 I/F であり、それ自体がロボット言語ではない。
+
+現在スサノオで使用している **ur_rtde** の **RTDEControlInterface** は、
+この RTDE と URScript を組み合わせてモーション制御を行う。
+接続時に専用の control URScript をコントローラ上で実行し、
+PC 側の moveJ、moveL、servoJ などの要求を RTDE 経由でこのスクリプトへ渡す。
+control script は受け取った要求に応じて URScript のモーション命令を実行し、
+最終的に URControl のモーション制御系を動作させる。
+
+したがって Universal Robots では、TP/PolyScope からの通常運転、
+PC から直接送信する **URScript**、**RTDEControlInterface** を用いた外部制御のいずれも、
+最終的にはコントローラ内部の URScript/URControl の制御系へ接続される。
+一方、状態取得や I/O、
+コントローラの管理については **RTDE Receive**、
+**RTDE IO**、
+**Dashboard**、
+**Primary Interface** などの独立した I/F が用意されている。
+
+## JAKA
+## FAIRINO
+## Dobot
+## FANATIC
 
 ## デバイスサーバー単位の緩やかな結合
 
