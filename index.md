@@ -8,7 +8,7 @@
 - 2026/08/09: [ese774_frame 動的ディスパッチ update](https://github.com/ohara-lab-su/ese774_frame/)
 - 2026/08/08: [cobotta_ctrl_joypad update](https://github.com/ohara-lab-su/cobotta2/)
 - 2026/08/08: [動的ディスパッチの初学者向けのセクションを追加](#transparent-proxy)
-- [HISTORY](susanoo_history.md)
+- [HISTORY](history.md)
 
 
 # 対応デバイスサーバ一覧 {#device-server}
@@ -302,22 +302,49 @@ I/O に `RTDEIOInterface`、
 コントローラ管理に Dashboard Server、
 controller message / error の取得に Primary Interface を利用している。
 
-- [Universal Robots の制御アーキテクチャ](ur_control_architecture.md)
-- [公式 RTDE と SDU Robotics `ur_rtde`](ur_rtde_control.md)
+- [Universal Robots の制御アーキテクチャ](robo_ur_control_architecture.md)
+- [公式 RTDE と SDU Robotics `ur_rtde`](robo_ur_rtde_control.md)
 
 ### JAKA
-JAKAのスサノオでの制御アレコレ
 
-...
+JAKA の協働ロボットでは、
+Robot Arm と Controller が実際のモーション制御を担い、
+その上位に JAKA App による教示・操作、
+Controller 上で実行するロボットプログラム、
+外部 PC 用の公式 SDK / 通信 I/F が用意されている。
+外部 PC からは C/C++、C#、**Python の公式 SDK** を利用でき、
+**V3 Controller** では gRPC の利用が推奨されている。一方、TCP/IP 外部制御プロトコルも公開されており、Controller の状態取得や制御を独自に実装することも可能である。
+
+公式 GitHub では SDK や ROS / ROS2 関連資産も公開されている。
+ただし Python SDK は `jkrc` とメーカー提供の native library を利用する構成であり、
+公開 GitHub repository が存在することと、
+SDK 全体が純粋な OSS であることは分けて考える必要がある。
+
+* [JAKA の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_jaka_control.html)
+
 ### FAIRINO
-FAIRINOのスサノオでの制御アレコレ
 
-...
+FAIRINO の協働ロボットでは、Robot Arm と Control Box がモーション制御を担い、WebAPP / Teach Pendant が教示・操作環境となる。Controller 上のロボットプログラムには Lua が用いられ、これとは別に外部 PC から公式 SDK を用いて Joint / Cartesian motion、Jog、Servo motion、I/O、状態取得などを直接操作できる。
+
+Python、C++、C#、Java の公式 SDK が GitHub で公開されており、Python SDK は Apache-2.0 で公開されている。このため Python から独自の制御 class を構築する場合、第三者 wrapper を必須とせず、メーカー公式 SDK をそのまま基盤として利用しやすい。
+
+* [FAIRINO の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_fairino_control.html)
 
 ### Dobot
-Dobotのスサノオでの制御アレコレ
 
-...
+Dobot の CR / CRA 系協働ロボットでは、
+Robot Arm と Controller がモーション制御を担い、
+DobotStudio Pro が教示・操作・プログラミング環境となる。
+外部 PC 制御では Controller の TCP/IP protocol が公開されており、
+管理 command、motion command、real-time feedback などが異なる通信経路として整理されている。
+
+公式 GitHub では TCP/IP protocol を Python から利用する `TCP-IP-Python-V3` が
+MIT License で公開されているほか、
+ROS / ROS2 関連資産も公開されている。
+このため通信 protocol から Python 制御 class まで追いやすく、
+独自のデバイス制御層を構築しやすい構成である。
+
+* [Dobot の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_dobot_control.html)
 
 ### FANATIC
 FANATICのスサノオでの制御アレコレ
