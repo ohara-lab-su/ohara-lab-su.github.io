@@ -1,7 +1,5 @@
 # Ohara Lab | Software {#top}
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
-> Sustainable Unified Systems Architecture for Networked Operations and Orchestration 
-
 
 ## 更新履歴
 - 2026/08/11: [コボッタ制御](#cobotta)、[ユニバーサルロボット](#ur)の記事を追加
@@ -14,8 +12,7 @@
 
 
 # 対応デバイスサーバ一覧 {#device-server}
-**(*) 2026/03/03 ソースコードにはアクセス制限あり**
-
+**(*) 2026/03/03 ソースコードにはアクセス制限あり**。 
 以下は各機器ごとに**制御プログラム**とスサノオに対応した**デバイスサーバー**が公開されている。
 そのドキュメントを以下に示す。
 機器制御側は基本的に全て[スサノオ (仮)](#susanoo)とは独立して記述してあるために、
