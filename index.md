@@ -265,6 +265,8 @@ RC8 への通信ではその下位で b-CAP が利用されるため、
 ORiN2 は上位のデバイス抽象化、
 b-CAP はコントローラへアクセスする通信プロトコルという関係になる。
 
+- [スサノオにおける COBOTTA 制御の詳細](https://ohara-lab-su.github.io/cobotta2/)
+
 ### ユニバーサルロボット
 
 Universal Robots では、
@@ -303,6 +305,8 @@ PC から直接送信する **URScript**、**RTDEControlInterface** を用いた
 **Dashboard**、
 **Primary Interface** などの独立した I/F が用意されている。
 
+- [スサノオにおける UR 制御の詳細](https://ohara-lab-su.github.io/ur/)
+ 
 ## JAKA
 ## FAIRINO
 ## Dobot
