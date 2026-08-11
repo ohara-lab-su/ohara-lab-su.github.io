@@ -269,43 +269,34 @@ b-CAP はコントローラへアクセスする通信プロトコルという�
 
 ### ユニバーサルロボット
 
-Universal Robots では、
-Control Box 上の URControl がロボットのプログラム実行、軌道生成、リアルタイム制御を担い、
-その下位で各関節のモータを制御する。
-ロボット制御言語として URScript が用意されており、
-movej、movel、servoj などの命令は URControl によって実際のロボットモーションへ変換される。
 
-TP 上の PolyScope は、この URControl を利用する上位の操作・プログラミング環境である。
-PolyScope 上で作成したロボットプログラムは実行時に URScript としてコントローラ上で実行される。
-したがって、TP 自体がモータを直接制御するのではなく、
-TP/PolyScope から作成されたプログラムも URScript を介して URControl のモーション制御系を利用する。
+Universal Robots では、Control Box 内の **URControl** がロボット制御の中核となる。
+TP 上の **PolyScope** はその上位の操作・教示・プログラミング環境であり、
+PolyScope で作成・実行する動作は **URScript** を介して URControl の制御系へ渡される。
+外部 PC から URScript を直接送信して実行する経路も用意されている。
 
-外部 PC からも複数の方法で同じコントローラへアクセスできる。
-Primary / Secondary Interface などを利用する場合は、
-PC から URScript を直接送信し、コントローラ上で実行できる。
-この場合、TP/PolyScope と PC は異なる入口から同じ URScript 実行系を利用することになる。
+**RTDE (Real-Time Data Exchange)** は Universal Robots が公式に提供する、
+外部 PC と UR controller 間の双方向データ I/F である。
+状態取得だけでなく、I/O、speed slider、汎用レジスタなど controller 側の入力値も書き込める。
+一方、公式 RTDE の標準入力項目には、`movej` や `movel` のようなロボット動作そのものを直接指定する命令はない。
+そのため RTDE を用いてロボット動作を構成する場合は、
+controller 側のプログラムが RTDE で受け取った値をどのような動作に使うかを定義する。
 
-低レベルな外部制御には RTDE も用意されている。
-**RTDE** は URControl と外部 PC の間で、
-ロボット状態、I/O、レジスタなどを周期的に交換するための通信 I/F であり、それ自体がロボット言語ではない。
+現在スサノオで使用している **`ur_rtde`** は Universal Robots 純正 SDK ではなく、
+**SDU Robotics が開発する第三者のオープンソースライブラリ**である。
+その `RTDEControlInterface` は、Universal Robots 公式 RTDE を通信に利用しつつ、
+ロボット側に専用の control URScript を実行させることで、
+`moveJ`、`moveL`、`servoJ` などの PC 側モーション API を構成している。
 
-現在スサノオで使用している **ur_rtde** の **RTDEControlInterface** は、
-この RTDE と URScript を組み合わせてモーション制御を行う。
-接続時に専用の control URScript をコントローラ上で実行し、
-PC 側の moveJ、moveL、servoJ などの要求を RTDE 経由でこのスクリプトへ渡す。
-control script は受け取った要求に応じて URScript のモーション命令を実行し、
-最終的に URControl のモーション制御系を動作させる。
+したがって、
+**Universal Robots 公式 RTDE** と
+**SDU Robotics の `RTDEControlInterface`** は別物として扱う必要がある。
+現在のスサノオでは、モーション制御に SDU `RTDEControlInterface`、
+状態取得に `RTDEReceiveInterface`、I/O に `RTDEIOInterface`、
+管理系に `DashboardClient`、controller message / error 取得に Primary Interface を利用している。
 
-したがって Universal Robots では、TP/PolyScope からの通常運転、
-PC から直接送信する **URScript**、**RTDEControlInterface** を用いた外部制御のいずれも、
-最終的にはコントローラ内部の URScript/URControl の制御系へ接続される。
-一方、状態取得や I/O、
-コントローラの管理については **RTDE Receive**、
-**RTDE IO**、
-**Dashboard**、
-**Primary Interface** などの独立した I/F が用意されている。
-
-- [スサノオにおける UR 制御の詳細](https://ohara-lab-su.github.io/ur/)
+- [Universal Robots の制御構造と公式 I/F](ur_control_architecture.md)
+- [公式 RTDE と SDU Robotics `ur_rtde`](ur_rtde_control.md)
  
 ## JAKA
 ## FAIRINO
