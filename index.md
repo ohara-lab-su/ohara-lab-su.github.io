@@ -2,8 +2,6 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 > Sustainable Unified Systems Architecture for Networked Operations and Orchestration 
 
-* Toc
-{:toc}
 
 ## 更新履歴
 - 2026/08/11: [コボッタ制御](#cobotta)、[ユニバーサルロボット](#ur)の記事を追加
@@ -16,7 +14,6 @@
 - 2026/08/04: ページ文章と構成を少し修正
 - [HISTORY](susanoo_history.md)
 
----
 
 # 対応デバイスサーバ一覧 {#device-server}
 **(*) 2026/03/03 ソースコードにはアクセス制限あり**
@@ -60,6 +57,9 @@
 
 ---
 
+* Toc
+  {:toc}
+ 
 # スサノオとは？
 [return](#top)
 
@@ -379,7 +379,6 @@ FANACのスサノオでの制御アレコレ
 このようなマイクロな設計と、
 分散したオブジェクトの緩やかな結合が、本プロジェクトの目的である。
 
----
 
 # 分散システムとは？
 [return](#top)
@@ -435,7 +434,6 @@ Web ベースであるか？DDS のような本格的な分散ベースか？の
 スサノオでは BL774 ベースであるため、DDS ベースはとりあえずはコアライブラリとしては除外する。
 DDS との接続はロボットを使う上では必須であるため、枠組みに入れていく形にする。
 
----
 
 # デバイスオブジェクト {#device-object}
 [return](#top)
@@ -543,8 +541,6 @@ Python は多少は知っておく必要がある。
 </div>
 
 
----
-
 # 計算・解析オブジェクト
 
 
@@ -618,7 +614,6 @@ Python は多少は知っておく必要がある。
 - QE の基本的な使い方
 - キュリー温度の計算コード開発
 
---- 
 
 # 過去記事
 [return](#top)
