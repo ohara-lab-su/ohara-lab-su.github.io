@@ -282,14 +282,14 @@ Robot Arm、Control Box、
 Teach Pendant から構成される。
 実際に各関節を協調して動かす制御の中心は Control Box 側にあり、
 TP 上の **PolyScope** はその上位にある操作・教示・プログラミング環境である。
-PolyScope で作成したロボットプログラムや外部 PC から送信した URScript は、
-最終的に Control Box 側の URControl で実行され、ロボット動作へ変換される。
+PolyScope で作成したロボットプログラムや外部 PC から送信した **URScript** は、
+最終的に Control Box 側の **URControl** で実行され、ロボット動作へ変換される。
 
 外部 PC との通信には Universal Robots 公式の
 **RTDE**、
 **Primary / Secondary Interface**、
 **Dashboard Server** など複数の I/F が用意されている。
-このうち RTDE は、外部 PC と UR controller の間で controller の状態、
+このうち **RTDE** は、外部 PC と UR controller の間で controller の状態、
 I/O、汎用レジスタなどを双方向に読み書きする公式 I/F である。
 ただし **RTDE** 自体に `movej` や `movel` のようなロボット動作命令が定義されているわけではない。
 **RTDE** で渡した値をどの動作に使うかは、必要に応じて controller 側のロボットプログラムが受け持つ。
@@ -324,8 +324,8 @@ Dobotのスサノオでの制御アレコレ
 
 ...
 
-### FANATIC
-FANATICのスサノオでの制御アレコレ
+### FANAC
+FANACのスサノオでの制御アレコレ
 
 ...
 
