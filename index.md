@@ -417,6 +417,9 @@ FANACのスサノオでの制御アレコレ
 このようなマイクロな設計と、
 分散したオブジェクトの緩やかな結合が、本プロジェクトの目的である。
 
+<div align="center">
+<span style="padding:0 20px;">●</span>
+</div>
 
 # 分散システムとは？
 [return](#top)
@@ -472,6 +475,9 @@ Web ベースであるか？DDS のような本格的な分散ベースか？の
 スサノオでは BL774 ベースであるため、DDS ベースはとりあえずはコアライブラリとしては除外する。
 DDS との接続はロボットを使う上では必須であるため、枠組みに入れていく形にする。
 
+<div align="center">
+<span style="padding:0 20px;">●</span>
+</div>
 
 # スサノオの設計思想のまとめ
 
@@ -486,7 +492,9 @@ DDS との接続はロボットを使う上では必須であるため、枠組�
 この薄い通信層を介して、複数の DeviceClass をデバイスオブジェクトとして必要に応じて連携させる。
 また、ロボット API のように明確な目的がある場合を除き、Framework 側で API を統一することも基本的には行わない。
 
----
+<div align="center">
+<span style="padding:0 20px;">●</span>
+</div>
 
 # デバイスオブジェクト {#device-object}
 [return](#top)
