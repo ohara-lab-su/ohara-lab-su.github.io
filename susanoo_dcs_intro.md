@@ -164,16 +164,20 @@ MADOCA は TANGO でいうところのスターターデバイスサーバーが
 ## 実験系分散システムにおけるプロトコルのトレンド
 
 TANGOやMADOCAやBL774という言葉は、プロトコルを示す以上にフレームワークを示す言葉である。
-lowレベルのプロトコルで言えば、TANGOやMADOCAは ZMQ であり、BL774 は RestAPI である。これらをまとめる。
+lowレベルの通信基盤で言えば、TANGO は CORBA + ZMQ、MADOCA2 は ZMQ、BL774 は REST API である。
+これらをまとめる。
 少し調査と情報が古いうえに偏っているところもあるが、大型放射光施設をめぐるプロトコルとフレームワーク事情をまとめられたらと思う。
 あとロボット。
 
 <img src="fig/dcs_with_e.036.png" width="70%" style="display:block; margin:auto;">
 
 たとえば、ESRF の [TANGO](https://www.tango-controls.org/)
-は TANGO v10 からメッセージ通信においても、CORBA の同期通信から ZMQ の非同期に変わるなど古いプロトコル(CORBA)を捨てる動きが本格化している。
+は現在も command / attribute の request / reply に CORBA、event 配信に ZMQ を用いる構成である。
+CORBA 依存を減らす議論は続いているが、
+TANGO v10 で全面的に ZMQ へ移行したわけではない。
 
-欧州でロボットで使われることの多い ROS は ROS1 系は CORBA であったが、ROS2系かからDDS基盤への完全に移行している。
+欧州でロボットで使われることの多い ROS は、ROS1 系では主に TCPROS / UDPROS など独自の通信を用いていた。
+ROS2 系では通信ミドルウェアを抽象化し、DDS を標準的な基盤として利用している。
 デンソーウェーブのORiN2は ROS1 への接続へは拡張はできるが、ROS2は完全に非対応なので、
 もはや過去の遺物とかしている。
 
