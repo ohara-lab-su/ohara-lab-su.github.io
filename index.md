@@ -383,7 +383,7 @@ FANACのスサノオでの制御アレコレ
 どのような汎用 API を用意して、どのような大きな構成を見据えた巨大なフレームワークを作っても、
 上位の命令・実行系は AI を含めて今後も大きく変化していくと考えられるからだ。
 
-<img src="fig/device-server.png" width="80%" style="display:block; margin:auto;">
+<img src="fig/device-server.png" width="95%" style="display:block; margin:auto;">
 
 その時に残るシステムバックエンドは、
 保守メンテナンスに優れたデバイス単位のミニマムな構成である。
@@ -412,7 +412,7 @@ FANACのスサノオでの制御アレコレ
 測定結果を解析し、その結果から次の動作や測定条件を決定する、
 自律的な自動実験へ容易に展開することができる。
 
-<img src="fig/automation.png" width="80%" style="display:block; margin:auto;">
+<img src="fig/automation.png" width="95%" style="display:block; margin:auto;">
 
 巨大なフレームワークは、その時代の技術や要求に強く依存し、
 一度構築しても短期間で陳腐化する。
@@ -460,7 +460,7 @@ TANGO の影響を強く受けている。
 REST API を中心とする Web 技術を使うことで、
 プロトコルそのものの開発だけでなく、導入・デバッグ・保守を含めた運用コストを小さくする方向である。
 
-<img src="fig/dst-system.png" width="85%" style="display:block; margin:auto;">
+<img src="fig/dst-system.png" width="95%" style="display:block; margin:auto;">
 
 これらの違いは、単純な機能の多寡や優劣ではない。
 分散制御の機能をプロトコルや Framework 側へ多く持たせれば、
