@@ -383,7 +383,7 @@ FANACのスサノオでの制御アレコレ
 どのような汎用 API を用意して、どのような大きな構成を見据えた巨大なフレームワークを作っても、
 上位の命令・実行系は AI を含めて今後も大きく変化していくと考えられるからだ。
 
-<img src="fig/device-server.png" width="85%" style="display:block; margin:auto;">
+<img src="fig/device-server.png" width="80%" style="display:block; margin:auto;">
 
 その時に残るシステムバックエンドは、
 保守メンテナンスに優れたデバイス単位のミニマムな構成である。
@@ -412,7 +412,7 @@ FANACのスサノオでの制御アレコレ
 測定結果を解析し、その結果から次の動作や測定条件を決定する、
 自律的な自動実験へ容易に展開することができる。
 
-<img src="fig/automation.png" width="85%" style="display:block; margin:auto;">
+<img src="fig/automation.png" width="80%" style="display:block; margin:auto;">
 
 巨大なフレームワークは、その時代の技術や要求に強く依存し、
 一度構築しても短期間で陳腐化する。
