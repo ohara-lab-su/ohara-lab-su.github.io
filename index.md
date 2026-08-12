@@ -47,8 +47,9 @@ REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付�
 
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/), ([source](https://github.com/ohara-lab-su/ese774_frame/)) SPring-8 BL774 互換風味
 - 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/), ([source](https://github.com/ohara-lab-su/grpc_frame/)) 高速な gRPC 転送用
-- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage
-- 通信Frame: DDS frame
+- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage, ESRFの資産を使うとき
+- 通信Frame: DDS frame, 高度なルーティングが必要なとき
+- 通信Frame: MQTT frame, 一体多数制御に特化
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
 
 ## others
@@ -563,7 +564,7 @@ DeviceClass
     ├─ ese774 Frame (REST / FastAPI), SPring-8互換層
     ├─ gRPC Frame, 高速通信層
     ├─ TANGO Frame, ESRFの資産を使うための層
-    └─ DDS Frame, ROS2関連資産を使うための層 (もし管理層などを作るときはこちらを中心に？)
+    └─ DDS Frame, 高度なルーティングを使う, ROS2資産を使うとき
 ```
 
 機器固有の制御と通信を分離し、
