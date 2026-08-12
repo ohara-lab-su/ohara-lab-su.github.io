@@ -82,7 +82,7 @@ and
 測定・解析・可視化・判断などをトータルで扱うための、
 **デバイス単位の緩やかな結合**を基本思想としている。
 
-(*) 名前は変わる可能性がある
+(*) 名前は変わる可能性がある。島根県はスサノオと命名されたプロジェクトがあまりにも多すぎる。
 
 ## スサノオの概要
 [return](#top)
@@ -323,6 +323,7 @@ controller message / error の取得に Primary Interface を利用している�
 - [公式 RTDE と SDU Robotics `ur_rtde`](robo_ur_rtde_control.md)
 
 ### JAKA
+[return](#top)
 
 JAKA の協働ロボットでは、
 Robot Arm と Controller が実際のモーション制御を担い、
@@ -340,6 +341,7 @@ SDK 全体が純粋な OSS であることは分けて考える必要がある�
 * [JAKA の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_jaka_control.html)
 
 ### FAIRINO
+[return](#top)
 
 FAIRINO の協働ロボットでは、Robot Arm と Control Box がモーション制御を担い、WebAPP / Teach Pendant が教示・操作環境となる。Controller 上のロボットプログラムには Lua が用いられ、これとは別に外部 PC から公式 SDK を用いて Joint / Cartesian motion、Jog、Servo motion、I/O、状態取得などを直接操作できる。
 
@@ -348,6 +350,7 @@ Python、C++、C#、Java の公式 SDK が GitHub で公開されており、Pyt
 * [FAIRINO の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_fairino_control.html)
 
 ### Dobot
+[return](#top)
 
 Dobot の CR / CRA 系協働ロボットでは、
 Robot Arm と Controller がモーション制御を担い、
@@ -364,6 +367,7 @@ ROS / ROS2 関連資産も公開されている。
 * [Dobot の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_dobot_control.html)
 
 ### FANAC
+[return](#top)
 FANACのスサノオでの制御アレコレ
 
 ...
@@ -579,6 +583,7 @@ DeviceClass
 </div>
 
 # スサノオの設計思想のまとめ
+[return](#top)
 
 スサノオは、DeviceClass ベースのシンプルな構成を基本としている。
 
@@ -709,7 +714,7 @@ Python は多少は知っておく必要がある。
 
 
 # 計算・解析オブジェクト
-
+[return](#top)
 
 実験制御たるデバイスサーバー（デバイスクラス）と連携する計算・解析オブジェクトを提供する
 
@@ -781,6 +786,9 @@ Python は多少は知っておく必要がある。
 - QE の基本的な使い方
 - キュリー温度の計算コード開発
 
+<div align="center">
+<span style="padding:0 20px;">●</span>
+</div>
 
 # 過去記事
 [return](#top)
@@ -803,7 +811,7 @@ Python は多少は知っておく必要がある。
 ## 古い記事へのリンク
 [return](#top)
 
-- [DARUMA project](http://daruma.spring8.or.jp/) (2019.12 プロジェクト更新は無くなりました。その時点でのプロジェクト内容)
+- [DARUMA project](http://daruma.spring8.or.jp/) (2019.12 プロジェクト更新は無くなりました。その時点でのプロジェクト内容。SPring-8 キャンパス内では閲覧可能)
 - [計算関係の役立ちリンク](abinit/index.md)
 
 ---
