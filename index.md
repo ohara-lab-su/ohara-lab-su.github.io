@@ -2,6 +2,7 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
+- 2026/08/12: [ese774_frame 完全透過型 Quick Start を追加](susanoo_ese774_quickstart.md)
 - 2026/08/12: [分散システムの記事を update](#distributed-system)
 - 2026/08/11: [コボッタ制御](#cobotta)、[ユニバーサルロボット](#ur)の記事を追加
 - 2026/08/10: [n10w02 update](https://github.com/ohara-lab-su/n10w02/)
@@ -640,9 +641,10 @@ DeviceClass
 
 4 の作業をより簡略化するために、1 をうまく作ると良い。
 すでに我々が用意しているものはこの後のセクションにある。
-これらの具体的作業を下記に記す。
 
-...
+例外処理を必要としない、最も単純な完全透過型の作成例を下記に示す。
+
+- [ese774_frame 完全透過型 Quick Start](susanoo_ese774_quickstart.md)
 
 ## デバイスサーバー作成 (Pydantic/OpenAPI タイプ)
 [return](#top)
