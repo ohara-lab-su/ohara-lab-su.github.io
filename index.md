@@ -2,6 +2,7 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
+- 2026/08/12: [分散システムの記事を update](#distributed-system)
 - 2026/08/11: [コボッタ制御](#cobotta)、[ユニバーサルロボット](#ur)の記事を追加
 - 2026/08/10: [n10w02 update](https://github.com/ohara-lab-su/n10w02/)
 - 2026/08/10: [高速な gRPC 転送用 grpc_frame update](https://github.com/ohara-lab-su/grpc_frame/)
@@ -382,6 +383,8 @@ FANACのスサノオでの制御アレコレ
 どのような汎用 API を用意して、どのような大きな構成を見据えた巨大なフレームワークを作っても、
 上位の命令・実行系は AI を含めて今後も大きく変化していくと考えられるからだ。
 
+<img src="fig/device-server.png" width="85%" style="display:block; margin:auto;">
+
 その時に残るシステムバックエンドは、
 保守メンテナンスに優れたデバイス単位のミニマムな構成である。
 インテリジェントな構成はその上位に任せれば良い。
@@ -409,6 +412,8 @@ FANACのスサノオでの制御アレコレ
 測定結果を解析し、その結果から次の動作や測定条件を決定する、
 自律的な自動実験へ容易に展開することができる。
 
+<img src="fig/automation.png" width="85%" style="display:block; margin:auto;">
+
 巨大なフレームワークは、その時代の技術や要求に強く依存し、
 一度構築しても短期間で陳腐化する。
 また、フレームワークが巨大になればなるほど、
@@ -426,7 +431,7 @@ FANACのスサノオでの制御アレコレ
 <span style="padding:0 20px;">●</span>
 </div>
 
-# 分散システムとは？
+# 分散システムとは？ {#distributed-system}
 [return](#top)
 
 スサノオの分散環境は、単純に特定の通信方式や Framework を選んで構成したものではない。
@@ -455,6 +460,8 @@ TANGO の影響を強く受けている。
 REST API を中心とする Web 技術を使うことで、
 プロトコルそのものの開発だけでなく、導入・デバッグ・保守を含めた運用コストを小さくする方向である。
 
+<img src="fig/dst-system.png" width="85%" style="display:block; margin:auto;">
+
 これらの違いは、単純な機能の多寡や優劣ではない。
 分散制御の機能をプロトコルや Framework 側へ多く持たせれば、
 メッセージルーティング、非同期通信、イベント配信、名前解決、起動管理などを
@@ -476,7 +483,7 @@ REST API を中心とする Web 技術を使うことで、
 BL774 型の独立したデバイスサーバーを基本とし、
 必要な通信機能だけを用途に応じて選択する方を採っている。
 
-**MADOCA/DARUMA や TANGO のようなフルスタック型の分散制御システムを
+つまり、**MADOCA/DARUMA や TANGO のようなフルスタック型の分散制御システムを
 新たに構築することは目的としない。**
 
 その代わり、機器固有の制御を担う DeviceClass を長く利用できる基本単位とし、
@@ -500,7 +507,7 @@ DeviceClass の外側に置かれる交換可能な通信層として扱う。
    BL774 / TANGO / MADOCA/DARUMA / ROS2 などの通信モデル
 
 
-## スサノオにおける分散システム
+## スサノオにおける分散システム {#distributed-system-susanoo}
 [return](#top)
 
 - [スサノオのシステム](susanoo_system.md)
