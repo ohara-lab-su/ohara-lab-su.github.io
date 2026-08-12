@@ -461,7 +461,9 @@ REST API を中心とする Web 技術を使うことで、
 共通基盤の機能は小さくなるが、デバイス単位で追加・交換しやすく、
 小規模な実験環境を小さいまま維持しやすい。
 
-結局は、 **プロトコルを高度にするか、Framework を高度にするか、運用を高度にするか、
+結局は、 
+
+**プロトコルを高度にするか、Framework を高度にするか、運用を高度にするか、
 あるいは用途と規模を限定して共通基盤を小さくするか、という選択になる。**
 
 スサノオでは、最大でも SPring-8 の BL 単位、通常は研究室の実験環境を対象とする。
@@ -558,10 +560,10 @@ TANGO 環境との接続が必要な場合には TANGO Frame を利用する。
 
 ```text
 DeviceClass
-    ├─ ese774 Fraee (REST / FastAPI)
-    ├─ gRPC Frame
-    ├─ TANGO Frame
-    └─ DDS Frame
+    ├─ ese774 Frame (REST / FastAPI), SPring-8互換層
+    ├─ gRPC Frame, 高速通信層
+    ├─ TANGO Frame, ESRFの資産を使うための層
+    └─ DDS Frame, ROS2関連資産を使うための層 (もし管理層などを作るときはこちらを中心に？)
 ```
 
 機器固有の制御と通信を分離し、
