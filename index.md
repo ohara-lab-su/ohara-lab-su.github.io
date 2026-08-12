@@ -265,7 +265,7 @@ OpenAPI による I/F が必要な場合には選択して利用できる。
 各社を横断した API セットは、メーカーではできない、大学らしい設計となる。
 各社の違いを超えて、実験する人が容易に置き換えることを目的としている。
 
-<img src="fig/dcs_robotto.png" width="85%" style="display:block; margin:auto;">
+<img src="fig/dcs_robotto.png" width="90%" style="display:block; margin:auto;">
 
 ### デンソーウェーブcobotta {#cobotta}
 [return](#top)
