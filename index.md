@@ -744,8 +744,9 @@ Python は多少は知っておく必要がある。
 - RMC (ANN) 機械学習ポテンシャル利用 (AENET の ANN ポテンシャル) / ([支援ライブラリ](https://github.com/ohara-lab-su/ann_env)) ANN 作成/利用 支援ライブラリ
 - [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC/DFT に関するクラスライブラリと RMC-DFT 計算コード
   - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
-  - [RMC_DFT: VASP 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/vasp)
+  - [RMC-DFT: VASP 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/vasp)
   - RMC-DFT: QE (Quantum ESPRESSO) 支援クラスライブラリ
+  - RMC-DFT: AENET (ANNポテンシャル) 支援クラスライブラリ
 - [RMC-MLP: ACE](https://ohara-lab-su.github.io/ace_env/), ACE を MD/DFT の代わりに使うための支援
 - [RMC-MLP: GAP](https://ohara-lab-su.github.io/gap_env/), MLP を MD/DFT の代わりに使うための支援。苦労の割には報われない気がする。それよりは、RMC の制約・補正としての ANN が RMC
 - RMC-MD: LAMMPS
@@ -770,7 +771,8 @@ Python は多少は知っておく必要がある。
 
 - [機械学習ポテンシャル ACE](https://github.com/kengo-nakada/ace_env) (非晶質にはちょっと学習向いてないかも)
 - 機械学習ポテンシャル SNAP
-- 機械学習ポテンシャル GAP (割と本命)
+- 機械学習ポテンシャル GAP (機械学習では割と本命)
+- 機械学習ポテンシャル ANET (深層学習では割と本命)
 
 ## 計算・データ解析 (DFT): source
 [return](#top)
