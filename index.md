@@ -320,8 +320,8 @@ I/O に `RTDEIOInterface`、
 コントローラ管理に Dashboard Server、
 controller message / error の取得に Primary Interface を利用している。
 
-- [Universal Robots の制御アーキテクチャ](robo_ur_control_architecture.md)
-- [公式 RTDE と SDU Robotics `ur_rtde`](robo_ur_rtde_control.md)
+- [Universal Robots の制御アーキテクチャ](robo/robo_ctrl_ur_control_architecture.md)
+- [公式 RTDE と SDU Robotics `ur_rtde`](robo/robo_ctrl_ur_rtde_control.md)
 
 ### JAKA
 [return](#top)
@@ -500,10 +500,10 @@ DeviceClass の外側に置かれる交換可能な通信層として扱う。
 
 この判断の背景となる分散制御モデルとノード間通信については、以下にまとめている。
 
-1. [機器制御における分散モデル](susanoo_dcs_intro.html)  
+1. [機器制御における分散モデル](dcs/susanoo_dcs_intro.html)  
    中央集権型、デバイスサーバー型、本格的な分散制御、
    BL774 / TANGO / MADOCA などの構成と運用上の違い
-2. [分散ノード通信の基礎](susanoo_dcs_com.html)  
+2. [分散ノード通信の基礎](dcs/susanoo_dcs_com.html)  
    REQ/REP、ROUTER/DEALER、PUB/SUB と、
    BL774 / TANGO / MADOCA/DARUMA / ROS2 などの通信モデル
 
