@@ -1,5 +1,7 @@
 # Universal Robots の制御アーキテクチャ
 
+[return](index.html#ur)
+
 Universal Robots の制御を理解するには、
 「実際にロボットを動かしている制御はどこにあり、
 それぞれの I/F がその制御にどう接続するか」を見る必要がある。
