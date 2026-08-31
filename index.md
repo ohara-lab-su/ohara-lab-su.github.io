@@ -339,7 +339,7 @@ Controller 上で実行するロボットプログラム、
 公開 GitHub repository が存在することと、
 SDK 全体が純粋な OSS であることは分けて考える必要がある。
 
-* [JAKA の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_jaka_control.html)
+* [JAKA の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_ctrl_jaka.html)
 
 ### FAIRINO
 [return](#top)
@@ -348,7 +348,7 @@ FAIRINO の協働ロボットでは、Robot Arm と Control Box がモーショ�
 
 Python、C++、C#、Java の公式 SDK が GitHub で公開されており、Python SDK は Apache-2.0 で公開されている。このため Python から独自の制御 class を構築する場合、第三者 wrapper を必須とせず、メーカー公式 SDK をそのまま基盤として利用しやすい。
 
-* [FAIRINO の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_fairino_control.html)
+* [FAIRINO の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_ctrl_fairino.html)
 
 ### Dobot
 [return](#top)
@@ -359,13 +359,14 @@ DobotStudio Pro が教示・操作・プログラミング環境となる。
 外部 PC 制御では Controller の TCP/IP protocol が公開されており、
 管理 command、motion command、real-time feedback などが異なる通信経路として整理されている。
 
-公式 GitHub では TCP/IP protocol を Python から利用する `TCP-IP-Python-V3` が
+公式 GitHub では TCP/IP protocol を Python から利用する
+[`TCP-IP-4Axis-Python`](https://github.com/Dobot-Arm/TCP-IP-4Axis-Python?utm_source=chatgpt.com) が
 MIT License で公開されているほか、
 ROS / ROS2 関連資産も公開されている。
 このため通信 protocol から Python 制御 class まで追いやすく、
 独自のデバイス制御層を構築しやすい構成である。
 
-* [Dobot の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_dobot_control.html)
+* [Dobot の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_ctrl_dobot.html)
 
 ### FANAC
 [return](#top)
