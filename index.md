@@ -2,6 +2,7 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
+- 2026/09/08: [Dobot](https://github.com/ohara-lab-su/dobot/)
 - 2026/08/26: [RMC_DFT DOC (かなり古いバージョンbase)](https://ohara-lab-su.github.io/rmc_dft/)
 - 2026/08/26: [RMC_DFT](https://github.com/ohara-lab-su/rmc_dft/)
 - 2026/08/26: [packmol_util (非晶質・分子作成)](https://github.com/ohara-lab-su/packmol_util/)
@@ -33,6 +34,7 @@ REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付�
 - ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2/) / ([source](https://github.com/ohara-lab-su/cobotta2/))
 - ロボット制御class: [cobotta 文字書き](https://ohara-lab-su.github.io/glyph_motion/), ([source](https://github.com/ohara-lab-su/glyph_motion/))
 - ロボット制御class: [UR (UR3e)](https://ohara-lab-su.github.io/ur/), ([source](https://github.com/ohara-lab-su/ur/))
+- ロボット制御class: [Dobot](https://ohara-lab-su.github.io/dobot/), ([source](https://github.com/ohara-lab-su/dobot))
 - ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad/), ([source](https://github.com/ohara-lab-su/cobotta2_joypad/))
 - 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader/), ([source](https://github.com/ohara-lab-su/aandd_reader/))
 - 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix/), ([source](https://github.com/ohara-lab-su/mini_pix/))
