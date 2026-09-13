@@ -2,6 +2,8 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
+- 2026/09/13: [process_executor](https://github.com/ohara-lab-su/process_executor/)
+- 2026/09/11: [PM2CD](https://github.com/ohara-lab-su/pm2cd/)
 - 2026/09/08: [Dobot](https://github.com/ohara-lab-su/dobot/)
 - 2026/08/26: [RMC_DFT DOC (かなり古いバージョンbase)](https://ohara-lab-su.github.io/rmc_dft/)
 - 2026/08/26: [RMC_DFT](https://github.com/ohara-lab-su/rmc_dft/)
