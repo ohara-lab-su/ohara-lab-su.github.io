@@ -55,7 +55,7 @@ REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付�
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage, ESRFの資産を使うとき
 - 通信Frame: DDS frame, 高度なルーティングが必要なとき
 - 通信Frame: MQTT frame, 一体多数制御に特化
-- プロセス Executor: [process_executor](https://ohara-lab-su.github.io/process_executor/),
+- プロセス Executor: [process_executor](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/)
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
 
 ## others
