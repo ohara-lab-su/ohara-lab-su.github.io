@@ -749,8 +749,8 @@ Python は多少は知っておく必要がある。
 - [RMC-MLP: ACE](https://ohara-lab-su.github.io/ace_env/), ACE を MD/DFT の代わりに使うための支援
 - [RMC-MLP: GAP](https://ohara-lab-su.github.io/gap_env/), MLP を MD/DFT の代わりに使うための支援。苦労の割には報われない気がする。それよりは、RMC の制約・補正としての ANN が RMC
 - RMC-MD: LAMMPS
-- [webPDF の Rust 版（パラメータ自動調整版)](https://ohara-lab-su.github.io/rust_pdf/web/) / ([source](https://github.com/ohara-lab-su/rust_pdf/))
-- [webPDF local](https://ohara-lab-su.github.io/local_pdf), ([source](https://github.com/ohara-lab-su/local_pdf)) 廃止予定？/Rust 版へ統合
+- [webPDF Rust版（パラメータ自動調整版)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://github.com/ohara-lab-su/rust_pdf/web)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
+- [webPDF local版 (パラメータ手動版)](https://ohara-lab-su.github.io/local_pdf), ([source](https://github.com/ohara-lab-su/local_pdf)) 廃止予定？/Rust 版へ統合
 
 
 ## 計算・データ解析 (MD): source
