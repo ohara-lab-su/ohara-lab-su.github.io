@@ -2,7 +2,7 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
-- 2026/09/24: [RustPDF (local I/F整備・マニュアル)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://github.com/ohara-lab-su/rust_pdf/web)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
+- 2026/09/24: [RustPDF (local I/F整備・マニュアル)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - 2026/09/24: [process_executor マニュアル整備](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/))
 - 2026/09/15: [localPDF マニュアル整備](https://ohara-lab-su.github.io/local_pdf/), ([source](https://github.com/ohara-lab-su/local_pdf/))
 - 2026/09/14: [PM2CD 0.1.0](https://github.com/ohara-lab-su/pm2cd/)
