@@ -1,29 +1,34 @@
 # Ohara Lab | Software {#top}
+
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
-- 2026/09/24: [RustPDF (pages 修正)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
-- 2026/09/24: [process_executor マニュアル整備](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/))
-- 2026/09/16: [RustPDF (local I/F整備・マニュアル)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
-- 2026/09/15: [localPDF マニュアル整備](https://ohara-lab-su.github.io/local_pdf/), ([source](https://github.com/ohara-lab-su/local_pdf/))
-- 2026/09/14: [PM2CD 0.1.0](https://github.com/ohara-lab-su/pm2cd/)
+
+- 2026/09/24: [RustPDF (pages 修正)](https://ohara-lab-su.github.io/rust_pdf/),
+  ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
+- 2026/09/24: [process_executor マニュアル整備](https://ohara-lab-su.github.io/process_executor/),
+  ([source](https://github.com/ohara-lab-su/process_executor/))
+- 2026/09/16: [RustPDF (local I/F整備・マニュアル)](https://ohara-lab-su.github.io/rust_pdf/),
+  ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
+- 2026/09/15: [localPDF マニュアル整備](https://ohara-lab-su.github.io/local_pdf/),
+  ([source](https://github.com/ohara-lab-su/local_pdf/))
+- 2026/09/14: [PM2CD 0.1.0](https://ohara-lab-su.github.io/pm2cd/), ([source](https://github.com/ohara-lab-su/pm2cd/))
 - 2026/09/14: [process_executor 0.1.1](https://github.com/ohara-lab-su/process_executor/)
 - 2026/09/14: [ese774_frame 0.6.0](https://github.com/ohara-lab-su/ese774_frame)
 - 2026/09/13: [process_executor](https://github.com/ohara-lab-su/process_executor/)
 - [HISTORY](history.md)
 
-
 # DeviceClass・デバイスサーバ一覧 {#device-server}
 
 スサノオは **DeviceClass ベース**のシンプルな構成を基本としている。
 基本単位は、特定の Framework や通信 protocol に依存しない、
-個別の**機器制御 class** である。
+個別の **機器制御 class** である。
 各機器制御 class はスサノオとは独立して単独で利用できる。
 
 ネットワーク越しの利用が必要な場合にのみ、
 REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付加してデバイスサーバーとして利用する。
-以下では、各機器ごとの**制御プログラム (DeviceClass)** と、
-スサノオに対応した**デバイスサーバー**を示す。
+以下では、各機器ごとの **制御プログラム (DeviceClass)** と、
+スサノオに対応した **デバイスサーバー**を示す。
 
 スサノオを利用しない場合でも、下記の制御 class はそのまま利用できる。
 
@@ -31,64 +36,77 @@ REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付�
 
 ## DeviceClass {#device-class}
 
-- ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2/) / ([source](https://github.com/ohara-lab-su/cobotta2/))
-- ロボット制御class: [cobotta 文字書き](https://ohara-lab-su.github.io/glyph_motion/), ([source](https://github.com/ohara-lab-su/glyph_motion/))
+- ロボット制御class: [cobotta](https://ohara-lab-su.github.io/cobotta2/) /
+  ([source](https://github.com/ohara-lab-su/cobotta2/))
+- ロボット制御class: [cobotta 文字書き](https://ohara-lab-su.github.io/glyph_motion/),
+  ([source](https://github.com/ohara-lab-su/glyph_motion/))
 - ロボット制御class: [UR (UR3e)](https://ohara-lab-su.github.io/ur/), ([source](https://github.com/ohara-lab-su/ur/))
 - ロボット制御class: [Dobot](https://ohara-lab-su.github.io/dobot/), ([source](https://github.com/ohara-lab-su/dobot))
-- ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad/), ([source](https://github.com/ohara-lab-su/cobotta2_joypad/))
-- 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader/), ([source](https://github.com/ohara-lab-su/aandd_reader/))
-- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix/), ([source](https://github.com/ohara-lab-su/mini_pix/))
-- マルチメータclass: [xdm1000](https://ohara-lab-su.github.io/xdm1000/), ([source](https://github.com/ohara-lab-su/xdm1000/))
-- モーター制御class: [ツジ電子 PM16C](https://ohara-lab-su.github.io/pm16c16/), ([source](https://github.com/ohara-lab-su/pm16c16/))
-- モーター制御class: [ツジ電子 PM2CD](https://ohara-lab-su.github.io/pm2cd/), ([source](https://github.com/ohara-lab-su/pm2cd/))
-- 画像転送class: [n10w02 (コボッタ付属カメラ)](https://ohara-lab-su.github.io/n10w02/), ([source](https://github.com/ohara-lab-su/n10w02/))
-- 画像転送class: [Web cam (OpenCV を使ったカメラ)](https://ohara-lab-su.github.io/image_server/), ([source](https://github.com/ohara-lab-su/image_server/))
-- 粉体の位置測定class: [powder-level-monitor](https://ohara-lab-su.github.io/powder_level_monitor/), ([source](https://github.com/ohara-lab-su/powder_level_monitor/))
-- 通信Frame テスト class: dummy_device, ([source](https://github.com/ohara-lab-su/ese774_dummy/)) ese774_frame 試験用の仮想のデバイス
+- ロボットGUI: [cobotta_joypad (GUI)](https://ohara-lab-su.github.io/cobotta2_joypad/),
+  ([source](https://github.com/ohara-lab-su/cobotta2_joypad/))
+- 電子天秤制御class: [aandd_reader](https://ohara-lab-su.github.io/aandd_reader/),
+  ([source](https://github.com/ohara-lab-su/aandd_reader/))
+- 二次元検出機class: [MiniPIX](https://ohara-lab-su.github.io/mini_pix/),
+  ([source](https://github.com/ohara-lab-su/mini_pix/))
+- マルチメータclass: [xdm1000](https://ohara-lab-su.github.io/xdm1000/),
+  ([source](https://github.com/ohara-lab-su/xdm1000/))
+- モーター制御class: [ツジ電子 PM16C](https://ohara-lab-su.github.io/pm16c16/),
+  ([source](https://github.com/ohara-lab-su/pm16c16/))
+- モーター制御class: [ツジ電子 PM2CD](https://ohara-lab-su.github.io/pm2cd/),
+  ([source](https://github.com/ohara-lab-su/pm2cd/))
+- 画像転送class: [n10w02 (コボッタ付属カメラ)](https://ohara-lab-su.github.io/n10w02/),
+  ([source](https://github.com/ohara-lab-su/n10w02/))
+- 画像転送class: [Web cam (OpenCV を使ったカメラ)](https://ohara-lab-su.github.io/image_server/),
+  ([source](https://github.com/ohara-lab-su/image_server/))
+- 粉体の位置測定class: [powder-level-monitor](https://ohara-lab-su.github.io/powder_level_monitor/),
+  ([source](https://github.com/ohara-lab-su/powder_level_monitor/))
+- 通信Frame テスト class: dummy_device, ([source](https://github.com/ohara-lab-su/ese774_dummy/)) ese774_frame
+  試験用の仮想のデバイス
 
 ## Framework {#frame-work}
 
-- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/), ([source](https://github.com/ohara-lab-su/ese774_frame/)) SPring-8 BL774 互換風味
-- 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/), ([source](https://github.com/ohara-lab-su/grpc_frame/)) 高速な gRPC 転送用
-- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage, ESRFの資産を使うとき
+- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/),
+  ([source](https://github.com/ohara-lab-su/ese774_frame/)) SPring-8 BL774 互換風味
+- 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/),
+  ([source](https://github.com/ohara-lab-su/grpc_frame/)) 高速な gRPC 転送用
+- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/),
+  ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage, ESRFの資産を使うとき
 - 通信Frame: DDS frame, 高度なルーティングが必要なとき
 - 通信Frame: MQTT frame, 一体多数制御に特化
-- プロセス Executor: [process_executor](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/))
-- ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
+- プロセス Executor: [process_executor](https://ohara-lab-su.github.io/process_executor/),
+  ([source](https://github.com/ohara-lab-su/process_executor/))
+- ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/),
+  ([source](https://github.com/ohara-lab-su/x_logger/))
 
 ## others
 
-- メール送信サーバ: [notify_server](https://ohara-lab-su.github.io/notify_server/), ([source](https://github.com/ohara-lab-su/notify_server/))
-- Web カメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) Web カメラ画像を gRPC 転送するだけ (alpha stage)
+- メール送信サーバ: [notify_server](https://ohara-lab-su.github.io/notify_server/),
+  ([source](https://github.com/ohara-lab-su/notify_server/))
+- Web カメラ制御: [camera_control](https://github.com/shimane-dev/web_camera) Web カメラ画像を gRPC 転送するだけ (alpha
+  stage)
 - WebSocket カメラ制御: [WebSocket によるリアルタイム通信 (過去資産+次のあれこれ alpha 版)]()
 - [過去資産の移行](susanoo_porting.md)
 
 ---
 
 * Toc
-{:toc}
- 
+  {:toc}
+
 # スサノオとは？ {#susanoo}
+
 [return](#top)
 
 島根大学が開発する、SPring-8 の **[BL774](https://user.spring8.or.jp/sp8info/?p=42759)** 互換 (ese774)
-を用いた一連の計測システムを
-**S**ustainable
-**U**nified
-**S**ystems
-**A**rchitecture
-for
-**N**etworked
-**O**perations
-and
-**O**rchestration
+を用いた一連の計測システムを **S**ustainable **U**nified **S**ystems **A**rchitecture
+for **N**etworked **O**perations
+and **O**rchestration
 の頭文字を取り、スサノオ (SUSANOO) と読んでいる (*)。
-測定・解析・可視化・判断などをトータルで扱うための、
-**デバイス単位の緩やかな結合**を基本思想としている。
+測定・解析・可視化・判断などをトータルで扱うための、 **デバイス単位の緩やかな結合**を基本思想としている。
 
 (*) 名前は変わる可能性がある。島根県はスサノオと命名されたプロジェクトがあまりにも多すぎる。
 
 ## スサノオの概要
+
 [return](#top)
 
 スサノオでは SPring-8 における [MADOCA/DARUMA](https://user.spring8.or.jp/sp8info/?p=37181) や
@@ -118,7 +136,7 @@ MADOCA や TANGO でも一般的なものである。
 同時に、スサノオは
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
 互換としての立ち位置を持つ。
-これは、公式に**BL774 REST server** のコードを基盤にしており、
+これは、公式に **BL774 REST server** のコードを基盤にしており、
 get や post のルールを
 [BL774](https://user.spring8.or.jp/sp8info/?p=42759)
 側の真似をしているところである (まだ、不完全である)。
@@ -139,13 +157,14 @@ API を揃える場合は制御クラス側で揃える。
 
 これは、最初から[デバイスサーバー](#device-server) を増やす前提のもとで設計されているためであり、
 デバイスごとに基本となる API が異なるためだ。
-モーター系など、すでに揃えるべき API セットが固定されたものを扱うことよりも、
-**多種多様なデバイスに対する対応の容易さ**の方を重視している。
+モーター系など、すでに揃えるべき API セットが固定されたものを扱うことよりも、 **多種多様なデバイスに対する対応の容易さ**
+の方を重視している。
 言い換えると徹底的にミニマム志向で作られているともいえる。
 
 - [方針メモ](susanoo_intro.md)
 
 ## 透過型プロキシとは？ {#transparent-proxy}
+
 [return](#top)
 
 スサノオでは、
@@ -185,13 +204,12 @@ API を揃える場合は制御クラス側で揃える。
 をはじめとする機器制御フレームワークでは、
 ネットワークの向こうにある機器をローカルなオブジェクトに近い形で扱う、
 透過的な構成が広く用いられている。
-Device、**Device Class**、**Device Server** という関係と名称も一般的なものであるが、
-スサノオにおけるこの名称分類は
-**[TANGO](https://www.tango-controls.org/)**
+Device、 **Device Class**、 **Device Server** という関係と名称も一般的なものであるが、
+スサノオにおけるこの名称分類は **[TANGO](https://www.tango-controls.org/)**
 の影響を強く受けている。
 
-
 ## 動的ディスパッチとは？
+
 [return](#top)
 
 スサノオでは、デバイス制御クラスのメソッドをネットワーク越しに呼び出すために、
@@ -200,17 +218,17 @@ Device、**Device Class**、**Device Server** という関係と名称も一般�
 例えば、デバイス制御クラスに
 
 ```python
-device.move (...)
-device.stop ()
-device.get_position ()
+device.move(...)
+device.stop()
+device.get_position()
 ```
 
 というメソッドがある場合、クライアント側でもほぼ同じ形で
 
 ```python
-device.move (...)
-device.stop ()
-device.get_position ()
+device.move(...)
+device.stop()
+device.get_position()
 ```
 
 と呼び出すことができる。
@@ -226,7 +244,7 @@ server
 device.move (...)
 ```
 
-のように、クライアントから送られた**メソッド名と引数**をもとに、
+のように、クライアントから送られた **メソッド名と引数**をもとに、
 サーバー側が対応するデバイスクラスのメソッドを探して実行している。
 通常の Web API では、`move`、`stop`、`get_position` などの処理ごとに
 個別の API を定義する必要がある。
@@ -234,17 +252,15 @@ device.move (...)
 制御クラスにあるメソッドを比較的そのまま公開できるため、
 新しい機器や新しい機能を追加するときの通信部分の記述を大幅に減らすことができる。
 
-これはスサノオの
-**[透過型プロキシ](#transparent-proxy)**
+これはスサノオの **[透過型プロキシ](#transparent-proxy)**
 を実現するための基本的な仕組みの一つである。
-つまり、
-**制御クラス側の Python API を、できるだけそのままネットワーク越しの API として利用する**
+つまり、 **制御クラス側の Python API を、できるだけそのままネットワーク越しの API として利用する**
 という考え方である。
 
 スサノオでは、当初は Pydantic/OpenAPI を用いて API の I/F を明示的に定義する方式を用いていた。
 しかし実際に運用すると、制御クラス側に Python API がすでに存在するにもかかわらず、
 通信側にも同じ I/F を定義して維持する必要があり、多種多様なデバイスを追加していく上では面倒であった。
-そのため現在は、**DeviceClass の Python API をそのまま I/F とする完全な動的ディスパッチを基本**としている。
+そのため現在は、 **DeviceClass の Python API をそのまま I/F とする完全な動的ディスパッチを基本**としている。
 
 一方、動的ディスパッチだけでは、
 利用できるメソッドや引数の型などの I/F が外部から分かりにくい。
@@ -255,8 +271,8 @@ OpenAPI による I/F が必要な場合には選択して利用できる。
 [動的ディスパッチと API の定義](susanoo_dynamic_dispatch.md)
 に記す。
 
-
 ## ロボット制御
+
 [return](#top)
 
 特にスサノオ (仮) の自動化の中核として、ロボット制御のデバイスサーバーが挙げられる。
@@ -271,6 +287,7 @@ OpenAPI による I/F が必要な場合には選択して利用できる。
 <img src="fig/dcs_robotto.png" width="90%" style="display:block; margin:auto;">
 
 ### デンソーウェーブcobotta {#cobotta}
+
 [return](#top)
 
 デンソーウェーブのロボットでは、
@@ -291,6 +308,7 @@ b-CAP はコントローラへアクセスする通信プロトコルという�
 - [スサノオにおける COBOTTA 制御の詳細](https://ohara-lab-su.github.io/cobotta2/)
 
 ### ユニバーサルロボット {#ur}
+
 [return](#top)
 
 Universal Robots のロボットは、
@@ -301,14 +319,12 @@ TP 上の **PolyScope** はその上位にある操作・教示・プログラ�
 PolyScope で作成したロボットプログラムや外部 PC から送信した **URScript** は、
 最終的に Control Box 側の **URControl** で実行され、ロボット動作へ変換される。
 
-外部 PC との通信には Universal Robots 公式の
-**RTDE**、
-**Primary / Secondary Interface**、
-**Dashboard Server** など複数の I/F が用意されている。
+外部 PC との通信には Universal Robots 公式の **RTDE**、 **Primary / Secondary Interface**、 **Dashboard Server** など複数の
+I/F が用意されている。
 このうち **RTDE** は、外部 PC と UR controller の間で controller の状態、
 I/O、汎用レジスタなどを双方向に読み書きする公式 I/F である。
-ただし **RTDE** 自体に `movej` や `movel` のようなロボット動作命令が定義されているわけではない。
-**RTDE** で渡した値をどの動作に使うかは、必要に応じて controller 側のロボットプログラムが受け持つ。
+ただし **RTDE** 自体に `movej` や `movel` のようなロボット動作命令が定義されているわけではない。 **RTDE**
+で渡した値をどの動作に使うかは、必要に応じて controller 側のロボットプログラムが受け持つ。
 
 現在スサノオで使用している **RTDEControlInterface** は Universal Robots 純正 API ではない。
 これは **SDU Robotics** が開発するオープンソースライブラリ **ur_rtde** の API であり、
@@ -327,6 +343,7 @@ controller message / error の取得に Primary Interface を利用している�
 - [公式 RTDE と SDU Robotics `ur_rtde`](robo/robo_ctrl_ur_rtde_control.md)
 
 ### JAKA
+
 [return](#top)
 
 JAKA の協働ロボットでは、
@@ -334,8 +351,8 @@ Robot Arm と Controller が実際のモーション制御を担い、
 その上位に JAKA App による教示・操作、
 Controller 上で実行するロボットプログラム、
 外部 PC 用の公式 SDK / 通信 I/F が用意されている。
-外部 PC からは C/C++、C#、**Python の公式 SDK** を利用でき、
-**V3 Controller** では gRPC の利用が推奨されている。一方、TCP/IP 外部制御プロトコルも公開されており、Controller の状態取得や制御を独自に実装することも可能である。
+外部 PC からは C/C++、C#、 **Python の公式 SDK** を利用でき、 **V3 Controller** では gRPC の利用が推奨されている。一方、TCP/IP
+外部制御プロトコルも公開されており、Controller の状態取得や制御を独自に実装することも可能である。
 
 公式 GitHub では SDK や ROS / ROS2 関連資産も公開されている。
 ただし Python SDK は `jkrc` とメーカー提供の native library を利用する構成であり、
@@ -345,15 +362,20 @@ SDK 全体が純粋な OSS であることは分けて考える必要がある�
 * [JAKA の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_ctrl_jaka.html)
 
 ### FAIRINO
+
 [return](#top)
 
-FAIRINO の協働ロボットでは、Robot Arm と Control Box がモーション制御を担い、WebAPP / Teach Pendant が教示・操作環境となる。Controller 上のロボットプログラムには Lua が用いられ、これとは別に外部 PC から公式 SDK を用いて Joint / Cartesian motion、Jog、Servo motion、I/O、状態取得などを直接操作できる。
+FAIRINO の協働ロボットでは、Robot Arm と Control Box がモーション制御を担い、WebAPP / Teach Pendant が教示・操作環境となる。Controller
+上のロボットプログラムには Lua が用いられ、これとは別に外部 PC から公式 SDK を用いて Joint / Cartesian motion、Jog、Servo
+motion、I/O、状態取得などを直接操作できる。
 
-Python、C++、C#、Java の公式 SDK が GitHub で公開されており、Python SDK は Apache-2.0 で公開されている。このため Python から独自の制御 class を構築する場合、第三者 wrapper を必須とせず、メーカー公式 SDK をそのまま基盤として利用しやすい。
+Python、C++、C#、Java の公式 SDK が GitHub で公開されており、Python SDK は Apache-2.0 で公開されている。このため Python
+から独自の制御 class を構築する場合、第三者 wrapper を必須とせず、メーカー公式 SDK をそのまま基盤として利用しやすい。
 
 * [FAIRINO の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_ctrl_fairino.html)
 
 ### Dobot
+
 [return](#top)
 
 Dobot の CR / CRA 系協働ロボットでは、
@@ -372,12 +394,14 @@ ROS / ROS2 関連資産も公開されている。
 * [Dobot の制御アーキテクチャ・SDK・通信 I/F の詳細](robo_ctrl_dobot.html)
 
 ### FANAC
+
 [return](#top)
 FANACのスサノオでの制御アレコレ
 
 ...
 
 ## デバイスサーバー単位の緩やかな結合
+
 [return](#top)
 
 自動化・自律化などの大きな枠組みを作らずに、
@@ -399,6 +423,7 @@ FANACのスサノオでの制御アレコレ
 上位の知能化や自動化は利用者が自由に構築できるようにする。
 
 ## 解析との結合による自動・自律実験
+
 [return](#top)
 
 スサノオ (仮) では、それぞれのデバイスが分散環境に配置されていても、
@@ -436,6 +461,7 @@ FANACのスサノオでの制御アレコレ
 </div>
 
 # 分散システムとは？ {#distributed-system}
+
 [return](#top)
 
 スサノオの分散環境は、単純に特定の通信方式や Framework を選んで構成したものではない。
@@ -477,7 +503,7 @@ REST API を中心とする Web 技術を使うことで、
 共通基盤の機能は小さくなるが、デバイス単位で追加・交換しやすく、
 小規模な実験環境を小さいまま維持しやすい。
 
-結局は、 
+結局は、
 
 **プロトコルを高度にするか、Framework を高度にするか、運用を高度にするか、
 あるいは用途と規模を限定して共通基盤を小さくするか、という選択になる。**
@@ -487,7 +513,7 @@ REST API を中心とする Web 技術を使うことで、
 BL774 型の独立したデバイスサーバーを基本とし、
 必要な通信機能だけを用途に応じて選択する方を採っている。
 
-つまり、**MADOCA/DARUMA や TANGO のようなフルスタック型の分散制御システムを
+つまり、 **MADOCA/DARUMA や TANGO のようなフルスタック型の分散制御システムを
 新たに構築することは目的としない。**
 
 その代わり、機器固有の制御を担う DeviceClass を長く利用できる基本単位とし、
@@ -510,8 +536,8 @@ DeviceClass の外側に置かれる交換可能な通信層として扱う。
    REQ/REP、ROUTER/DEALER、PUB/SUB と、
    BL774 / TANGO / MADOCA/DARUMA / ROS2 などの通信モデル
 
-
 ## スサノオにおける分散システム {#distributed-system-susanoo}
+
 [return](#top)
 
 - [スサノオのシステム](susanoo_system.md)
@@ -582,8 +608,7 @@ DeviceClass
     └─ DDS Frame, 高度なルーティングを使う, ROS2資産を使うとき
 ```
 
-機器固有の制御と通信を分離し、
-**DeviceClass を長く利用する資産として残し、通信方式を用途に応じて選択・交換する。**
+機器固有の制御と通信を分離し、 **DeviceClass を長く利用する資産として残し、通信方式を用途に応じて選択・交換する。**
 
 上位の実験シーケンス、解析、自動化、AI の構成が変化しても、
 機器制御そのものまで巻き込んで作り直す必要をできるだけ減らす。
@@ -594,6 +619,7 @@ DeviceClass
 </div>
 
 # スサノオの設計思想のまとめ
+
 [return](#top)
 
 スサノオは、DeviceClass ベースのシンプルな構成を基本としている。
@@ -612,6 +638,7 @@ DeviceClass
 </div>
 
 # デバイスオブジェクト {#device-object}
+
 [return](#top)
 
 ## インストール方法
@@ -620,10 +647,11 @@ DeviceClass
 
 - [スサノオの基本構成のインストール](susanoo_install.md)
 
-次に[デバイスサーバー](#device-server) を導入する必要がある。 
+次に[デバイスサーバー](#device-server) を導入する必要がある。
 後述する、すでに開発済みのデバイスサーバーを使うだけならば次のセクションは飛ばして良い。
 
 ## デバイスサーバー作成 (自動ディスパッチ)
+
 [return](#top)
 
 スサノオは透過型の Framework を基盤としており、FastAPI (BL774 型) や gRPC を用いた透過型プロキシを使ったデバイスサーバーを作ることができる。
@@ -650,6 +678,7 @@ DeviceClass
 - [ese774_frame 完全透過型 Quick Start](susanoo_ese774_quickstart.md)
 
 ## デバイスサーバー作成 (Pydantic/OpenAPI タイプ)
+
 [return](#top)
 
 現在のスサノオでは、[動的ディスパッチ](#動的ディスパッチとは) により
@@ -664,7 +693,7 @@ DeviceClass 側の Python API とは別に I/F 定義を記述する必要があ
 
 1. スサノオに関係なく[デバイス制御クラス (プログラム)](#device-class) を書く。
 2. スサノオフレームを用いて、デバイス制御クラスからデバイスサーバーを作る
-3. スサノオフレームを用いて、デバイスサーバーの**API 定義**を記述する
+3. スサノオフレームを用いて、デバイスサーバーの **API 定義**を記述する
    Pydantic/OpenAPI という一般的な Web 技術とその記法で記述されており、スサノオが用意するクライアントを使わなくてもデバイスサーバーを使うことができる
 4. サーバー側で処理されてしまう処理をクライアント側にしたいなど (たとえばファイル保存) の例外処理を書く
 5. スサノオフレームにより自動で作られるデバイスプロキシ (デバイスクライアント) を用いて、実験制御プログラムを書く。
@@ -692,11 +721,11 @@ DeviceClass があればデバイスサーバー・クライアントをほぼ�
 問題はサーバ側、つまり機器側の対応になる。
 つまり、async で非同期並行処理っぽく見せていて、
 サーバー側はコテコテのマルチスレッドやマルチプロセスで、非同期並列処理となっている場合がありうる。
-注意が必要である。この非同期性の担保・実装は個別の**デバイスサーバーの責務**となる。
+注意が必要である。この非同期性の担保・実装は個別の **デバイスサーバーの責務**となる。
 原理的に不可能なデバイスも多い。
 
-
 ## 実験用サンプルスクリプトと環境構築 docs
+
 [return](#top)
 **(*) 研究室の学生向けのドキュメント**
 
@@ -724,46 +753,56 @@ Python は多少は知っておく必要がある。
 <span style="padding:0 20px;">●</span>
 </div>
 
-
 # 計算・解析オブジェクト
+
 [return](#top)
 
 実験制御たるデバイスサーバー（デバイスクラス）と連携する計算・解析オブジェクトを提供する
 
 ## 計算・データ解析 (RMC): source
+
 [return](#top)
 **(*) 2026/03/03 アクセス制限あり**
 
 主に逆モンテカルロ (RMC) を用いた計算・データ解析とそのための支援ツールなど。
 
-- [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) / ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
+- [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) /
+  ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
 - RMC (FNC) 形状固定の方法 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
 - RMC (TOP) ポテンシャル利用 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
-- [RMC (SNC) Qn Network](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT 用の Qn network 作成支援
-- RMC (ANN) 機械学習ポテンシャル利用 (AENET の ANN ポテンシャル) / ([支援ライブラリ](https://github.com/ohara-lab-su/ann_env)) ANN 作成/利用 支援ライブラリ
-- [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC/DFT に関するクラスライブラリと RMC-DFT 計算コード
-  - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
-  - [RMC-DFT: VASP 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/vasp)
-  - RMC-DFT: QE (Quantum ESPRESSO) 支援クラスライブラリ
-  - RMC-DFT: AENET (ANNポテンシャル) 支援クラスライブラリ
+- [RMC (SNC) Qn Network](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT
+  用の Qn network 作成支援
+- RMC (ANN) 機械学習ポテンシャル利用 (AENET の ANN ポテンシャル) /
+  ([支援ライブラリ](https://github.com/ohara-lab-su/ann_env)) ANN 作成/利用 支援ライブラリ
+- [RMC-DFT](https://ohara-lab-su.github.io/rmc_dft/) / ([source](https://github.com/ohara-lab-su/rmc_dft/)) RMC/DFT
+  に関するクラスライブラリと RMC-DFT 計算コード
+    - [RMC-DFT: RMC 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot)
+    - [RMC-DFT: VASP 支援クラスライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/vasp)
+    - RMC-DFT: QE (Quantum ESPRESSO) 支援クラスライブラリ
+    - RMC-DFT: AENET (ANNポテンシャル) 支援クラスライブラリ
 - [RMC-MLP: ACE](https://ohara-lab-su.github.io/ace_env/), ACE を MD/DFT の代わりに使うための支援
-- [RMC-MLP: GAP](https://ohara-lab-su.github.io/gap_env/), MLP を MD/DFT の代わりに使うための支援。苦労の割には報われない気がする。それよりは、RMC の制約・補正としての ANN が RMC
+- [RMC-MLP: GAP](https://ohara-lab-su.github.io/gap_env/), MLP を MD/DFT の代わりに使うための支援。苦労の割には報われない気がする。それよりは、RMC
+  の制約・補正としての ANN が RMC
 - RMC-MD: LAMMPS
-- [webPDF Rust版（パラメータ自動調整版)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://github.com/ohara-lab-su/rust_pdf/web)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
-- [webPDF local版 (パラメータ手動版)](https://ohara-lab-su.github.io/local_pdf), ([source](https://github.com/ohara-lab-su/local_pdf)) 廃止予定？/Rust 版へ統合
-
+- [webPDF Rust版（パラメータ自動調整版)](https://ohara-lab-su.github.io/rust_pdf/),
+  ([web-I/F](https://github.com/ohara-lab-su/rust_pdf/web)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
+- [webPDF local版 (パラメータ手動版)](https://ohara-lab-su.github.io/local_pdf),
+  ([source](https://github.com/ohara-lab-su/local_pdf)) 廃止予定？/Rust 版へ統合
 
 ## 計算・データ解析 (MD): source
+
 [return](#top)
 **(*) 2026/03/03 アクセス制限あり**
 
 主に古典分子動力学 (MD) を用いた計算・データ解析とそのための支援ツールなど
 
-- [Power スペクトル (using lammps トラジェクトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD 解析支援 project
+- [Power スペクトル (using lammps トラジェクトリ) 計算コード](https://github.com/kengo-nakada/md_analysis) MD 解析支援
+  project
 - [lammps to vasp](https://github.com/shimane-dev/lammps_to_vasp)
 - LAMMPS の基本的な使い方
 
 ## 計算・データ解析 (MLP): source
+
 [return](#top) **(*) 2026/03/03 アクセス制限あり**
 
 主に機械学習ポテンシャル (MLP) を用いた計算・データ解析とそのための支援ツールなど
@@ -774,17 +813,20 @@ Python は多少は知っておく必要がある。
 - 機械学習ポテンシャル ANET (深層学習では割と本命)
 
 ## 計算・データ解析 (DFT): source
+
 [return](#top)
 **(*) 2026/03/03 アクセス制限あり**
 
 主に密度汎関数理論 (DFT) / 第一原理 MD を用いた計算・データ解析とそのための支援ツールなど
 
 - [x_poscar](https://github.com/shimane-dev/x_poscar) VASP 構造と Bader 電荷密度と MD 関係の解析支援クラスライブラリおよびその使用例
-- [周波数解析](https://github.com/shimane-dev/x_frequency) ゼロクロッシング法による周波数推定と Synchrosqueezing Transform (SST) による周波数セグメント検出
+- [周波数解析](https://github.com/shimane-dev/x_frequency) ゼロクロッシング法による周波数推定と Synchrosqueezing
+  Transform (SST) による周波数セグメント検出
 - [COHP による結合解析](https://github.com/shimane-dev/x_lobster)
 - ワニエ関数による局在化軌道解析 (結合解析)
 - ワニエ関数による局在化軌道解析 (電荷のずれ)
-- [SAE](https://github.com/shimane-dev/sae) DFT 計算と結晶構造と群論に関して支援ツール集 (**古すぎるのでほぼ死亡** 歴史的役割は終わった)
+- [SAE](https://github.com/shimane-dev/sae) DFT 計算と結晶構造と群論に関して支援ツール集 (**古すぎるのでほぼ死亡**
+  歴史的役割は終わった)
 - [vasp1](https://github.com/shimane-dev/vasp1) VASP 支援スクリプト集
 - [bader1](https://github.com/shimane-dev/bader1) Bader 支援スクリプト集
 - [真空層 関連ツール](https://github.com/shimane-dev/change_lattice_constant)
@@ -795,7 +837,8 @@ Python は多少は知っておく必要がある。
 - [表面構造作成支援 (突貫)](https://github.com/shimane-dev/make_surface)
 
 
-- [全電子計算手法 (FLAPW) による DFT 計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW 基盤から、FLEUR/exting 基盤へ移行中)
+- [全電子計算手法 (FLAPW) による DFT 計算手法開発](https://github.com/kengo-nakada/flapw) (HiLAPW 基盤から、FLEUR/exting
+  基盤へ移行中)
 - VASP の基本的な使い方
 - QE の基本的な使い方
 - キュリー温度の計算コード開発
@@ -805,13 +848,15 @@ Python は多少は知っておく必要がある。
 </div>
 
 # 過去記事
+
 [return](#top)
 
 計算手法の基礎とその応用についての過去記事
 
 - [第一原理計算の基礎知識](abinit/intro/intro.md)
 - [第一原理計算の選び方 (プレゼン資料)](https://support.spring8.or.jp/Doc_workshop/PDF_20150728/5.nakada.pdf), 2015 年度版
-- [実空間差分法による XANES スペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf), 2023 年度版
+- [実空間差分法による XANES スペクトル計算の方法](https://support.spring8.or.jp/assets/materials/20230309_1.koide.pdf),
+  2023 年度版
 - [実習](https://support.spring8.or.jp/assets/materials/190228_5.nakada.pdf)
 - [TSPACE](abinit/TSPACE/tspace_00.md), 空間群のプログラム (2017)
 - [memo WIEN2k](abinit/pdf/memo_WIEN2k_code_intro_2015.pdf), WIEN2k メモ (2015)
@@ -823,9 +868,11 @@ Python は多少は知っておく必要がある。
 - [遍歴電子モデルによる強磁性発現機構](abinit/pdf/20060726.pdf), M.SHIMIZU, Proc. Phys. Soc., 84 (1964) 397. の解説
 
 ## 古い記事へのリンク
+
 [return](#top)
 
-- [DARUMA project](http://daruma.spring8.or.jp/) (2019.12 プロジェクト更新は無くなりました。その時点でのプロジェクト内容。SPring-8 キャンパス内では閲覧可能)
+- [DARUMA project](http://daruma.spring8.or.jp/) (2019.12 プロジェクト更新は無くなりました。その時点でのプロジェクト内容。SPring-8
+  キャンパス内では閲覧可能)
 - [計算関係の役立ちリンク](abinit/index.md)
 
 ---
