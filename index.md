@@ -2,6 +2,7 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
+- 2026/09/24: [process_executor マニュアル整備](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/))
 - 2026/09/15: [localPDF マニュアル整備](https://ohara-lab-su.github.io/local_pdf/), ([source](https://github.com/ohara-lab-su/local_pdf/))
 - 2026/09/14: [PM2CD 0.1.0](https://github.com/ohara-lab-su/pm2cd/)
 - 2026/09/14: [process_executor 0.1.1](https://github.com/ohara-lab-su/process_executor/)
@@ -53,7 +54,7 @@ REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付�
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/), ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage, ESRFの資産を使うとき
 - 通信Frame: DDS frame, 高度なルーティングが必要なとき
 - 通信Frame: MQTT frame, 一体多数制御に特化
-- プロセス Executor: [process_executor](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/)
+- プロセス Executor: [process_executor](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/))
 - ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
 
 ## others
