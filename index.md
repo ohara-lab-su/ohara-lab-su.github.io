@@ -2,16 +2,14 @@
 [尾原研](https://ohara.mat.shimane-u.ac.jp/) / [ohara-lab-su (github)](https://github.com/ohara-lab-su) / [ohara-lab-su (docs)](https://ohara-lab-su.github.io/)
 
 ## 更新履歴
-- 2026/09/24: [RustPDF (local I/F整備・マニュアル)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
+- 2026/09/24: [RustPDF (pages 修正)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - 2026/09/24: [process_executor マニュアル整備](https://ohara-lab-su.github.io/process_executor/), ([source](https://github.com/ohara-lab-su/process_executor/))
+- 2026/09/16: [RustPDF (local I/F整備・マニュアル)](https://ohara-lab-su.github.io/rust_pdf/), ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - 2026/09/15: [localPDF マニュアル整備](https://ohara-lab-su.github.io/local_pdf/), ([source](https://github.com/ohara-lab-su/local_pdf/))
 - 2026/09/14: [PM2CD 0.1.0](https://github.com/ohara-lab-su/pm2cd/)
 - 2026/09/14: [process_executor 0.1.1](https://github.com/ohara-lab-su/process_executor/)
 - 2026/09/14: [ese774_frame 0.6.0](https://github.com/ohara-lab-su/ese774_frame)
 - 2026/09/13: [process_executor](https://github.com/ohara-lab-su/process_executor/)
-- 2026/09/11: [PM2CD](https://github.com/ohara-lab-su/pm2cd/)
-- 2026/09/08: [Dobot](https://github.com/ohara-lab-su/dobot/)
-- 2026/08/26: [RMC_DFT DOC (かなり古いバージョンbase)](https://ohara-lab-su.github.io/rmc_dft/)
 - [HISTORY](history.md)
 
 
