@@ -4,6 +4,7 @@
 
 ## 更新履歴
 
+- 2026/09/25: [Packmol_util (pages 追加)](https://ohara-lab-su.github.io/packmol_util/), ([source](https://github.com/ohara-lab-su/packmol_util/)
 - 2026/09/24: [RustPDF (pages 修正)](https://ohara-lab-su.github.io/rust_pdf/),
   ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
 - 2026/09/24: [process_executor マニュアル整備](https://ohara-lab-su.github.io/process_executor/),
