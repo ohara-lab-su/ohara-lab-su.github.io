@@ -4,6 +4,7 @@
 
 ## 更新履歴
 
+- 2026/09/25: [LogServer (デバイスクラスを指定して、そのログを好きに取得)](https://ohara-lab-su.github.io/log_server/), ([source](https://github.com/ohara-lab-su/log_server/))
 - 2026/09/25: [Packmol_util (pages 追加)](https://ohara-lab-su.github.io/packmol_util/), ([source](https://github.com/ohara-lab-su/packmol_util/))
 - 2026/09/24: [RustPDF (pages 修正)](https://ohara-lab-su.github.io/rust_pdf/),
   ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
