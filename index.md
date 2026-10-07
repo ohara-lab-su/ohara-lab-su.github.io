@@ -4,21 +4,11 @@
 
 ## 更新履歴
 
-- 2026/10/08: [LogCtrl (デバイスクラスを指定して、そのログを好きに取得)](https://ohara-lab-su.github.io/log_ctrl/), ([source](https://github.com/ohara-lab-su/log_ctrl/))
-- 2026/10/01: [MiniPIX 再設計・X線入れたテスト済み](https://ohara-lab-su.github.io/mini_pix/), ([source](https://ohara-lab-su.github.io/mini_pix/))
-- 2026/09/25: [LogCtrl (デバイスクラスを指定して、そのログを好きに取得)](https://ohara-lab-su.github.io/log_ctrl/), ([source](https://github.com/ohara-lab-su/log_ctrl/))
-- 2026/09/25: [Packmol_util (pages 追加)](https://ohara-lab-su.github.io/packmol_util/), ([source](https://github.com/ohara-lab-su/packmol_util/))
-- 2026/09/24: [RustPDF (pages 修正)](https://ohara-lab-su.github.io/rust_pdf/),
-  ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
-- 2026/09/24: [process_executor マニュアル整備](https://ohara-lab-su.github.io/process_executor/),
-  ([source](https://github.com/ohara-lab-su/process_executor/))
-- 2026/09/16: [RustPDF (local I/F整備・マニュアル)](https://ohara-lab-su.github.io/rust_pdf/),
-  ([web-I/F](https://ohara-lab-su.github.io/rust_pdf/web/)), ([source](https://github.com/ohara-lab-su/rust_pdf/))
-- 2026/09/15: [localPDF マニュアル整備](https://ohara-lab-su.github.io/local_pdf/),
-  ([source](https://github.com/ohara-lab-su/local_pdf/))
-- 2026/09/14: [PM2CD 0.1.0](https://ohara-lab-su.github.io/pm2cd/), ([source](https://github.com/ohara-lab-su/pm2cd/))
-- 2026/09/14: [process_executor 0.1.1](https://github.com/ohara-lab-su/process_executor/)
-- 2026/09/14: [ese774_frame 0.6.0](https://github.com/ohara-lab-su/ese774_frame)
+- 2026/10/07  [RMC_util (RMD-DFT から RMCを分離, PyPI)](https://ohara-lab-su.github.io/rmc_util/), ([source](https://github.com/ohara-lab-su/rmc_util))
+- 2026/10/07  [RMC_DFT (PyPI対応)](https://ohara-lab-su.github.io/rmc_dft/), ([source](https://github.com/ohara-lab-su/rmc_dft))
+- 2026/10/07: [Packmol_util (PyPI対応)](https://ohara-lab-su.github.io/packmol_util/), ([source](https://github.com/ohara-lab-su/packmol_util/))
+- 2026/10/06: [x_logger (PyPI対応)](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
+- 2026/10/06: [LogCtrl (デバイスクラスを指定して、そのログを好きに取得)](https://ohara-lab-su.github.io/log_ctrl/), ([source](https://github.com/ohara-lab-su/log_ctrl/))
 - [HISTORY](history.md)
 
 # DeviceClass・デバイスサーバ一覧 {#device-server}
@@ -770,7 +760,7 @@ Python は多少は知っておく必要がある。
 主に逆モンテカルロ (RMC) を用いた計算・データ解析とそのための支援ツールなど。
 
 - [Packmol_util](https://ohara-lab-su.github.io/packmol_util/) /
-  ([source](https://github.com/ohara-lab-su/packmol_util/)) 非晶質の構造作成
+  ([source](https://github.com/ohara-lab-su/packmol_util/)), ([PyPI](https://pypi.org/project/xlogger-py/)) 非晶質の構造作成
 - RMC (FNC) 形状固定の方法 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
 - RMC (TOP) ポテンシャル利用 / ([支援ライブラリ](https://github.com/ohara-lab-su/rmc_dft/tree/main/src/rmc_dft/rmc_pot))
 - [RMC (SNC) Qn Network](https://ohara-lab-su.github.io/qn/) / ([source](https://github.com/ohara-lab-su/qn/)) RMC_POT
