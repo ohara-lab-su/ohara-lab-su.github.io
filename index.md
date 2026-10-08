@@ -4,6 +4,10 @@
 
 ## 更新履歴
 
+- 2026/10/07: [ese774 frame PyPI対応](https://ohara-lab-su.github.io/ese774_frame/),
+  ([source](https://github.com/ohara-lab-su/ese774_frame/)), ([PyPI](https://pypi.org/project/ese774-frame/))
+- 2026/10/07: [gRPC frame (PyPI対応)](https://ohara-lab-su.github.io/grpc_frame/),
+  ([source](https://github.com/ohara-lab-su/grpc_frame/)), ([PyPI](https://pypi.org/project/grpc-frame/)
 - 2026/10/07  [RMC_util (RMD-DFT から RMCを分離, PyPI)](https://ohara-lab-su.github.io/rmc_util/), ([source](https://github.com/ohara-lab-su/rmc_util))
 - 2026/10/07  [RMC_DFT (PyPI対応)](https://ohara-lab-su.github.io/rmc_dft/), ([source](https://github.com/ohara-lab-su/rmc_dft))
 - 2026/10/07: [Packmol_util (PyPI対応)](https://ohara-lab-su.github.io/packmol_util/), ([source](https://github.com/ohara-lab-su/packmol_util/))
@@ -59,9 +63,9 @@ REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付�
 ## Framework {#frame-work}
 
 - 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/),
-  ([source](https://github.com/ohara-lab-su/ese774_frame/)) SPring-8 BL774 互換風味
+  ([source](https://github.com/ohara-lab-su/ese774_frame/)), ([PyPI](https://pypi.org/project/ese774-frame/)) SPring-8 BL774 互換風味
 - 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/),
-  ([source](https://github.com/ohara-lab-su/grpc_frame/)) 高速な gRPC 転送用
+  ([source](https://github.com/ohara-lab-su/grpc_frame/)), ([PyPI](https://pypi.org/project/grpc-frame/)) 高速な gRPC 転送用
 - 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/),
   ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage, ESRFの資産を使うとき
 - 通信Frame: DDS frame, 高度なルーティングが必要なとき
