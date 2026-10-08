@@ -7,11 +7,15 @@
 - 2026/10/07: [ese774 frame PyPI対応](https://ohara-lab-su.github.io/ese774_frame/),
   ([source](https://github.com/ohara-lab-su/ese774_frame/)), ([PyPI](https://pypi.org/project/ese774-frame/))
 - 2026/10/07: [gRPC frame (PyPI対応)](https://ohara-lab-su.github.io/grpc_frame/),
-  ([source](https://github.com/ohara-lab-su/grpc_frame/)), ([PyPI](https://pypi.org/project/grpc-frame/)
-- 2026/10/07  [RMC_util (RMD-DFT から RMCを分離, PyPI)](https://ohara-lab-su.github.io/rmc_util/), ([source](https://github.com/ohara-lab-su/rmc_util))
-- 2026/10/07  [RMC_DFT (PyPI対応)](https://ohara-lab-su.github.io/rmc_dft/), ([source](https://github.com/ohara-lab-su/rmc_dft))
-- 2026/10/07: [Packmol_util (PyPI対応)](https://ohara-lab-su.github.io/packmol_util/), ([source](https://github.com/ohara-lab-su/packmol_util/))
-- 2026/10/06: [x_logger (PyPI対応)](https://ohara-lab-su.github.io/x_logger/), ([source](https://github.com/ohara-lab-su/x_logger/))
+  ([source](https://github.com/ohara-lab-su/grpc_frame/)), ([PyPI](https://pypi.org/project/grpc-frame/))
+- 2026/10/07  [RMC_util (RMD-DFT から RMCを分離, PyPI)](https://ohara-lab-su.github.io/rmc_util/), 
+  ([source](https://github.com/ohara-lab-su/rmc_util)), ([PyPI](https://pypi.org/project/rmc-util/))
+- 2026/10/07  [RMC_DFT (PyPI対応)](https://ohara-lab-su.github.io/rmc_dft/),
+  ([source](https://github.com/ohara-lab-su/rmc_dft)), ([PyPI](https://pypi.org/project/rmc-dft/))
+- 2026/10/07: [Packmol_util (PyPI対応)](https://ohara-lab-su.github.io/packmol_util/),
+  ([source](https://github.com/ohara-lab-su/packmol_util/)), ([PyPI](https://pypi.org/project/packmol-util/))
+- 2026/10/06: [x_logger (PyPI対応)](https://ohara-lab-su.github.io/x_logger/),
+  ([source](https://github.com/ohara-lab-su/x_logger/)), ([PyPI](https://pypi.org/project/xlogger-py/))
 - 2026/10/06: [LogCtrl (デバイスクラスを指定して、そのログを好きに取得)](https://ohara-lab-su.github.io/log_ctrl/), ([source](https://github.com/ohara-lab-su/log_ctrl/))
 - [HISTORY](history.md)
 
@@ -62,18 +66,26 @@ REST (**SPring8-BL774互換風味**) / gRPC などの薄い通信 Frame を付�
 
 ## Framework {#frame-work}
 
-- 通信Frame: [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/),
-  ([source](https://github.com/ohara-lab-su/ese774_frame/)), ([PyPI](https://pypi.org/project/ese774-frame/)) SPring-8 BL774 互換風味
-- 通信Frame: [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/),
-  ([source](https://github.com/ohara-lab-su/grpc_frame/)), ([PyPI](https://pypi.org/project/grpc-frame/)) 高速な gRPC 転送用
-- 通信Frame: [TANGO frame](https://ohara-lab-su.github.io/tango_frame/),
-  ([source](https://github.com/ohara-lab-su/tango_frame/)) alpha-stage, ESRFの資産を使うとき
+- 通信Frame: 
+  [ese774 frame](https://ohara-lab-su.github.io/ese774_frame/),
+  ([source](https://github.com/ohara-lab-su/ese774_frame/)),
+  ([PyPI](https://pypi.org/project/ese774-frame/)) SPring-8 BL774 互換風味
+- 通信Frame:
+  [gRPC frame](https://ohara-lab-su.github.io/grpc_frame/),
+  ([source](https://github.com/ohara-lab-su/grpc_frame/)),
+  ([PyPI](https://pypi.org/project/grpc-frame/)) 高速な gRPC 転送用
+- 通信Frame:
+  [TANGO frame](https://ohara-lab-su.github.io/tango_frame/),
+  ([source](https://github.com/ohara-lab-su/tango_frame/))
 - 通信Frame: DDS frame, 高度なルーティングが必要なとき
 - 通信Frame: MQTT frame, 一体多数制御に特化
-- プロセス Executor: [process_executor](https://ohara-lab-su.github.io/process_executor/),
-  ([source](https://github.com/ohara-lab-su/process_executor/))
-- ロガーclass: [x_logger](https://ohara-lab-su.github.io/x_logger/),
-  ([source](https://github.com/ohara-lab-su/x_logger/))
+- プロセス Executor:
+  [process_executor](https://ohara-lab-su.github.io/process_executor/),
+  ([source](https://github.com/ohara-lab-su/process_executor/)),
+- ロガーclass:
+  [x_logger](https://ohara-lab-su.github.io/x_logger/),
+  ([source](https://github.com/ohara-lab-su/x_logger/)),
+  ([PyPI](https://pypi.org/project/xlogger-py/))
 
 ## others
 
